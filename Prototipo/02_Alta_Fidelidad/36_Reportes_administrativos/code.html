@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#2563eb","secondary":"#466080","tertiary-container":"#676e76","surface":"#f8f9ff","outline-variant":"#c3c6d7","primary":"#004ac6","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#c0c7d0","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#003ea8","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#121c2a","on-tertiary-container":"#eaf1fa","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-container-high":"#dee9fc","on-primary-fixed":"#00174b","inverse-surface":"#27313f","tertiary":"#4e565d","surface-container":"#e6eeff","secondary-fixed-dim":"#aec9ed","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","background":"#f8f9ff","primary-fixed":"#dbe1ff","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-bright":"#f8f9ff","on-secondary-container":"#455f7e","on-surface":"#121c2a","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","on-surface-variant":"#434655","tertiary-fixed":"#dce3ec","outline":"#737686","secondary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#2e4867","inverse-primary":"#b4c5ff","on-primary-container":"#eeefff","on-secondary-fixed":"#001d37","on-tertiary-fixed-variant":"#40484f","on-tertiary-fixed":"#151c23","secondary-container":"#bfd9fe","surface-tint":"#0053db"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"data-metric":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Simulación: Caso Matemática Básica (20 ejemplares)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Sistema Institucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard General</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-de-libros" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Catálogo de Libros</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="publicaciones-e-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Publicaciones e Inventario</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Solicitudes</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Gestión de Reservas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Registro de Entregas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Instituciones</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Usuarios y Roles</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historiales" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Historiales</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reportes Consolidados</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Bitácora de Auditoría</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título o institución..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-[104px] min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full">
+<!-- Session & Context Breadcrumb Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Módulo 2: Administración Central</span>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Auditoría Operativa y Trazabilidad</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">RF16 · RF17 · RF18</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight font-bold">Reportes Administrativos y Consolidado de Impacto (ODS 4 y ODS 12)</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl">
+        Métricas integrales de circulación bibliográfica, balance de inventario por sede y trazabilidad de convenios de donación interinstitucional.
+      </p>
+</div>
+<!-- Official Actions & SDG Badges -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span>Auditado: <strong class="font-semibold">Ing. Carlos Mendoza Alva</strong> (Sede Central Rectorado)</span>
+</div>
+<button class="flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold cursor-pointer" id="btnExportPDF">
+<span class="material-symbols-outlined text-[18px] text-secondary">picture_as_pdf</span>
+<span>Exportar Acta Consolidada</span>
+</button>
+<button class="flex items-center gap-space-xs px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold cursor-pointer" id="btnExportCSV">
+<span class="material-symbols-outlined text-[18px] text-secondary">table_view</span>
+<span>Libro de Saldos (CSV)</span>
+</button>
+</div>
+</div>
+<!-- Filter & Parameter Panel (RF18) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<span class="font-label-lg text-label-lg font-semibold text-on-surface">Criterios de Consolidación y Parametrización de Red</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rango Base: Año Fiscal 2024 en Curso</span>
+</div>
+<form class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-space-sm items-end" id="filterForm">
+<!-- Date Range: From -->
+<div class="lg:col-span-2 space-y-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-medium" for="fechaDesde">Desde</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-2 focus:bg-surface-container-lowest focus:outline-none" id="fechaDesde" type="date" value="2024-01-01"/>
+</div>
+</div>
+<!-- Date Range: To -->
+<div class="lg:col-span-2 space-y-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-medium" for="fechaHasta">Hasta</label>
+<div class="relative">
+<input class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-2 focus:bg-surface-container-lowest focus:outline-none" id="fechaHasta" type="date" value="2024-10-31"/>
+</div>
+</div>
+<!-- Donating Institution -->
+<div class="lg:col-span-3 space-y-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-medium" for="institucionDonante">Institución Donante</label>
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-2 focus:bg-surface-container-lowest focus:outline-none" id="institucionDonante">
+<option value="todas">Todas las Universidades en Red</option>
+<option selected="" value="unmsm">Universidad Nacional Mayor de San Marcos (UNMSM)</option>
+<option value="uni">Universidad Nacional de Ingeniería (UNI)</option>
+<option value="pucp">Pontificia Universidad Católica del Perú (PUCP)</option>
+<option value="unc">Universidad Nacional de Cajamarca (UNC)</option>
+</select>
+</div>
+<!-- Category Filter -->
+<div class="lg:col-span-3 space-y-1">
+<label class="block font-label-sm text-label-sm text-on-surface-variant font-medium" for="categoriaTematica">Categoría Temática</label>
+<select class="w-full bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-2 focus:bg-surface-container-lowest focus:outline-none" id="categoriaTematica">
+<option value="todas">Todas las Categorías UNESCO</option>
+<option selected="" value="ciencias">Ciencias Exactas y Naturales</option>
+<option value="ingenieria">Ingeniería, Industria y Construcción</option>
+<option value="humanidades">Humanidades y Artes</option>
+<option value="sociales">Ciencias Sociales y Jurídicas</option>
+</select>
+</div>
+<!-- Action Buttons -->
+<div class="lg:col-span-2 flex items-center gap-space-xs pt-1">
+<button class="flex-1 flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all cursor-pointer" id="btnFiltrar" type="button">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span>Generar</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors cursor-pointer" id="btnReset" title="Restablecer Filtros Iniciales" type="reset">
+<span class="material-symbols-outlined text-[20px]">restart_alt</span>
+</button>
+</div>
+</form>
+</section>
+<!-- Consolidated Balance Tiles (RF16 & RF17) -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Metric 1: Total Registered -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Total Registrado</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">inventory</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">5,550</span>
+<span class="block font-label-sm text-label-sm text-secondary mt-0.5">Volúmenes en Red Central</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[14px]">account_balance</span>
+<span>4 Sedes Donantes</span>
+</span>
+<span class="font-medium text-secondary">100% Auditado</span>
+</div>
+</div>
+<!-- Metric 2: Available Volumes -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Disponibles</span>
+<span class="p-1.5 rounded-lg bg-secondary-container text-on-secondary-fixed-variant">
+<span class="material-symbols-outlined text-[20px]">library_books</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-data-metric text-data-metric text-primary font-bold">3,450</span>
+<span class="block font-label-sm text-label-sm text-secondary mt-0.5">En Estante para Asignación</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-semibold">62.2% del Fondo</span>
+<span class="text-on-surface-variant">En Catálogo</span>
+</div>
+</div>
+<!-- Metric 3: Reserved in Custody -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">En Custodia / Reserva</span>
+<span class="p-1.5 rounded-lg bg-[#fef3c7] text-[#92400e]">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-data-metric text-data-metric text-[#92400e] font-bold">280</span>
+<span class="block font-label-sm text-label-sm text-secondary mt-0.5">Bloqueados temporalmente</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-[#fef3c7] text-[#92400e] font-semibold">5.0% Activo</span>
+<span class="text-on-surface-variant">Plazo máx. 5 días</span>
+</div>
+</div>
+<!-- Metric 4: Delivered with Act (SDG Impact) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Entregados con Acta</span>
+<span class="p-1.5 rounded-lg bg-[#dcfce7] text-[#166534]">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-data-metric text-data-metric text-[#166534] font-bold">1,820</span>
+<span class="block font-label-sm text-label-sm text-secondary mt-0.5">Impacto ODS 4 y 12</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-[#dcfce7] text-[#166534] font-semibold">32.8% Circulado</span>
+<span class="text-on-surface-variant">Con Firma Digital</span>
+</div>
+</div>
+<!-- Metric 5: Reservation Fulfillment Rate -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Cumplimiento Reservas</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">94.6%</span>
+<span class="block font-label-sm text-label-sm text-secondary mt-0.5">Retiros Efectivos a Tiempo</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-[#166534] font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_drop_up</span>
+          +2.4% vs 2023
+        </span>
+<span class="text-on-surface-variant">Caducidad 4%</span>
+</div>
+</div>
+<!-- Metric 6: Active Beneficiaries -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Red Beneficiaria</span>
+<span class="p-1.5 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[20px]">domain</span>
+</span>
+</div>
+<div class="mt-space-md">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">16</span>
+<span class="block font-label-sm text-label-sm text-secondary mt-0.5">Entidades Receptoras</span>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-semibold">11 Colegios · 5 Bib.</span>
+<span class="text-primary font-medium">Activas</span>
+</div>
+</div>
+</section>
+<!-- Analytical Charts Section (3 Grid Components) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Chart 1: Monthly Evolution of Delivered Books (Bar Chart SVG) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">bar_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Volumen de Ejemplares Entregados por Periodo</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-secondary font-medium">Ene - Oct 2024</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Total acumulado mensual con actas de conformidad formalizadas.</p>
+<!-- Inline Accessible SVG Bar Chart -->
+<div class="w-full h-56 pt-2">
+<svg aria-label="Gráfico de barras de entregas mensuales" class="w-full h-full" fill="none" role="img" viewbox="0 0 420 180" xmlns="http://www.w3.org/2000/svg">
+<!-- Grid Lines -->
+<line stroke="#E5E7EB" stroke-dasharray="3 3" x1="30" x2="410" y1="20" y2="20"></line>
+<line stroke="#E5E7EB" stroke-dasharray="3 3" x1="30" x2="410" y1="60" y2="60"></line>
+<line stroke="#E5E7EB" stroke-dasharray="3 3" x1="30" x2="410" y1="100" y2="100"></line>
+<line stroke="#E5E7EB" x1="30" x2="410" y1="140" y2="140"></line>
+<!-- Y Axis Labels -->
+<text class="text-[9px] fill-[#737686] font-sans" x="5" y="24">300</text>
+<text class="text-[9px] fill-[#737686] font-sans" x="5" y="64">200</text>
+<text class="text-[9px] fill-[#737686] font-sans" x="5" y="104">100</text>
+<text class="text-[9px] fill-[#737686] font-sans" x="12" y="144">0</text>
+<!-- Bars (Ene to Oct) -->
+<!-- Ene: 90 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="36" rx="3" width="22" x="42" y="104"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="53" y="156">Ene</text>
+<!-- Feb: 115 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="46" rx="3" width="22" x="78" y="94"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="89" y="156">Feb</text>
+<!-- Mar: 240 (Inicio año escolar) -->
+<rect class="transition-all hover:fill-[#1D4ED8]" fill="#2563EB" height="96" rx="3" width="22" x="114" y="44"></rect>
+<text class="text-[9px] fill-[#121C2A] font-semibold font-sans" text-anchor="middle" x="125" y="156">Mar</text>
+<!-- Abr: 160 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="64" rx="3" width="22" x="150" y="76"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="161" y="156">Abr</text>
+<!-- May: 185 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="74" rx="3" width="22" x="186" y="66"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="197" y="156">May</text>
+<!-- Jun: 210 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="84" rx="3" width="22" x="222" y="56"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="233" y="156">Jun</text>
+<!-- Jul: 140 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="56" rx="3" width="22" x="258" y="84"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="269" y="156">Jul</text>
+<!-- Ago: 195 -->
+<rect class="transition-all hover:fill-[#2563EB]" fill="#BFD9FE" height="78" rx="3" width="22" x="294" y="62"></rect>
+<text class="text-[9px] fill-[#434655] font-sans" text-anchor="middle" x="305" y="156">Ago</text>
+<!-- Set: 235 -->
+<rect class="transition-all hover:fill-[#1D4ED8]" fill="#2563EB" height="94" rx="3" width="22" x="330" y="46"></rect>
+<text class="text-[9px] fill-[#121C2A] font-semibold font-sans" text-anchor="middle" x="341" y="156">Set</text>
+<!-- Oct: 250 (Pico UNMSM) -->
+<rect class="transition-all hover:fill-[#003EA8]" fill="#004AC6" height="100" rx="3" width="22" x="366" y="40"></rect>
+<text class="text-[9px] fill-[#004AC6] font-bold font-sans" text-anchor="middle" x="377" y="156">Oct</text>
+<!-- Peak Indicator Badge -->
+<circle cx="377" cy="34" fill="#004AC6" r="3"></circle>
+<text class="text-[9px] fill-[#004AC6] font-bold font-sans" text-anchor="middle" x="377" y="26">250 ej.</text>
+</svg>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container-highest/40 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Incremento semestral: <strong class="text-[#166534] font-semibold">+18.5%</strong></span>
+<span class="text-secondary">Pico en Octubre con campaña interuniversitaria</span>
+</div>
+</div>
+<!-- Chart 2: Distribution by Beneficiary Institution (Horizontal Bar Chart) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">share_location</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Distribución por Beneficiarios</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container text-secondary font-medium">Top 5</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Impacto medido en volúmenes asignados y entregados.</p>
+<!-- Bar Progress Items -->
+<div class="space-y-3.5">
+<!-- Item 1 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-medium text-on-surface truncate">Bib. Comunitaria San Martín de Porres</span>
+<span class="font-semibold text-primary ml-2 font-mono">540 ej. (29.7%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-primary h-2.5 rounded-full" style="width: 29.7%;"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-medium text-on-surface truncate">I.E. 2024 Los Olivos de Pro</span>
+<span class="font-semibold text-primary ml-2 font-mono">410 ej. (22.5%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-primary-container h-2.5 rounded-full" style="width: 22.5%;"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-medium text-on-surface truncate">Colegio Fe y Alegría N° 26 (Canto Grande)</span>
+<span class="font-semibold text-primary ml-2 font-mono">360 ej. (19.8%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-secondary h-2.5 rounded-full" style="width: 19.8%;"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-medium text-on-surface truncate">Biblioteca Municipal El Porvenir (Trujillo)</span>
+<span class="font-semibold text-primary ml-2 font-mono">280 ej. (15.4%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-secondary-container h-2.5 rounded-full" style="width: 15.4%;"></div>
+</div>
+</div>
+<!-- Item 5 -->
+<div>
+<div class="flex justify-between items-center text-body-sm font-body-sm mb-1">
+<span class="font-medium text-on-surface truncate">Otras 12 Instituciones Rurales y Colegios</span>
+<span class="font-semibold text-on-surface-variant ml-2 font-mono">230 ej. (12.6%)</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 overflow-hidden">
+<div class="bg-outline-variant h-2.5 rounded-full" style="width: 12.6%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container-highest/40 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Foco de Cobertura: <strong class="text-on-surface font-semibold">Lima Norte y Zonas Vulnerables</strong></span>
+<span class="text-primary font-medium cursor-pointer hover:underline">Ver 16 entidades</span>
+</div>
+</div>
+<!-- Chart 3: Reservation Lifecycle & Expiry Donut Chart -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#166534] text-[20px]">pie_chart</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Estatus de Reservas y Caducidad</h2>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Eficacia del protocolo de retiro a 5 días.</p>
+<!-- Donut Chart with Center Metric -->
+<div class="relative flex items-center justify-center my-2">
+<svg class="w-40 h-40 transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Ring -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#EFF4FF" stroke-width="12"></circle>
+<!-- Segment 1: Completadas 82% (Circumference ~ 238.76 => 238.76 * 0.82 = 195.78) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#166534" stroke-dasharray="195.78 238.76" stroke-dashoffset="0" stroke-width="12"></circle>
+<!-- Segment 2: En curso parcial 12% (238.76 * 0.12 = 28.65) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#2563EB" stroke-dasharray="28.65 238.76" stroke-dashoffset="-195.78" stroke-width="12"></circle>
+<!-- Segment 3: Vencidas 4% (238.76 * 0.04 = 9.55) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#BA1A1A" stroke-dasharray="9.55 238.76" stroke-dashoffset="-224.43" stroke-width="12"></circle>
+<!-- Segment 4: Canceladas 2% (238.76 * 0.02 = 4.78) -->
+<circle cx="50" cy="50" fill="none" r="38" stroke="#D97706" stroke-dasharray="4.78 238.76" stroke-dashoffset="-233.98" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface leading-tight">94.6%</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium uppercase">Retiro Exitoso</span>
+</div>
+</div>
+<!-- Legend breakdown -->
+<div class="grid grid-cols-2 gap-x-2 gap-y-1.5 pt-2">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#166534]"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Completadas: <strong>82%</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface">En Curso: <strong>12%</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Vencidas: <strong>4%</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#d97706]"></span>
+<span class="font-label-sm text-label-sm text-on-surface">Canceladas: <strong>2%</strong></span>
+</div>
+</div>
+</div>
+<div class="mt-space-sm pt-space-xs border-t border-surface-container-highest/40 font-label-sm text-label-sm text-secondary">
+        Liberación automática a inventario en reservas caducadas.
+      </div>
+</div>
+</section>
+<!-- Section Title & Verification Statement (Audit Control RF16 / RF17) -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="p-1.5 rounded-lg bg-primary-container text-on-primary">
+<span class="material-symbols-outlined text-[20px]">account_tree</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface">Control de Inventario y Balance de Custodia por Publicación</h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ecuación de Auditoría Invariable: <code class="bg-surface-container px-1.5 py-0.5 rounded font-mono text-primary font-semibold">Q_inicial = Disponible + Reservada + Entregada</code></span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex h-2 w-2 rounded-full bg-[#166534]"></span>
+<span>Cálculo en Tiempo Real · Balance Cerrado al 100%</span>
+</div>
+</div>
+<!-- Consolidated Data Table (RF16 & RF17 Master Grid) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="tablaBalanceInventario">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Institución Donante</th>
+<th class="py-3 px-4 font-semibold min-w-[280px]">Título, Autor e ISBN</th>
+<th class="py-3 px-3 text-right font-semibold">Q. Inicial</th>
+<th class="py-3 px-3 text-right font-semibold text-primary">Disponible</th>
+<th class="py-3 px-3 text-right font-semibold text-[#92400e]">Reservada</th>
+<th class="py-3 px-3 text-right font-semibold text-[#166534]">Entregada</th>
+<th class="py-3 px-4 font-semibold text-center">Ecuación de Custodia</th>
+<th class="py-3 px-4 text-center font-semibold">Trazabilidad</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/40 font-body-sm text-body-sm text-on-surface">
+<!-- SUSTENTATION CASE HIGHLIGHT ROW: Matematica Basica I - UNMSM (20 = 10 + 6 + 4) -->
+<tr class="bg-surface-container-low/70 hover:bg-surface-container-high/60 transition-colors border-l-4 border-l-primary">
+<td class="py-3.5 px-4 font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">school</span>
+</span>
+<div>
+<span class="font-bold text-primary block">UNMSM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fac. Ciencias Matemáticas</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-12 object-cover rounded shadow-xs" data-alt="Cover of the academic book Matematica Basica I by Ricardo Figueroa Garcia, navy blue and white technical textbook style with geometric vectors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKOT_NeNS9RcgRT-_ET3pye5eMkEevDsOoS320SEs32KHkkTBh-O26DaMK6vZAE9fci_ChDHAAJ0Gwn6IS-9IfRl3bzktauraxS4k4nmNQGNFwVN3rPVawoJYVtZjYdSkbb8hQ__aDFEx6wfP8yyld5qsY9fwDVrCZzUno9zgyV2ES1xLWhhvDcZox1k3azszvOmNruDEt_Hb6XLfmFssUW5oBBwC3bojMt0-Ym6l1"/>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-semibold text-on-surface truncate">Matemática Básica I</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-container text-on-primary font-label-sm text-label-sm uppercase font-bold">Caso Sustentación</span>
+</div>
+<span class="block text-on-surface-variant text-body-sm">Ricardo Figueroa García · Ed. RFG</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ISBN: 978-612-45892-0-1</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-3 text-right font-bold text-on-surface font-mono text-body-md">20</td>
+<td class="py-3.5 px-3 text-right font-semibold text-primary font-mono text-body-md bg-primary-fixed/20 rounded">10</td>
+<td class="py-3.5 px-3 text-right font-semibold text-[#92400e] font-mono text-body-md bg-[#fef3c7]/40 rounded">6</td>
+<td class="py-3.5 px-3 text-right font-bold text-[#166534] font-mono text-body-md bg-[#dcfce7]/50 rounded">4</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center justify-center gap-1.5">
+<span class="px-2 py-1 rounded bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+<span>20 = 10 + 6 + 4 (100% OK)</span>
+</span>
+</div>
+</td>
+<td class="py-3.5 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-surface-container-lowest hover:bg-primary-container hover:text-on-primary text-primary transition-all font-label-sm text-label-sm font-semibold shadow-xs cursor-pointer" onclick="verDetalleTrazabilidad('Matemática Básica I', 'UNMSM', 20, 10, 6, 4)">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Auditar Actas</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: Fisica General UNI -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+</span>
+<div>
+<span class="font-semibold text-on-surface block">UNI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Facultad de Ciencias</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-12 object-cover rounded shadow-xs" data-alt="Cover of Fisica General Sears Zemansky textbook with mechanics diagram, dark formal university graphic style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzKbkq2HR1oTC-iVeMYJnxGUTvpurfkX78F_kNNT4X976sqdlolnYK_TTHZ04S5HcNL42yTeiptfTB1-sbO_Ipuli0YfT-0rcf_goHgGBhL1ErR9s2rid_VrqfpvrpXA_MrIYWCykah_Zn9NVTUm99FqtLA7hVDonhWdDhybvu-aW3Krq0F-Bk6RcsdmbK6idUEdwkO3Bo9tTtlK6AWCU_IBvuTYVNbcM3xDtpv_xV"/>
+<div class="min-w-0">
+<span class="font-medium text-on-surface truncate block">Física Universitaria Vol. 1</span>
+<span class="block text-on-surface-variant text-body-sm">Sears - Zemansky - Young · Pearson</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ISBN: 978-607-32-2190-0</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-right font-medium text-on-surface font-mono">35</td>
+<td class="py-3 px-3 text-right font-semibold text-primary font-mono">22</td>
+<td class="py-3 px-3 text-right font-semibold text-[#92400e] font-mono">3</td>
+<td class="py-3 px-3 text-right font-semibold text-[#166534] font-mono">10</td>
+<td class="py-3 px-4 text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                35 = 22 + 3 + 10 (Cuadrado)
+              </span>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-secondary transition-colors font-label-sm text-label-sm cursor-pointer" onclick="verDetalleTrazabilidad('Física Universitaria Vol. 1', 'UNI', 35, 22, 3, 10)">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Detalle</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Quimica General PUCP -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+</span>
+<div>
+<span class="font-semibold text-on-surface block">PUCP</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dpto. de Ingeniería</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-12 object-cover rounded shadow-xs" data-alt="Cover of Quimica Raymond Chang university textbook with molecular structures in subtle blue and white tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfGjMyh3YtxcZqKwIuFkH7peKoVNv6lMOSkaCSmm3dYfDvwK4QG5Vwvar1d4Z-HjsxenpLpTbhr3-5UnA31o6TBMnWiLclv46atKwGijBF2LunlQyR2MuMzYySrs--N_MiT_9pNf-MAF3gAP9YA_nbvCkxXOiAKeElldsW82GCUUYD5Pnb3rkoZKKJDO_1UrcQ0TotQqyU35Hbkt-YYvBf6MQ00gRNTO_qGo594nLP"/>
+<div class="min-w-0">
+<span class="font-medium text-on-surface truncate block">Química General (11va Ed.)</span>
+<span class="block text-on-surface-variant text-body-sm">Raymond Chang · McGraw-Hill</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ISBN: 978-607-15-0928-4</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-right font-medium text-on-surface font-mono">40</td>
+<td class="py-3 px-3 text-right font-semibold text-primary font-mono">15</td>
+<td class="py-3 px-3 text-right font-semibold text-[#92400e] font-mono">5</td>
+<td class="py-3 px-3 text-right font-semibold text-[#166534] font-mono">20</td>
+<td class="py-3 px-4 text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                40 = 15 + 5 + 20 (Cuadrado)
+              </span>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-secondary transition-colors font-label-sm text-label-sm cursor-pointer" onclick="verDetalleTrazabilidad('Química General (11va Ed.)', 'PUCP', 40, 15, 5, 20)">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Detalle</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Calculo con Trascendentes Tempranas UNMSM -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-primary-fixed text-on-primary-fixed">
+<span class="material-symbols-outlined text-[16px]">school</span>
+</span>
+<div>
+<span class="font-semibold text-on-surface block">UNMSM</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Biblioteca Pedro Zulen</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-12 object-cover rounded shadow-xs" data-alt="Cover of James Stewart Single Variable Calculus textbook with architectural curves clean academic design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw9PNWcENy6nNR3DW1xhTygI9gioIo28RCbHTwT5c64Pvjbj_97ltipPeMo5sCiNm5xkqqbWG-uQNK0wnXMGmZsIZtsupNRbcII-K8q9i6cEyBzRkD_hTZYww-QEg-EdlFI_iS0ar0zX-errNUCI-OFFvpmejeY4yOEvfhVvRWD9XqcIOZ6wE1OBGoo3twAalLgkaWn4BfIe1Qi6f_vDYvzOzjfSnYJ0ZVD9dtAQp6"/>
+<div class="min-w-0">
+<span class="font-medium text-on-surface truncate block">Cálculo de una Variable</span>
+<span class="block text-on-surface-variant text-body-sm">James Stewart · Cengage Learning</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ISBN: 978-607-481-777-5</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-right font-medium text-on-surface font-mono">50</td>
+<td class="py-3 px-3 text-right font-semibold text-primary font-mono">30</td>
+<td class="py-3 px-3 text-right font-semibold text-[#92400e] font-mono">8</td>
+<td class="py-3 px-3 text-right font-semibold text-[#166534] font-mono">12</td>
+<td class="py-3 px-4 text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                50 = 30 + 8 + 12 (Cuadrado)
+              </span>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-secondary transition-colors font-label-sm text-label-sm cursor-pointer" onclick="verDetalleTrazabilidad('Cálculo de una Variable', 'UNMSM', 50, 30, 8, 12)">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Detalle</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Algoritmos y Estructura de Datos UNI -->
+<tr class="hover:bg-surface-container transition-colors">
+<td class="py-3 px-4 font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">domain</span>
+</span>
+<div>
+<span class="font-semibold text-on-surface block">UNI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fac. Ing. de Sistemas</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4">
+<div class="flex items-center gap-3">
+<img class="w-9 h-12 object-cover rounded shadow-xs" data-alt="Cover of Introduction to Algorithms CLRS classic computer science textbook cover in white and midnight blue" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqGxSsY5iISXUmNTzcy0KLCNLKpAKxS-iolslC6Vre_PLtJdEdnTyX2IcQLNBUp3ZXi3_b96PHbKtAymq03vshk_xn_TOAIuIG_U9ivnTlp6ATU36qJYZ1qyKfu03lKs1DeafGXOYv_itB6tTrcZHER8Zep4iVtBBN29UuP_kWQ1Knn3DLqPZVmNBTfwX65tL_xh2VAZvVD22_2qAz33PYFd4n_qGVtQjvUKCyopmB"/>
+<div class="min-w-0">
+<span class="font-medium text-on-surface truncate block">Introducción a los Algoritmos</span>
+<span class="block text-on-surface-variant text-body-sm">Cormen, Leiserson, Rivest · MIT Press</span>
+<span class="font-label-sm text-label-sm text-outline font-mono">ISBN: 978-0262033848</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3 text-right font-medium text-on-surface font-mono">25</td>
+<td class="py-3 px-3 text-right font-semibold text-primary font-mono">18</td>
+<td class="py-3 px-3 text-right font-semibold text-[#92400e] font-mono">2</td>
+<td class="py-3 px-3 text-right font-semibold text-[#166534] font-mono">5</td>
+<td class="py-3 px-4 text-center">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+                25 = 18 + 2 + 5 (Cuadrado)
+              </span>
+</td>
+<td class="py-3 px-4 text-center">
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container text-secondary transition-colors font-label-sm text-label-sm cursor-pointer" onclick="verDetalleTrazabilidad('Introducción a los Algoritmos', 'UNI', 25, 18, 2, 5)">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Detalle</span>
+</button>
+</td>
+</tr>
+</tbody>
+<tfoot class="bg-surface-container-high/50 font-label-md text-label-md text-on-surface font-semibold border-t border-surface-container-highest">
+<tr>
+<td class="py-3 px-4 text-right" colspan="2">Sumatoria Filtrada (Muestra Activa):</td>
+<td class="py-3 px-3 text-right font-mono">170</td>
+<td class="py-3 px-3 text-right font-mono text-primary">95</td>
+<td class="py-3 px-3 text-right font-mono text-[#92400e]">24</td>
+<td class="py-3 px-3 text-right font-mono text-[#166534]">51</td>
+<td class="py-3 px-4 text-center">
+<span class="px-2 py-0.5 rounded bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm">
+                170 = 95 + 24 + 51 (100% Cuadrado)
+              </span>
+</td>
+<td class="py-3 px-4 text-center text-on-surface-variant font-label-sm text-label-sm">5 Títulos</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<!-- Pagination & Legal Ledger Legend -->
+<div class="p-space-sm bg-surface-container-lowest flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm border-t border-surface-container-highest/40 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span>Mostrando <strong>1 - 5</strong> de <strong>48 títulos</strong> registrados bajo convenio</span>
+<span class="hidden md:inline">·</span>
+<span class="hidden md:inline text-secondary">Registro oficial bajo normativa SUNEDU y Ley del Libro N° 31053</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors disabled:opacity-50 cursor-pointer" disabled="">Anterior</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-semibold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors cursor-pointer">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors cursor-pointer">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors cursor-pointer">10</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface-variant transition-colors cursor-pointer">Siguiente</button>
+</div>
+</div>
+</div>
+<!-- Administrative Audit Modal Dialog (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-[#16324F]/50 backdrop-blur-xs flex items-center justify-center p-4 hidden" id="modalTrazabilidad">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full shadow-2xl overflow-hidden flex flex-col">
+<!-- Modal Header -->
+<div class="px-space-md py-space-sm bg-[#16324F] text-white flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">verified_user</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Auditoría de Trazabilidad y Balance Unitario</span>
+</div>
+<button class="p-1 rounded text-white/70 hover:text-white hover:bg-white/10 transition-colors cursor-pointer" onclick="cerrarModalTrazabilidad()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-md space-y-space-md">
+<div class="flex items-start justify-between bg-surface-container-low p-space-sm rounded-lg">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface" id="modalTituloLibro">Matemática Básica I</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modalEntidadDonante">Donado por: Universidad Nacional Mayor de San Marcos</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-bold">Estado: Auditado</span>
+</div>
+<!-- Metric Formula Breakdown -->
+<div class="grid grid-cols-4 gap-2 text-center">
+<div class="p-2 rounded-lg bg-surface-container">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Q. Inicial</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-mono" id="modalQIni">20</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-high">
+<span class="block font-label-sm text-label-sm text-primary">Disponibles</span>
+<span class="font-headline-md text-headline-md font-bold text-primary font-mono" id="modalDisp">10</span>
+</div>
+<div class="p-2 rounded-lg bg-[#fef3c7]">
+<span class="block font-label-sm text-label-sm text-[#92400e]">Reservadas</span>
+<span class="font-headline-md text-headline-md font-bold text-[#92400e] font-mono" id="modalRes">6</span>
+</div>
+<div class="p-2 rounded-lg bg-[#dcfce7]">
+<span class="block font-label-sm text-label-sm text-[#166534]">Entregadas</span>
+<span class="font-headline-md text-headline-md font-bold text-[#166534] font-mono" id="modalEnt">4</span>
+</div>
+</div>
+<!-- Traceability Steps / Timeline -->
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold block mb-2">Historial de Eventos Vinculados (Caso Sustentación):</span>
+<div class="space-y-2 border-l-2 border-primary/30 pl-3">
+<div class="relative text-body-sm">
+<span class="absolute -left-[19px] top-1.5 w-2 h-2 rounded-full bg-primary"></span>
+<div class="flex justify-between items-baseline">
+<strong class="font-semibold text-on-surface">Acta de Ingreso N° ACT-2024-0012</strong>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">15/02/2024 · 10:30</span>
+</div>
+<p class="text-on-surface-variant">Ingreso de lote original de 20 ejemplares donados por UNMSM para fomento escolar.</p>
+</div>
+<div class="relative text-body-sm">
+<span class="absolute -left-[19px] top-1.5 w-2 h-2 rounded-full bg-[#166534]"></span>
+<div class="flex justify-between items-baseline">
+<strong class="font-semibold text-on-surface">Acta de Entrega N° ENT-2024-0089</strong>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">12/04/2024 · 15:45</span>
+</div>
+<p class="text-on-surface-variant">Entrega formal de 4 ejemplares a la Biblioteca Comunitaria San Martín con firma digital de receptor.</p>
+</div>
+<div class="relative text-body-sm">
+<span class="absolute -left-[19px] top-1.5 w-2 h-2 rounded-full bg-[#d97706]"></span>
+<div class="flex justify-between items-baseline">
+<strong class="font-semibold text-on-surface">Reserva Institucional N° RES-2024-0341</strong>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">24/10/2024 · 09:12</span>
+</div>
+<p class="text-on-surface-variant">Reserva activa de 6 ejemplares por el Colegio Fe y Alegría N° 26 en proceso de retiro en sede.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">ID Auditoría Hash: #UNMSM-MB1-0020-2024-REV</span>
+<button class="px-4 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors cursor-pointer" onclick="cerrarModalTrazabilidad()">
+          Entendido / Cerrar
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Traceability Modal Inspection Logic
+  function verDetalleTrazabilidad(titulo, entidad, qIni, disp, res, ent) {
+    document.getElementById('modalTituloLibro').textContent = titulo;
+    document.getElementById('modalEntidadDonante').textContent = 'Donado por: ' + entidad;
+    document.getElementById('modalQIni').textContent = qIni;
+    document.getElementById('modalDisp').textContent = disp;
+    document.getElementById('modalRes').textContent = res;
+    document.getElementById('modalEnt').textContent = ent;
+
+    const modal = document.getElementById('modalTrazabilidad');
+    modal.classList.remove('hidden');
+  }
+
+  function cerrarModalTrazabilidad() {
+    const modal = document.getElementById('modalTrazabilidad');
+    modal.classList.add('hidden');
+  }
+
+  // Interactive filtering feedback
+  document.getElementById('btnFiltrar').addEventListener('click', function() {
+    const entidad = document.getElementById('institucionDonante').value;
+    const categoria = document.getElementById('categoriaTematica').value;
+    
+    // Quick visual state notification
+    const btn = this;
+    const originalText = btn.innerHTML;
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Consolidando...</span>';
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = originalText;
+      btn.disabled = false;
+    }, 600);
+  });
+
+  // Export buttons confirmation handlers
+  document.getElementById('btnExportPDF').addEventListener('click', function() {
+    const original = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary">download</span><span>Generando Acta...</span>';
+    setTimeout(() => { this.innerHTML = original; }, 1200);
+  });
+
+  document.getElementById('btnExportCSV').addEventListener('click', function() {
+    const original = this.innerHTML;
+    this.innerHTML = '<span class="material-symbols-outlined text-[18px] text-secondary">file_download_done</span><span>Libro Descargado</span>';
+    setTimeout(() => { this.innerHTML = original; }, 1200);
+  });
+</script></main></div></body></html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-bright":"#f8f9ff","surface-tint":"#0053db","surface-variant":"#d9e3f6","on-tertiary-fixed-variant":"#40484f","background":"#f8f9ff","surface":"#f8f9ff","primary-fixed":"#dbe1ff","tertiary":"#4e565d","on-primary-fixed":"#00174b","on-primary":"#ffffff","tertiary-fixed-dim":"#c0c7d0","secondary":"#466080","secondary-fixed":"#d2e4ff","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","primary":"#004ac6","inverse-primary":"#b4c5ff","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","primary-fixed-dim":"#b4c5ff","on-tertiary-fixed":"#151c23","on-secondary-fixed":"#001d37","surface-container-high":"#dee9fc","on-tertiary-container":"#eaf1fa","on-surface-variant":"#434655","on-background":"#121c2a","outline-variant":"#c3c6d7","secondary-container":"#bfd9fe","outline":"#737686","secondary-fixed-dim":"#aec9ed","inverse-surface":"#27313f","on-secondary-container":"#455f7e","on-error-container":"#93000a","on-surface":"#121c2a","error":"#ba1a1a","on-secondary-fixed-variant":"#2e4867","on-secondary":"#ffffff","on-tertiary":"#ffffff","error-container":"#ffdad6","tertiary-fixed":"#dce3ec","on-primary-container":"#eeefff","surface-dim":"#d0dbed","surface-container":"#e6eeff","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#d9e3f6","primary-container":"#2563eb","tertiary-container":"#676e76"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-md":"1rem","gutter":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"headline-xl":["Inter"],"headline-xl-mobile":["Inter"],"label-lg":["Inter"],"data-metric":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Caso: Matemática Básica (20 ejemplares iniciales)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Gestión Interinstitucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-4" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><div class="space-y-1"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Administrador</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="panel-principal-del-administrador" href="#">Dashboard</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#">Instituciones</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#">Usuarios y Roles</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="inventario-global" href="#">Inventario Global</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#">Reportes</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#">Bitácora</a></div><div class="space-y-1 pt-2 border-t border-white/10"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Donante</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-donante" href="#">Dashboard Donante</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="mis-publicaciones" href="#">Mis Publicaciones</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes-recibidas" href="#">Solicitudes Recibidas</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#">Gestión de Reservas</a></div><div class="space-y-1 pt-2 border-t border-white/10"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Solicitante</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-general-de-libros-y-solicitud" href="#">Catálogo General</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="mis-solicitudes" href="#">Mis Solicitudes</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="mis-reservas" href="#">Mis Reservas</a></div><div class="space-y-1 pt-2 border-t border-white/10"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Entrega</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-entrega" href="#">Dashboard Entrega</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#">Registro de Entregas</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historial-de-entregas" href="#">Historial de Entregas</a></div></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option><option value="iep">Institución Educativa Pública 2050</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título, código de entrega..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Foto de perfil" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full">
+<!-- Sub-header / Academic Context Notice for Resp. Entrega -->
+<div class="flex items-center justify-between pb-space-md border-b border-surface-container-highest/60 mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold tracking-wide">
+          Módulo 5: Responsable de Entrega
+        </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">
+          Normativa RD11 • RD12 • RNF07
+        </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+        Panel de Control - Despacho Presencial y Custodia de Actas
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-4xl mt-0.5">
+        Gestión operativa de retiros físicos, verificación de apoderados acreditados y emisión de actas foliadas de entrega presencial total o parcial. Custodia oficial de inventario en almacén interinstitucional.
+      </p>
+</div>
+<div class="hidden lg:flex flex-col items-end text-right pl-space-md border-l border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline font-semibold">Funcionario Custodio</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lic. Marco Valdivia Paredes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Operaciones Logísticas de Almacén</span>
+</div>
+</div>
+<!-- Section 1: KPI Metrics Ribbon -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-md mb-space-lg">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Reservas Autorizadas</span>
+<span class="material-symbols-outlined text-[20px] text-primary">verified</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">8</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">en almacén</span>
+</div>
+<span class="font-body-sm text-body-sm text-primary font-medium mt-1">Listas para retiro hoy</span>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Entregas Pendientes</span>
+<span class="material-symbols-outlined text-[20px] text-secondary">pending_actions</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">5</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">citas</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium mt-1">Programadas turno tarde</span>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Entregas Parciales</span>
+<span class="material-symbols-outlined text-[20px] text-[#b45309]">alt_route</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">lotes activos</span>
+</div>
+<span class="font-body-sm text-body-sm text-[#b45309] font-medium mt-1">Despacho en 2 fases</span>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider">Completadas Mes</span>
+<span class="material-symbols-outlined text-[20px] text-[#166534]">task_alt</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-on-surface">24</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">actas</span>
+</div>
+<span class="font-body-sm text-body-sm text-[#166534] font-medium mt-1">Folios cerrados</span>
+</div>
+<!-- Metric 5 -->
+<div class="bg-[#12263a] text-white p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary-fixed mb-2">
+<span class="font-label-sm text-label-sm font-semibold uppercase tracking-wider text-secondary-fixed-dim">Despachados</span>
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">local_shipping</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-data-metric text-data-metric text-white">312</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed font-medium">ejemplares</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary-fixed-dim mt-1">Con firma y huella física</span>
+</div>
+</section>
+<!-- Section 2: Banner de Ecuación de Custodia e Integridad de Inventario (RF14/RNF07) -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-lg shadow-sm border border-surface-container-highest flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2.5 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ecuación de Custodia y Principio de Invarianza Estricta</h2>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold">
+            Q_inicial = Disp + Res + Ent
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-2xl">
+          El Responsable de Entrega no puede alterar títulos ni crear ejemplares. Las transiciones de inventario son de solo despacho: el stock se debita automáticamente de la cuenta de <strong>Reserva</strong> a <strong>Entregado Definitivo</strong> con hash de acta foliada.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto shrink-0 justify-end">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-outline">Balance Caso Matemática</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">20 = 10 Disp + 6 Res + 4 Ent</span>
+</div>
+<button class="px-3 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" title="Ver auditoría criptográfica del inventario" type="button">
+<span class="material-symbols-outlined text-[16px]">fingerprint</span>
+<span>Validar Integridad</span>
+</button>
+</div>
+</div>
+<!-- Section 3: Primary Work Area & Table (Cola de Despacho) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<!-- Header with Search & Filters -->
+<div class="p-space-md border-b border-surface-container-highest flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface flex items-center gap-2">
+<span>Cola de Despacho y Reservas Autorizadas para Retiro Presencial</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+            RF15 / RF16
+          </span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Verifique DNI y Carta Poder del comisionado antes de proceder a la firma manuscrita y emisión digital.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<div class="relative w-64">
+<span class="material-symbols-outlined absolute left-2.5 top-2 text-outline text-[18px]">search</span>
+<input class="w-full pl-8 pr-3 py-1.5 text-body-sm font-body-sm rounded-lg border border-outline-variant bg-surface focus:outline-none focus:border-primary-container" placeholder="Filtrar por DNI, Código o Libro..." type="text"/>
+</div>
+<select class="px-2.5 py-1.5 rounded-lg border border-outline-variant text-label-md font-label-md bg-surface text-on-surface focus:outline-none">
+<option>Todos los Estados</option>
+<option>Parciales Pendientes</option>
+<option>Completas sin Iniciar</option>
+<option>Cerradas / Archivadas</option>
+</select>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Reporte de Turno</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider border-b border-surface-container-highest">
+<th class="py-3 px-space-md">Identificación / Fechas</th>
+<th class="py-3 px-space-md">Material Bibliográfico</th>
+<th class="py-3 px-space-md">Institución y Acreditado</th>
+<th class="py-3 px-space-md text-center">Progreso de Despacho</th>
+<th class="py-3 px-space-md text-right">Saldo Pendiente</th>
+<th class="py-3 px-space-md text-right">Acción Operativa</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest font-body-sm text-body-sm">
+<!-- Row 1: Caso Estudio Principal (Matemática Básica I - Parcial en curso) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-secondary-fixed/10">
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-primary">RES-2024-0042</span>
+<span class="font-body-sm text-body-sm text-outline">Sol: SOL-2024-0089</span>
+<span class="mt-1 inline-flex items-center gap-1 text-[11px] font-semibold text-[#b45309]">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+                  Vence en 3 días
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Matemática Básica I - 2da Ed.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ISBN: 978-612-4029-12-8 • Cat: Ciencias Exactas</span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-2 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Donante: UNMSM</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-high text-primary font-label-sm text-label-sm">Estado Físico: Muy Bueno</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Bib. Comunitaria San Martín</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">badge</span>
+                  Prof. Roberto Gómez Saldarriaga
+                </span>
+<span class="font-body-sm text-body-sm text-outline">DNI: 42819023 • Poder N° 084-2024</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-center">
+<div class="flex flex-col items-center">
+<div class="w-32 bg-surface-container-highest rounded-full h-2 overflow-hidden mb-1">
+<div class="bg-primary-container h-2 rounded-full" style="width: 40%"></div>
+</div>
+<div class="flex items-center justify-between w-32 font-label-sm text-label-sm text-on-surface-variant">
+<span>Despachado: 4</span>
+<span class="font-bold text-primary">40%</span>
+</div>
+<span class="text-[11px] text-outline mt-0.5">Aprobado: 10 un.</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-metric text-[22px] leading-tight font-bold text-on-surface">6</span>
+<span class="font-label-sm text-label-sm text-outline">unidades restantes</span>
+<span class="px-2 py-0.5 rounded-full bg-[#fef3c7] text-[#92400e] font-label-sm text-label-sm font-semibold mt-1">
+                  Entrega Parcial Activa
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-right">
+<div class="flex flex-col items-end gap-1.5">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm font-semibold transition-colors shadow-sm flex items-center gap-1.5" onclick="document.getElementById('modal-despacho').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">inventory</span>
+<span>Registrar Entrega Presencial</span>
+</button>
+<button class="px-2.5 py-1 rounded-lg bg-surface-container hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm font-medium transition-colors flex items-center gap-1" onclick="alert('Abriendo Acta Preliminar Folio #0042-P1 por 4 unidades despachadas el 12/03/2024.')" type="button">
+<span class="material-symbols-outlined text-[14px]">description</span>
+<span>Ver Acta Anterior (P1)</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Físico-Química (Sin iniciar) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">RES-2024-0045</span>
+<span class="font-body-sm text-body-sm text-outline">Sol: SOL-2024-0094</span>
+<span class="mt-1 inline-flex items-center gap-1 text-[11px] font-semibold text-secondary">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                  Cita: Hoy 16:30 hrs
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Manual de Físico-Química Experimental</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ISBN: 978-013-1865-88-2 • Tomo I y II</span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-2 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Donante: UNI</span>
+<span class="px-2 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Estado: Impecable</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">I.E. República de Colombia</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">badge</span>
+                  Dra. Elena Ramos Carrión
+                </span>
+<span class="font-body-sm text-body-sm text-outline">DNI: 09843211 • Directora Titular</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-center">
+<div class="flex flex-col items-center">
+<div class="w-32 bg-surface-container-highest rounded-full h-2 overflow-hidden mb-1">
+<div class="bg-outline h-2 rounded-full" style="width: 0%"></div>
+</div>
+<div class="flex items-center justify-between w-32 font-label-sm text-label-sm text-on-surface-variant">
+<span>Despachado: 0</span>
+<span class="font-medium text-outline">0%</span>
+</div>
+<span class="text-[11px] text-outline mt-0.5">Aprobado: 15 un.</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-metric text-[22px] leading-tight font-bold text-on-surface">15</span>
+<span class="font-label-sm text-label-sm text-outline">unidades pendientes</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold mt-1">
+                  Reserva Autorizada
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-right">
+<div class="flex flex-col items-end gap-1.5">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-highest hover:bg-secondary hover:text-white text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" onclick="document.getElementById('modal-despacho').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Iniciar Despacho</span>
+</button>
+<span class="text-[11px] text-outline">Requiere DNI presencial</span>
+</div>
+</td>
+</tr>
+<!-- Row 3: Literatura Peruana (Completada Definitiva) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors opacity-90">
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">RES-2024-0038</span>
+<span class="font-body-sm text-body-sm text-outline">Sol: SOL-2024-0077</span>
+<span class="mt-1 inline-flex items-center gap-1 text-[11px] font-semibold text-[#166534]">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                  Cerrado el 14/03/2024
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Antología de Literatura Peruana Contemporánea</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ISBN: 978-84-204-7123-1 • 14 Tomos empastados</span>
+<div class="mt-1 flex items-center gap-1.5">
+<span class="px-2 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Donante: PUCP</span>
+<span class="px-2 py-0.2 rounded bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm">Total Entregado</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Biblioteca Municipal El Porvenir</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">badge</span>
+                  Sr. Miguel Ángel Paredes
+                </span>
+<span class="font-body-sm text-body-sm text-outline">DNI: 10459920 • Conforme Acta #0038-DEF</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-center">
+<div class="flex flex-col items-center">
+<div class="w-32 bg-surface-container-highest rounded-full h-2 overflow-hidden mb-1">
+<div class="bg-[#166534] h-2 rounded-full" style="width: 100%"></div>
+</div>
+<div class="flex items-center justify-between w-32 font-label-sm text-label-sm text-[#166534] font-semibold">
+<span>Despachado: 14</span>
+<span>100%</span>
+</div>
+<span class="text-[11px] text-outline mt-0.5">Aprobado: 14 un.</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-right">
+<div class="flex flex-col items-end">
+<span class="font-data-metric text-[22px] leading-tight font-bold text-[#166534]">0</span>
+<span class="font-label-sm text-label-sm text-outline">saldo pendiente</span>
+<span class="px-2 py-0.5 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-semibold mt-1">
+                  Acta Definitiva Foliada
+                </span>
+</div>
+</td>
+<td class="py-3.5 px-space-md align-top text-right">
+<div class="flex flex-col items-end gap-1.5">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" onclick="alert('Descargando Acta Definitiva Foliada #0038-DEF con Código QR y Sello Digital.')" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">download</span>
+<span>Ver Acta Definitiva</span>
+</button>
+<span class="text-[11px] text-outline">Folio Tomo II / Pág 45</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="px-space-md py-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant border-t border-surface-container-highest">
+<span>Mostrando 3 de 8 reservas autorizadas con trámite de entrega presencial</span>
+<div class="flex items-center gap-1 mt-2 sm:mt-0">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-highest disabled:opacity-50 text-label-sm font-label-sm" disabled="">Anterior</button>
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary text-label-sm font-label-sm font-semibold">1</span>
+<button class="px-2.5 py-1 rounded hover:bg-surface-container text-label-sm font-label-sm">2</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-highest text-label-sm font-label-sm">Siguiente</button>
+</div>
+</div>
+</section>
+<!-- Section 4: Dual Auxiliary Panels: Verificación de Acreditación & Generación de Acta Foliada Preliminar -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md mb-space-lg">
+<!-- Panel 1: Verificación de Acreditación Presencial -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">verified_user</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Validación de Acreditación y Poderes (RF14)</h4>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-semibold">
+            Servicio RENIEC Activo
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Paso previo obligatorio antes de la apertura del casillero físico. Verifique que la persona presente coincida con la carta de autorización institucional registrada por el solicitante.
+        </p>
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-space-sm border border-surface-container-highest mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Comisionado actual:</span>
+<span class="font-semibold text-on-surface">Prof. Roberto Gómez Saldarriaga</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Documento de Identidad:</span>
+<span class="font-semibold text-on-surface font-mono">DNI 42819023 (Vigente hasta 2028)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Instrumento de Autorización:</span>
+<span class="font-semibold text-primary">Oficio de Acreditación N° 084-BCSM-2024</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Custodio Responsable:</span>
+<span class="font-semibold text-on-surface">Lic. Marco Valdivia Paredes</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm pt-space-sm border-t border-surface-container-highest">
+<button class="flex-1 px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center justify-center gap-1.5" onclick="alert('Abriendo visor del Oficio de Acreditación Escaneado N° 084.')" type="button">
+<span class="material-symbols-outlined text-[18px]">attachment</span>
+<span>Ver Poder Adjunto (PDF)</span>
+</button>
+<button class="flex-1 px-3 py-2 rounded-lg bg-primary hover:bg-[#003ea8] text-on-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center justify-center gap-1.5" onclick="alert('Identidad cotejada conforme con el padrón electoral y oficio suscrito por el director de la biblioteca.')" type="button">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Validar y Dar Conformidad</span>
+</button>
+</div>
+</div>
+<!-- Panel 2: Protocolo de Foliación y Custodia de Actas Físico-Digitales -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">history_edu</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Protocolo de Foliación y Actas (RF17)</h4>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+            Tomo Operativo 2024-B
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+          Cada acta física requiere 2 firmas manuscritas y huella dactilar. Al consolidarse, el sistema genera un Código Hash SHA-256 inmutable que se anexa a la bitácora central de auditoría institucional.
+        </p>
+<!-- Dynamic Folio Status Card -->
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg border border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-0.5">Siguiente Folio</span>
+<span class="font-headline-sm text-headline-sm text-primary font-mono">ACTA-2024-0313</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Modalidad: Retiro parcial</span>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg border border-surface-container-highest">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-0.5">Libro de Entregas</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-mono">Folio Pág. 78</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-1">Archivo de Almacén A-1</span>
+</div>
+</div>
+<div class="flex items-center gap-2 text-body-sm font-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[#166534] text-[18px]">lock</span>
+<span>Cierre de actas garantizado contra reversión o eliminación no autorizada.</span>
+</div>
+</div>
+<div class="pt-space-sm border-t border-surface-container-highest flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">Custodio acreditado ante el MINEDU / ODS 4</span>
+<button class="px-3 py-2 rounded-lg bg-surface-container-highest hover:bg-secondary hover:text-white text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" onclick="alert('Abriendo libro foliador general de actas presenciales de la sede central.')" type="button">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Ver Libro Foliador</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Modal (Hidden by default): Registrar Entrega Presencial (RF15, RF16) -->
+<div class="fixed inset-0 z-50 bg-[#16324F]/50 backdrop-blur-xs flex items-center justify-center p-4 hidden" id="modal-despacho">
+<div class="bg-surface-container-lowest rounded-2xl shadow-2xl max-w-2xl w-full border border-surface-container-highest overflow-hidden animate-fade-in">
+<!-- Modal Header -->
+<div class="bg-surface-container-low px-space-lg py-space-md border-b border-surface-container-highest flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Registro Operativo de Despacho Presencial</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Acta de Retiro Físico: RES-2024-0042</h3>
+</div>
+<button class="p-1 rounded-lg text-outline hover:bg-surface-container hover:text-on-surface transition-colors" onclick="document.getElementById('modal-despacho').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-space-lg space-y-space-md max-h-[75vh] overflow-y-auto">
+<!-- Summary Box -->
+<div class="bg-surface rounded-xl p-space-md border border-surface-container-highest flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase">Título a Despachar</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">Matemática Básica I - 2da Ed.</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Receptor: Biblioteca Comunitaria San Martín</div>
+</div>
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline uppercase">Saldo Disponible Reserva</span>
+<div class="font-data-metric text-data-metric text-primary font-bold">6 <span class="text-body-md font-body-md font-normal text-on-surface">ejemplares</span></div>
+</div>
+</div>
+<!-- Form Dispatch Controls -->
+<div class="space-y-space-sm">
+<label class="block font-label-md text-label-md font-semibold text-on-surface">
+            Cantidad de Ejemplares a Retirar en esta Sesión:
+          </label>
+<div class="grid grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-2 p-3 rounded-lg border border-surface-container-highest bg-surface-container-low cursor-pointer hover:border-primary">
+<input checked="" class="text-primary focus:ring-0" name="modal_qty" onchange="document.getElementById('custom_qty_box').classList.add('hidden')" type="radio" value="total"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Total (6 un.)</span>
+<span class="text-[11px] text-[#166534] font-semibold">Cierra Reserva</span>
+</div>
+</label>
+<label class="flex items-center gap-2 p-3 rounded-lg border border-surface-container-highest bg-surface-container-low cursor-pointer hover:border-primary">
+<input class="text-primary focus:ring-0" name="modal_qty" onchange="document.getElementById('custom_qty_box').classList.remove('hidden')" type="radio" value="parcial"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Parcial</span>
+<span class="text-[11px] text-[#b45309] font-semibold">Mantiene Saldo</span>
+</div>
+</label>
+<div class="hidden flex items-center gap-2" id="custom_qty_box">
+<input class="w-full h-10 px-3 rounded-lg border border-outline-variant bg-surface text-body-md font-body-md focus:border-primary focus:outline-none" max="5" min="1" placeholder="Cant." type="number" value="3"/>
+</div>
+</div>
+</div>
+<!-- Verification Checklist -->
+<div class="space-y-2 pt-2 border-t border-surface-container-highest">
+<label class="block font-label-md text-label-md font-semibold text-on-surface mb-1">
+            Lista de Control de Identidad y Custodia:
+          </label>
+<div class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>DNI físico de Prof. Roberto Gómez Saldarriaga cotejado presencialmente (42819023).</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Carta Poder/Oficio original archivado en carpeta de custodio sede central.</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input checked="" class="rounded text-primary focus:ring-0" type="checkbox"/>
+<span>Inspección de integridad física de los libros realizada en mesón de despacho.</span>
+</label>
+</div>
+</div>
+<!-- Signature Note -->
+<div class="p-space-sm bg-surface-container-low rounded-lg border border-surface-container-highest">
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm font-semibold mb-1">
+<span class="material-symbols-outlined text-[18px]">draw</span>
+<span>Firma Física y Digital Foliada</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Al confirmar, se emitirá el acta oficial foliada en PDF con código de verificación QR. El apoderado estampará su firma y huella en el ejemplar impreso del almacén.
+          </p>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="bg-surface-container-low px-space-lg py-space-md border-t border-surface-container-highest flex items-center justify-between">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-medium transition-colors" onclick="document.getElementById('modal-despacho').classList.add('hidden')" type="button">
+          Cancelar
+        </button>
+<button class="px-5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-colors flex items-center gap-2 shadow-sm" onclick="alert('¡Entrega Presencial Registrada Exitosamente!\nActa Foliada: ACTA-2024-0313\nSaldo restante actualizado.'); document.getElementById('modal-despacho').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+<span>Confirmar Entrega y Foliar Acta</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

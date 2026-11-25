@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#2563eb","secondary":"#466080","tertiary-container":"#676e76","surface":"#f8f9ff","outline-variant":"#c3c6d7","primary":"#004ac6","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#c0c7d0","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#003ea8","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#121c2a","on-tertiary-container":"#eaf1fa","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-container-high":"#dee9fc","on-primary-fixed":"#00174b","inverse-surface":"#27313f","tertiary":"#4e565d","surface-container":"#e6eeff","secondary-fixed-dim":"#aec9ed","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","background":"#f8f9ff","primary-fixed":"#dbe1ff","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-bright":"#f8f9ff","on-secondary-container":"#455f7e","on-surface":"#121c2a","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","on-surface-variant":"#434655","tertiary-fixed":"#dce3ec","outline":"#737686","secondary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#2e4867","inverse-primary":"#b4c5ff","on-primary-container":"#eeefff","on-secondary-fixed":"#001d37","on-tertiary-fixed-variant":"#40484f","on-tertiary-fixed":"#151c23","secondary-container":"#bfd9fe","surface-tint":"#0053db"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"data-metric":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Simulación: Caso Matemática Básica (20 ejemplares)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Sistema Institucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard General</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-de-libros" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Catálogo de Libros</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="publicaciones-e-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Publicaciones e Inventario</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Solicitudes</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Gestión de Reservas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Registro de Entregas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Instituciones</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Usuarios y Roles</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historiales" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Historiales</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reportes Consolidados</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Bitácora de Auditoría</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título o institución..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-[104px] min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<!-- Navegación de Migas de Pan (Breadcrumbs) -->
+<nav aria-label="Migas de Pan" class="flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span>Gestión de Reservas</span>
+</a>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="text-on-surface-variant font-label-md text-label-md">Expediente RES-2024-0042</span>
+<span class="material-symbols-outlined text-[16px] text-outline">chevron_right</span>
+<span class="font-semibold text-primary">Ficha de Despacho y Trazabilidad</span>
+</nav>
+<!-- Banner de Cumplimiento Normativo / Reglas de Negocio -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 bg-primary-container text-on-primary rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Validación de Reglas de Negocio (RF13-RF16 &amp; RD09-RD15)</h2>
+<span class="bg-[#1b4332] text-[#95d5b2] px-2 py-0.5 rounded-full font-label-sm text-label-sm">Conforme</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+          Trazabilidad inmutable de custodia por lote. Principio de conservación física y balance de inventario estricto.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Kardex Hash: <span class="font-mono text-on-surface">sha256:7c9e12...f82a</span></span>
+</div>
+</div>
+<!-- Encabezado de la Reserva con Estado y Acciones Rápidas -->
+<header class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Detalle de Reserva RES-2024-0042</h1>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+          Parcialmente Entregada (Fase 1 Completada)
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-space-xs flex-wrap">
+<span>Publicación de Origen: <strong class="text-on-surface">PUB-MAT-2024-019</strong></span>
+<span>•</span>
+<span>Asignación Prioritaria Educativa (ODS 4)</span>
+<span>•</span>
+<span>Fecha de Reserva: <strong>21/10/2024 09:15 hrs</strong></span>
+</p>
+</div>
+<!-- Bloque de Botones de Acción Primaria -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<a class="px-3.5 py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5 shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Volver al Listado</span>
+</a>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-surface-container-low transition-colors flex items-center gap-1.5 shadow-sm" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar Acta (PDF)</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-error-container text-on-error-container font-label-md text-label-md hover:bg-error/20 transition-colors flex items-center gap-1.5 shadow-sm" onclick="openCancelModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">event_busy</span>
+<span>Cancelar Saldo Pendiente</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1.5 shadow-md" onclick="openDispatchModal()" type="button">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+<span>Registrar Siguiente Entrega (Fase 2 - 6 ejs)</span>
+</button>
+</div>
+</header>
+<!-- Bento Grid: Balances de Inventario, Ecuación en Tiempo Real y Plazos -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Métrica 1: Stock Total Inicial del Lote -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Lote Total Donado</span>
+<span class="material-symbols-outlined text-primary text-[22px]">inventory_2</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-[#16324F] font-bold">20</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1">ejemplares</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-mono bg-surface-container px-1.5 py-0.5 rounded text-[11px]">MAT-BAS-2ED</span>
+<span>En custodia física</span>
+</div>
+</div>
+<!-- Métrica 2: Estatus del Despacho de Reserva (40% vs 60%) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Entregados a la Fecha</span>
+<span class="material-symbols-outlined text-[#1b4332] text-[22px]">check_circle</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-2">
+<span class="font-data-metric text-data-metric text-[#16324F] font-bold">4</span>
+<span class="font-label-md text-label-md text-on-surface-variant">de 10 ejs aprobados</span>
+</div>
+<!-- Barra de Progreso Despacho -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-full" style="width: 40%;"></div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-1">40% retirado (Fase 1 completada)</span>
+</div>
+<!-- Métrica 3: Saldo Pendiente de Retiro -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Saldo en Espera de Retiro</span>
+<span class="material-symbols-outlined text-[#b45309] text-[22px]">hourglass_top</span>
+</div>
+<div class="my-space-xs">
+<span class="font-data-metric text-data-metric text-[#b45309] font-bold">6</span>
+<span class="font-label-md text-label-md text-on-surface-variant ml-1">ejemplares restantes</span>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-[#f59e0b]"></span>
+<span>60% reservado garantizado</span>
+</div>
+</div>
+<!-- Métrica 4: Plazo Perentorio RD09 (Caducidad de Reserva) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Plazo Límite de Retiro</span>
+<span class="material-symbols-outlined text-error text-[22px]">alarm</span>
+</div>
+<div class="my-space-xs flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-error font-bold">3 Días</span>
+<span class="font-label-md text-label-md text-on-surface-variant">hábiles restan</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-error-container bg-error-container px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>Vence el 29/10/2024 (Regla RD09)</span>
+</div>
+</div>
+</div>
+<!-- Ecuación de Inventario en Tiempo Real (RD10, RD11, RD13) -->
+<section class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">calculate</span>
+<span>Ecuación de Conservación de Stock en Tiempo Real</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Auditoría permanente: Cada volumen físico conserva correspondencia unívoca según la regla RD11.
+        </p>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container text-secondary font-mono px-3 py-1 rounded-full mt-2 md:mt-0">
+        RD10: Total = Disp (10) + Res (6) + Entr (4)
+      </span>
+</div>
+<!-- Panel Gráfico de Desglose Matemático -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col lg:flex-row items-center justify-around gap-space-md">
+<!-- Lote Total -->
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-lg shadow-sm">
+          20
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lote Inicial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Custodia Donante</span>
+</div>
+</div>
+<span class="font-headline-lg text-headline-lg text-secondary font-light">=</span>
+<!-- Disponibles Restantes -->
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#dcfce7] text-[#166534] flex items-center justify-center font-bold text-lg shadow-sm">
+          10
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-[#166534]">Disponibles</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Catálogo Público</span>
+</div>
+</div>
+<span class="font-headline-lg text-headline-lg text-secondary font-light">+</span>
+<!-- Reservadas en Proceso -->
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-[#fef3c7] text-[#92400e] flex items-center justify-center font-bold text-lg shadow-sm">
+          6
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-[#92400e]">Reservadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Saldo RES-2024-0042</span>
+</div>
+</div>
+<span class="font-headline-lg text-headline-lg text-secondary font-light">+</span>
+<!-- Entregadas Efectivas -->
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-fixed-variant flex items-center justify-center font-bold text-lg shadow-sm">
+          4
+        </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-secondary-fixed-variant">Entregadas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Acta ENT-2024-001</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Ficha Institucional y Datos de la Obra (Layout en 2 Columnas) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Columna Izquierda: Información de Partes Involucradas -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">corporate_fare</span>
+<span>Intervinientes Institucionales (RD15)</span>
+</h3>
+<!-- Institución Donante -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Institución Donante (Custodia)</span>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Universidad Nacional Mayor de San Marcos</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sede Central Rectorado - Almacén General de Publicaciones</p>
+<div class="mt-2 text-[12px] text-secondary flex items-center gap-2">
+<span>RUC: 20148092282</span>
+<span>•</span>
+<span>Responsable: Lic. Marco Valdivia</span>
+</div>
+</div>
+<!-- Institución Solicitante -->
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#166534] font-bold">Institución Solicitante (Receptora)</span>
+<span class="material-symbols-outlined text-[#166534] text-[18px]">school</span>
+</div>
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface">Biblioteca Comunitaria San Martín</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Sede Popular San Juan de Lurigancho - Sala Escolar</p>
+<div class="mt-2 text-[12px] text-secondary flex items-center gap-2">
+<span>RUC: 10452391823</span>
+<span>•</span>
+<span>Delegado: Prof. Roberto Gómez</span>
+</div>
+</div>
+</div>
+<!-- Certificación y Cumplimiento ODS -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/60 rounded-xl p-space-sm flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">public</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface block">Compromiso ODS 4.6 &amp; 12.5</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Donación no comercial destinada a fortalecimiento pedagógico comunitario.</span>
+</div>
+</div>
+</div>
+<!-- Columna Derecha: Ficha Técnica Bibliográfica con Miniatura -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-md flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">menu_book</span>
+<span>Ficha Técnica del Material Bibliográfico (RF13)</span>
+</h3>
+<div class="flex flex-col sm:flex-row gap-space-md">
+<!-- Thumbnail Portada -->
+<div class="w-full sm:w-36 h-48 rounded-xl overflow-hidden shadow-md flex-shrink-0 relative bg-surface-container-highest">
+<img alt="Matemática Básica I" class="w-full h-full object-cover" data-alt="Portada académica del libro Matemática Básica Segunda Edición, fondo azul marino profundo con diagramas geométricos y fórmulas matemáticas limpias, diseño sobrio institucional universitario de alta calidad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzGpBCdTirDXdbrqrEMPWdVir7RdI0roIZM3GXuC6Skk-iPZNDzdk4r2GdwNoHj6whTEUq0ogN4DsaCqoXFFiLkkgOyptyRIBsiq-oPZM1Zg854rfX3RN8S9iql6YSCFWL35ZUNZgvFeUVgqOtbLmcwp1Jkb4lralnxMjvoHZUumf_5LQ44RWrbM24FhzpGCXlHgiTssXwaTdrCh_hhIc3PG-NKRVN3nBXJ4YC5e7f"/>
+<span class="absolute top-2 left-2 bg-[#16324F] text-white text-[10px] font-mono px-2 py-0.5 rounded font-semibold">Tapa Blanda</span>
+</div>
+<!-- Datos de la Edición -->
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-semibold">Buen Estado (A)</span>
+<span class="font-mono text-body-sm text-secondary">ISBN: 978-612-4201-92-3</span>
+</div>
+<h4 class="font-headline-md text-headline-md text-on-surface mt-1">Matemática Básica I (2da Edición Revisada)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Autores: Dr. Alberto Venero &amp; Colaboradores Académicos • Fondo Editorial Universitario UNMSM
+              </p>
+<div class="grid grid-cols-2 gap-2 mt-3 font-body-sm text-body-sm">
+<div><span class="text-secondary">Año:</span> <span class="font-semibold text-on-surface">2021</span></div>
+<div><span class="text-secondary">Páginas:</span> <span class="font-semibold text-on-surface">480 pp.</span></div>
+<div><span class="text-secondary">Clasificación Dewey:</span> <span class="font-semibold text-on-surface">510.7 V38</span></div>
+<div><span class="text-secondary">Idioma:</span> <span class="font-semibold text-on-surface">Español</span></div>
+</div>
+</div>
+<!-- Resumen de Destino -->
+<div class="mt-space-sm p-space-sm bg-surface-container-low rounded-lg text-body-sm text-on-surface">
+<strong class="font-label-sm text-label-sm text-primary">Propósito del Solicitante:</strong>
+              Implementación de taller escolar para nivel secundaria y preuniversitario en la sede San Martín.
+            </div>
+</div>
+</div>
+</div>
+<!-- Resumen Cuantitativo del Ejemplar -->
+<div class="grid grid-cols-3 gap-2 mt-space-md text-center bg-surface-container rounded-xl p-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary block">Cantidad Solicitada</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">10 u.</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-[#166534] block">Retiro Efectuado</span>
+<span class="font-headline-sm text-headline-sm text-[#166534] font-bold">4 u.</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-[#b45309] block">Retiro Remanente</span>
+<span class="font-headline-sm text-headline-sm text-[#b45309] font-bold">6 u.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECCIÓN 1: Cronología y Kardex de Entregas Parciales Realizadas (RF14, RF15, RD10) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">history_edu</span>
+<span>Cronología y Kardex de Entregas Parciales (Fases de Retiro)</span>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Historial certificado de actas de recepción conforme según protocolo institucional RD10.
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+          2 Fases Planificadas
+        </span>
+</div>
+</div>
+<!-- Tabla de Entregas Parciales y Fases -->
+<div class="overflow-x-auto rounded-lg">
+<table class="w-full text-left font-body-md text-body-md border-collapse">
+<thead class="bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<tr>
+<th class="py-3 px-4 font-semibold">Identificador de Acta</th>
+<th class="py-3 px-4 font-semibold">Fecha y Hora</th>
+<th class="py-3 px-4 font-semibold text-right">Cantidad</th>
+<th class="py-3 px-4 font-semibold">Receptor Acreditado</th>
+<th class="py-3 px-4 font-semibold">Responsable Almacén</th>
+<th class="py-3 px-4 font-semibold">Hash de Integridad</th>
+<th class="py-3 px-4 font-semibold text-center">Estado del Despacho</th>
+<th class="py-3 px-4 font-semibold text-center">Documento</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Registro 1: Acta Foliada Completada (Fase 1) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-4 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#166534]"></span>
+<span class="font-mono text-primary font-bold">ENT-2024-001</span>
+</div>
+<span class="text-[11px] text-secondary ml-4">Fase 1 (Entrega Inmutable)</span>
+</td>
+<td class="py-4 px-4 text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+<span>24/10/2024</span>
+</div>
+<span class="text-[11px] text-secondary ml-5">13:21 hrs (Local)</span>
+</td>
+<td class="py-4 px-4 text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-[#166534]">4</span>
+<span class="text-body-sm text-secondary ml-1">ejemplares</span>
+</td>
+<td class="py-4 px-4 text-on-surface">
+<div class="font-label-md text-label-md font-semibold">Prof. Roberto Gómez</div>
+<span class="text-body-sm text-secondary font-mono">DNI: 42819023</span>
+</td>
+<td class="py-4 px-4 text-on-surface">
+<div class="font-label-md text-label-md">Lic. Marco Valdivia</div>
+<span class="text-body-sm text-secondary">Jefe de Custodia UNMSM</span>
+</td>
+<td class="py-4 px-4">
+<span class="font-mono text-[11px] bg-surface-container px-2 py-1 rounded text-on-surface select-all" title="Hash SHA-256 verificado">
+                9a7f...e4b1
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+                Entregado Definitivo con Acta Foliada
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<button class="p-1.5 text-primary hover:bg-surface-container rounded-lg transition-colors" title="Descargar Acta ENT-2024-001 Firmada" type="button">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</button>
+</td>
+</tr>
+<!-- Registro 2: Fase 2 En Programación (Saldo Pendiente) -->
+<tr class="hover:bg-surface-container-low/40 transition-colors bg-surface-container-low/20">
+<td class="py-4 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#f59e0b] animate-ping"></span>
+<span class="font-mono text-secondary font-bold">Fase 2 (Programada)</span>
+</div>
+<span class="text-[11px] text-secondary ml-4">Saldo Remanente</span>
+</td>
+<td class="py-4 px-4 text-on-surface">
+<div class="flex items-center gap-1 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">event</span>
+<span>28/10/2024 (Estimada)</span>
+</div>
+<span class="text-[11px] text-secondary ml-5">Turno Mañana (10:00 - 12:00)</span>
+</td>
+<td class="py-4 px-4 text-right">
+<span class="font-headline-sm text-headline-sm font-bold text-[#b45309]">6</span>
+<span class="text-body-sm text-secondary ml-1">ejemplares</span>
+</td>
+<td class="py-4 px-4 text-on-surface">
+<div class="font-label-md text-label-md text-on-surface-variant italic">Mismo receptor acreditado</div>
+<span class="text-body-sm text-secondary">O delegación autorizada</span>
+</td>
+<td class="py-4 px-4 text-on-surface">
+<div class="font-label-md text-label-md">Lic. Marco Valdivia</div>
+<span class="text-body-sm text-secondary">Ventanilla de Despacho 02</span>
+</td>
+<td class="py-4 px-4">
+<span class="font-mono text-[11px] text-outline italic">Pendiente de generación</span>
+</td>
+<td class="py-4 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-[#fef3c7] text-[#92400e] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span>
+                Pendiente de Retiro Presencial en Almacén
+              </span>
+</td>
+<td class="py-4 px-4 text-center">
+<button class="px-2.5 py-1 text-primary-container hover:bg-surface-container font-label-sm text-label-sm font-semibold rounded transition-colors" onclick="openDispatchModal()" type="button">
+                Despachar
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Trazabilidad Gráfica de Estados (Stepper Visual) -->
+<div class="mt-space-md pt-space-md bg-surface-container-low rounded-xl p-space-md">
+<h4 class="font-label-lg text-label-lg font-bold text-on-surface mb-space-md">Secuencia de Trazabilidad del Expediente (RF16)</h4>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md relative">
+<!-- Paso 1 -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-[12px]">1</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Reserva Aprobada</span>
+</div>
+<span class="text-body-sm text-secondary ml-8">21/10/2024 - 10 ejemplares asignados formalmente</span>
+</div>
+<!-- Paso 2 -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-[12px]">2</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Despacho Parcial (4 ejs)</span>
+</div>
+<span class="text-body-sm text-secondary ml-8">24/10/2024 - Acta ENT-2024-001 consolidada</span>
+</div>
+<!-- Paso 3 (Actual) -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-[#f59e0b] text-white flex items-center justify-center font-bold text-[12px] animate-pulse">3</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Custodia de Saldo (6 ejs)</span>
+</div>
+<span class="text-body-sm text-secondary ml-8">En curso - Vence en 3 días hábiles (RD09)</span>
+</div>
+<!-- Paso 4 -->
+<div class="flex flex-col items-start gap-1">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center font-bold text-[12px]">4</span>
+<span class="font-label-md text-label-md font-bold text-secondary">Cierre de Expediente</span>
+</div>
+<span class="text-body-sm text-secondary ml-8">Pendiente de Fase 2 o Caducidad</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECCIÓN 2: Simulación y Panel de Cancelación de Reserva (Escenario Alternativo RD12) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cancel</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mecanismo de Cancelación de Saldo Pendiente (RD12)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Protocolo de reversión de reserva con salvaguarda de entregas parciales consumadas.
+          </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold bg-error-container px-3 py-1 rounded-full">
+        Escenario Excepcional
+      </span>
+</div>
+<!-- Simulación del Impacto en Inventario -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-on-surface font-label-lg text-label-lg font-bold">
+<span class="material-symbols-outlined text-primary text-[20px]">info</span>
+<span>Impacto Matemático Inmediato en caso de Cancelación:</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface bg-surface-container-lowest p-space-md rounded-lg shadow-xs leading-relaxed">
+        “Si el donante cancela la reserva en este momento, los <strong>4 ejemplares ya entregados</strong> permanecen como <strong class="text-[#166534]">‘Entregados’ inmutables</strong> en acta <strong>ENT-2024-001</strong>, y únicamente los <strong>6 ejemplares pendientes</strong> se reintegrarán al stock <strong class="text-primary">Disponible</strong> (Disponible pasará de <strong>10 a 16</strong>).”
+      </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm mt-1 text-center">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block">Stock Entregado (Inmutable)</span>
+<span class="font-headline-sm text-headline-sm text-[#166534] font-bold">4 ejs (Sin cambios)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block">Saldo Cancelado</span>
+<span class="font-headline-sm text-headline-sm text-error font-bold">6 ejs (A liberarse)</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block">Nuevo Stock Disponible</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">16 ejs (10 + 6)</span>
+</div>
+</div>
+</div>
+</section>
+<!-- MODAL 1: Panel de Cancelación de Reserva (RD12) -->
+<div class="fixed inset-0 z-50 bg-[#16324F]/50 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="cancelModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-error">
+<span class="material-symbols-outlined text-[24px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Confirmar Cancelación de Saldo</h3>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg" onclick="closeCancelModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-error-container/30 text-on-surface p-space-md rounded-lg font-body-sm text-body-sm">
+<strong>Atención (Regla RD12):</strong> Se reintegrarán exactamente <strong>6 ejemplares</strong> al catálogo disponible. Los 4 ejemplares correspondientes al acta <strong>ENT-2024-001</strong> son irrevocables.
+      </div>
+<!-- Formulario de Justificación -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md font-semibold text-on-surface" for="cancelReason">
+          Motivo Formal de Cancelación <span class="text-error">*</span>
+</label>
+<select class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-primary" id="cancelReasonPreset" onchange="document.getElementById('cancelReason').value = this.value">
+<option value="">Seleccione causal justificada...</option>
+<option value="Incomparecencia del solicitante tras vencimiento de prórroga">Incomparecencia del solicitante tras vencimiento de prórroga</option>
+<option value="Desistimiento formal expresado por la Biblioteca Comunitaria San Martín">Desistimiento formal expresado por la Biblioteca Comunitaria San Martín</option>
+<option value="Fuerza mayor / Reasignación por emergencia educativa comunitaria">Fuerza mayor / Reasignación por emergencia educativa comunitaria</option>
+<option value="Otro">Otro motivo justificado</option>
+</select>
+<textarea class="w-full mt-2 bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg p-2.5 focus:outline-none focus:ring-2 focus:ring-primary" id="cancelReason" placeholder="Escriba los detalles o informe administrativo que ampara esta cancelación..." rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeCancelModal()" type="button">
+          Descartar
+        </button>
+<button class="px-4 py-2 rounded-lg bg-error text-on-error font-label-md text-label-md hover:bg-error/90 transition-colors shadow-sm" onclick="executeCancellation()" type="button">
+          Confirmar Cancelación de 6 Ejs
+        </button>
+</div>
+</div>
+</div>
+<!-- MODAL 2: Registro de Entrega Fase 2 (Despacho de Saldo 6 Ejs) -->
+<div class="fixed inset-0 z-50 bg-[#16324F]/50 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="dispatchModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Registrar Siguiente Entrega (Fase 2)</h3>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg" onclick="closeDispatchModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="bg-secondary-container/30 p-space-md rounded-lg text-body-sm text-on-surface">
+        Está a punto de completar el retiro final de <strong>6 ejemplares</strong> de <em>Matemática Básica I</em> para la <strong>Biblioteca Comunitaria San Martín</strong>. Con esta acción el expediente pasará a <strong>Totalmente Entregado</strong>.
+      </div>
+<div class="space-y-3 font-body-sm text-body-sm">
+<div>
+<label class="font-label-md text-label-md font-semibold text-on-surface block mb-1">Receptor Presencial Autorizado</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded-lg p-2 focus:outline-none" type="text" value="Prof. Roberto Gómez (DNI 42819023)"/>
+</div>
+<div>
+<label class="font-label-md text-label-md font-semibold text-on-surface block mb-1">Cantidad a Entregar</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded-lg p-2 focus:outline-none font-bold text-primary" max="6" min="1" type="number" value="6"/>
+</div>
+<div>
+<label class="font-label-md text-label-md font-semibold text-on-surface block mb-1">Observaciones de Folio / Acta</label>
+<input class="w-full bg-surface-container-low text-on-surface rounded-lg p-2 focus:outline-none" placeholder="Ej: Ejemplares revisados en presencia del receptor, sin sellos defectuosos." type="text"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-secondary font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="closeDispatchModal()" type="button">
+          Cancelar
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-md" onclick="executeDispatch()" type="button">
+          Emitir Acta y Finalizar (ENT-2024-002)
+        </button>
+</div>
+</div>
+</div>
+<!-- Micro-interacción: Toast de Notificación Dinámico -->
+<div class="fixed bottom-6 right-6 z-50 bg-[#16324F] text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 transition-opacity duration-300 opacity-0 pointer-events-none" id="systemToast">
+<span class="material-symbols-outlined text-[20px] text-[#95d5b2]" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold" id="toastMessage">Operación procesada exitosamente.</span>
+</div>
+<script>
+    function openCancelModal() {
+      document.getElementById('cancelModal').classList.remove('hidden');
+    }
+
+    function closeCancelModal() {
+      document.getElementById('cancelModal').classList.add('hidden');
+    }
+
+    function openDispatchModal() {
+      document.getElementById('dispatchModal').classList.remove('hidden');
+    }
+
+    function closeDispatchModal() {
+      document.getElementById('dispatchModal').classList.add('hidden');
+    }
+
+    function showToast(message, isError = false) {
+      const toast = document.getElementById('systemToast');
+      const toastMsg = document.getElementById('toastMessage');
+      const toastIcon = document.getElementById('toastIcon');
+
+      toastMsg.innerText = message;
+      if (isError) {
+        toastIcon.innerText = 'warning';
+        toastIcon.classList.remove('text-[#95d5b2]');
+        toastIcon.classList.add('text-error');
+      } else {
+        toastIcon.innerText = 'check_circle';
+        toastIcon.classList.remove('text-error');
+        toastIcon.classList.add('text-[#95d5b2]');
+      }
+
+      toast.classList.remove('opacity-0', 'pointer-events-none');
+      toast.classList.add('opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0', 'pointer-events-none');
+      }, 4000);
+    }
+
+    function executeCancellation() {
+      const reason = document.getElementById('cancelReason').value;
+      if (!reason.trim()) {
+        alert('Debe ingresar un motivo formal de cancelación según la regla RD12.');
+        return;
+      }
+      closeCancelModal();
+      showToast('RD12 Aplicada: 6 ejemplares reintegrados a Disponibles (Total disponible: 16). 4 ejs conservados en ENT-2024-001.');
+    }
+
+    function executeDispatch() {
+      closeDispatchModal();
+      showToast('Acta ENT-2024-002 generada: 6 ejemplares entregados con éxito. Expediente cerrado.');
+    }
+  </script>
+</div></main></div></body></html>

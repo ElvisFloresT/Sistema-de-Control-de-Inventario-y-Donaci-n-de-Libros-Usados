@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#2563eb","secondary":"#466080","tertiary-container":"#676e76","surface":"#f8f9ff","outline-variant":"#c3c6d7","primary":"#004ac6","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#c0c7d0","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#003ea8","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#121c2a","on-tertiary-container":"#eaf1fa","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-container-high":"#dee9fc","on-primary-fixed":"#00174b","inverse-surface":"#27313f","tertiary":"#4e565d","surface-container":"#e6eeff","secondary-fixed-dim":"#aec9ed","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","background":"#f8f9ff","primary-fixed":"#dbe1ff","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-bright":"#f8f9ff","on-secondary-container":"#455f7e","on-surface":"#121c2a","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","on-surface-variant":"#434655","tertiary-fixed":"#dce3ec","outline":"#737686","secondary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#2e4867","inverse-primary":"#b4c5ff","on-primary-container":"#eeefff","on-secondary-fixed":"#001d37","on-tertiary-fixed-variant":"#40484f","on-tertiary-fixed":"#151c23","secondary-container":"#bfd9fe","surface-tint":"#0053db"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"data-metric":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Simulación: Caso Matemática Básica (20 ejemplares)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Sistema Institucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard General</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-de-libros" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Catálogo de Libros</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="publicaciones-e-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Publicaciones e Inventario</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Solicitudes</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Gestión de Reservas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Registro de Entregas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Instituciones</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Usuarios y Roles</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historiales" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Historiales</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reportes Consolidados</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Bitácora de Auditoría</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título o institución..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-[104px] min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full">
+<!-- Toast Notificación Institucional -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-[#16324F] text-white px-5 py-4 rounded-xl shadow-xl flex items-start gap-3 max-w-md">
+<span class="material-symbols-outlined text-[#34d399] text-[24px] mt-0.5" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold text-white tracking-wide">Solicitud Registrada con Éxito</span>
+<p class="font-body-md text-body-md text-[#d2e4ff] mt-0.5 leading-snug">
+          Tu solicitud fue registrada correctamente. La institución donante revisará tu solicitud.
+        </p>
+<span class="font-label-sm text-label-sm text-[#aec9ed] mt-2 font-mono">Trámite ID: SOL-2024-0894 • ODS 4 y 12</span>
+</div>
+<button class="text-[#aec9ed] hover:text-white p-1 ml-auto" onclick="dismissToast()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Header Institucional & Métricas de Acceso Abierto -->
+<section class="flex flex-col gap-6 mb-8">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<div>
+<div class="flex items-center gap-2 mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-primary-container/10 text-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+            Portal de Acceso Bibliográfico Universal
+          </span>
+<span class="text-tertiary font-label-sm text-label-sm">• Libre de Costo</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-[#16324F] tracking-tight">Catálogo General de Donaciones</h1>
+<p class="font-body-lg text-body-lg text-secondary mt-1">
+          Explore el acervo bibliográfico transferible entre instituciones públicas, universitarias y comunitarias.
+        </p>
+</div>
+<!-- Indicadores de Balance Institucional -->
+<div class="flex items-center gap-3">
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-[#e0f2fe] text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">auto_stories</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Títulos Activos</span>
+<span class="font-headline-sm text-headline-sm text-[#16324F] font-bold">1,428 libros</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-xl shadow-sm flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-[#dcfce7] text-[#166534] flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary">Ejemplares Circulantes</span>
+<span class="font-headline-sm text-headline-sm text-[#16324F] font-bold">5,890 volúmenes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Barra de Filtros y Búsqueda -->
+<div class="bg-surface-container-lowest p-5 rounded-xl shadow-sm flex flex-col gap-4">
+<!-- Buscador Primario -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-3 items-center">
+<div class="md:col-span-8 relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-tertiary text-[20px]">search</span>
+<input class="w-full pl-11 pr-4 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md placeholder:text-tertiary focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2563eb]" id="searchInput" placeholder="Buscar por título de obra, autor o código ISBN normalizado..." type="text" value=""/>
+</div>
+<div class="md:col-span-4 flex items-center gap-2">
+<button class="flex-1 bg-primary-container hover:bg-[#1d4ed8] text-white py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="aplicarFiltros()" type="button">
+<span class="material-symbols-outlined text-[18px]">search</span>
+<span>Buscar en Catálogo</span>
+</button>
+<button class="bg-surface-container-low hover:bg-surface-container text-[#16324F] py-2.5 px-3.5 rounded-lg font-label-md text-label-md font-medium transition-colors flex items-center justify-center" onclick="limpiarFiltros()" title="Reestablecer filtros" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Filtros Paramétricos Multicriterio -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-3">
+<!-- Filtro: Categoría -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider" for="filterCategory">Área de Conocimiento</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2563eb]" id="filterCategory" onchange="aplicarFiltros()">
+<option value="all">Todas las Categorías</option>
+<option value="Ciencias Exactas">Ciencias Exactas</option>
+<option value="Humanidades">Humanidades</option>
+<option value="Ingeniería">Ingeniería</option>
+<option value="Ciencias Médicas">Ciencias Médicas</option>
+<option value="Literatura">Literatura</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-tertiary text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Filtro: Estado Físico -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider" for="filterCondition">Estado de Conservación</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2563eb]" id="filterCondition" onchange="aplicarFiltros()">
+<option value="all">Todos los Estados</option>
+<option value="Bueno">Bueno (Sin marcas críticas)</option>
+<option value="Regular">Regular (Páginas legibles)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-tertiary text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Filtro: Disponibilidad -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider" for="filterAvailability">Stock Transferible</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2563eb]" id="filterAvailability" onchange="aplicarFiltros()">
+<option value="available">Solo Disponibles (&gt; 0)</option>
+<option value="all">Ver Todo el Acervo</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-tertiary text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Filtro: Ordenación -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider" for="filterOrder">Ordenar Resultados</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-low text-on-surface font-body-sm text-body-sm rounded-lg px-3 py-2 pr-8 focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2563eb]" id="filterOrder" onchange="aplicarFiltros()">
+<option value="recent">Más recientes incorporados</option>
+<option value="stock">Mayor disponibilidad de stock</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-tertiary text-[18px]">sort</span>
+</div>
+</div>
+</div>
+<!-- Quick Category Chips -->
+<div class="flex items-center gap-2 flex-wrap pt-2">
+<span class="font-label-sm text-label-sm text-tertiary mr-1 font-medium">Accesos rápidos:</span>
+<button class="px-3 py-1 rounded-full bg-surface-container text-[#16324F] hover:bg-primary-container hover:text-white transition-colors font-label-sm text-label-sm" onclick="selectChip('Ciencias Exactas')" type="button">Ciencias Exactas</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-[#16324F] hover:bg-primary-container hover:text-white transition-colors font-label-sm text-label-sm" onclick="selectChip('Ingeniería')" type="button">Ingeniería</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-[#16324F] hover:bg-primary-container hover:text-white transition-colors font-label-sm text-label-sm" onclick="selectChip('Literatura')" type="button">Literatura</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-[#16324F] hover:bg-primary-container hover:text-white transition-colors font-label-sm text-label-sm" onclick="selectChip('Humanidades')" type="button">Humanidades</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-[#16324F] hover:bg-primary-container hover:text-white transition-colors font-label-sm text-label-sm" onclick="selectChip('Ciencias Médicas')" type="button">Ciencias Médicas</button>
+</div>
+</div>
+</section>
+<!-- Banner de Cumplimiento ODS & Transparencia Institucional -->
+<div class="bg-gradient-to-r from-[#16324F] to-[#1e4875] text-white p-4 rounded-xl mb-8 flex flex-col md:flex-row items-center justify-between gap-4 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="p-2 rounded-lg bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">policy</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg font-semibold text-white">Régimen Institucional de Donación Abierta</p>
+<p class="font-body-sm text-body-sm text-secondary-fixed-dim">
+          Todas las transferencias son 100% gratuitas bajo custodia académica. Sin transacciones mercantiles ni retribuciones económicas.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="font-label-sm text-label-sm bg-white/10 px-3 py-1.5 rounded-lg text-white font-mono">
+        Institución Solicitante Activa: <strong class="text-secondary-fixed">Biblioteca Comunitaria San Martín</strong>
+</span>
+</div>
+</div>
+<!-- Cuadrícula de Libros del Catálogo -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<!-- Libro 1: Matemática Básica (Destacado del Caso) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden relative" data-category="Ciencias Exactas" data-condition="Bueno" data-stock="10">
+<div class="p-5 flex flex-col gap-4">
+<!-- Header con Badges -->
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            Donación Gratuita
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm">
+            ISBN: 978-612-405-112
+          </span>
+</div>
+<!-- Cover & Ficha Principal -->
+<div class="flex gap-4 items-start">
+<div class="w-24 h-32 rounded-lg bg-surface-container shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portada académica de Matemática Básica por el Dr. Hugo Lázaro Carrillo, diseño sobrio de texto universitario en tonos azul naval y blanco, estilo editorial académico formal sin textos comerciales." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2FeDBPTbfgmSv_vTc7zJd7pKCYtFiQzYsQXvK9CiTA7-Z1uEqFRdUWlaZKUobahRwiKAkZPN686Vm4SAEa-wrYdkchNTcCOpTUKecHrALsk8zhaVKv611MOBfuAbyrCy2TocEp6aK7ZQx4Rg8z9C9iXAQEkKQmY-aaqsocoG9jJRtac52ANbklUmNS9TYIBWc7xk8ZgbKwE0xlgOpYfwUqaMSsXF2_UNu6mJ5SVb-"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Ciencias Exactas</span>
+<h2 class="font-headline-md text-headline-md text-[#16324F] font-bold leading-tight mt-0.5 truncate" title="Matemática Básica">
+              Matemática Básica
+            </h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Dr. Hugo Lázaro Carrillo</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-[#22c55e]"></span>
+<span class="font-label-sm text-label-sm text-[#166534] font-semibold">Estado: Bueno</span>
+</div>
+</div>
+</div>
+<!-- Entidad Donante e Inventario -->
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">apartment</span>
+<strong class="text-on-surface">Inst. Donante:</strong> Univ. Nacional de Ingeniería
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Disponibilidad del lote:</span>
+<span class="font-label-md text-label-md font-bold text-[#16324F]">
+<span class="text-primary font-headline-sm text-headline-sm">10</span> / 20 iniciales
+            </span>
+</div>
+<!-- Barra de Progresión de Donación -->
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+<!-- Footer & Botón de Acción -->
+<div class="p-5 pt-0">
+<button class="w-full bg-primary-container hover:bg-[#1d4ed8] text-white py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="openRequestModal('Matemática Básica', 'Dr. Hugo Lázaro Carrillo', 'Universidad Nacional de Ingeniería', 10, 'Ciencias Exactas')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Solicitar Libro</span>
+</button>
+</div>
+</article>
+<!-- Libro 2: Física Universitaria Vol. 1 -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden relative" data-category="Ciencias Exactas" data-condition="Bueno" data-stock="15">
+<div class="p-5 flex flex-col gap-4">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            Donación Gratuita
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm">
+            ISBN: 978-607-442-288
+          </span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-32 rounded-lg bg-surface-container shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portada de libro universitario de Física Universitaria de Sears y Zemansky, edición académica con diagramas de ondas y vectores, encuadernación rústica institucional de alta calidad." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCotcrqz6SqG63sPDFba_Yk50Qipwb3kwp4blqxFNj1sOaa9PQVaEYzbxvVcyZG3vfVaAVrP6IEZycws7QjOtXnpG6U6c4fhdA8okn3u6w_YsM-7W5lVXLIKfhTZhYryjRS2uFIo5_rL0dih4GPD9O4rsQEC0JzloKdsQ0IYsOFq7q1JMRuHRFa9v2NYp9eBMXAYEinTRFgmvijMcWbEBKy6Zlx4Sz7hCtB-PFQwbPW"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Ciencias Exactas</span>
+<h2 class="font-headline-md text-headline-md text-[#16324F] font-bold leading-tight mt-0.5 truncate" title="Física Universitaria Vol. 1">
+              Física Universitaria Vol. 1
+            </h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Sears &amp; Zemansky</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-[#22c55e]"></span>
+<span class="font-label-sm text-label-sm text-[#166534] font-semibold">Estado: Bueno</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">apartment</span>
+<strong class="text-on-surface">Inst. Donante:</strong> Fac. de Ciencias Físicas UNMSM
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Disponibilidad del lote:</span>
+<span class="font-label-md text-label-md font-bold text-[#16324F]">
+<span class="text-primary font-headline-sm text-headline-sm">15</span> disponibles
+            </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full bg-primary-container hover:bg-[#1d4ed8] text-white py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="openRequestModal('Física Universitaria Vol. 1', 'Sears &amp; Zemansky', 'Facultad de Ciencias Físicas UNMSM', 15, 'Ciencias Exactas')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Solicitar Libro</span>
+</button>
+</div>
+</article>
+<!-- Libro 3: Cien Años de Soledad -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden relative" data-category="Literatura" data-condition="Regular" data-stock="8">
+<div class="p-5 flex flex-col gap-4">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            Donación Gratuita
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm">
+            ISBN: 978-030-747-472
+          </span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-32 rounded-lg bg-surface-container shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portada clásica de la obra Cien Años de Soledad de Gabriel García Márquez, estética literaria formal en tonos cálidos ocres y marrones, edición conmemorativa de biblioteca pública." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYPf3XkvEAXk4eu_o-w-pRPX17RrGaRjxwYltus2x_LXbkcY-bKY9h3sfvvT3RI43kG2QPBa_0QLLpD3taf9CNROe91dOsxVzsK55YCTg7Ib3qAeyvvIhPzspI29Mrl2TQE6aig_SU5TrUpQvsKkzjHcICPYk8ZXEEoQCz2Vc3v_68gA7SjAtae2vrMa8BzuTXoqwoGVuIE064sxCmD5fNlSfTjVoces_KcG_sFvjz"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Literatura</span>
+<h2 class="font-headline-md text-headline-md text-[#16324F] font-bold leading-tight mt-0.5 truncate" title="Cien Años de Soledad">
+              Cien Años de Soledad
+            </h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Gabriel García Márquez</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-[#f59e0b]"></span>
+<span class="font-label-sm text-label-sm text-[#92400e] font-semibold">Estado: Regular</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">apartment</span>
+<strong class="text-on-surface">Inst. Donante:</strong> Biblioteca Central Municipal
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Disponibilidad del lote:</span>
+<span class="font-label-md text-label-md font-bold text-[#16324F]">
+<span class="text-primary font-headline-sm text-headline-sm">8</span> disponibles
+            </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 40%;"></div>
+</div>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full bg-primary-container hover:bg-[#1d4ed8] text-white py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="openRequestModal('Cien Años de Soledad', 'Gabriel García Márquez', 'Biblioteca Central Municipal', 8, 'Literatura')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Solicitar Libro</span>
+</button>
+</div>
+</article>
+<!-- Libro 4: Fundamentos de Programación en C++ (Agotado) -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col justify-between overflow-hidden relative opacity-75" data-category="Ingeniería" data-condition="Bueno" data-stock="0">
+<div class="p-5 flex flex-col gap-4">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">block</span>
+            Sin ejemplares disponibles
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm">
+            ISBN: 978-844-817-214
+          </span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-32 rounded-lg bg-surface-container shrink-0 overflow-hidden relative shadow-sm grayscale">
+<img class="w-full h-full object-cover" data-alt="Libro de texto sobre programación estructurada en C++ de Joyanes Aguilar, portada de computación técnica con código fuente sutil y tipografía técnica en blanco y azul tenue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXUIoQCxi4R9GWpNZIYAh7QsYVJFMWhbYqMgcWJdVpfV_O-s1kaQjd6xoP5KpouKiRiBbDTay1MSWYvDy6OEKAugXZzseTWyfWEXbOr3mBFMm62Fx2ZXj9qEYWfp3qilF4WHLXuygySH9bHh3HhkWbItFx68jnIUkbDvq6UBal7JrQ8YrIF-Nfwburw6X3IuD8ZG7GBxFOejamkSeiL3eYeLx-GjN04v3xk9-6emt8"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase tracking-wider">Ingeniería</span>
+<h2 class="font-headline-md text-headline-md text-tertiary font-bold leading-tight mt-0.5 truncate" title="Fundamentos de Programación en C++">
+              Fundamentos de Programación en C++
+            </h2>
+<p class="font-body-md text-body-md text-tertiary mt-1">Joyanes Aguilar</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold">Estado: Bueno</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">apartment</span>
+<strong class="text-on-surface">Inst. Donante:</strong> Fac. de Ingeniería de Sistemas
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Disponibilidad del lote:</span>
+<span class="font-label-md text-label-md font-bold text-error">
+              0 ejemplares
+            </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 0%;"></div>
+</div>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full bg-surface-container-high text-tertiary cursor-not-allowed py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold flex items-center justify-center gap-2" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">remove_shopping_cart</span>
+<span>Sin Stock Disponible</span>
+</button>
+</div>
+</article>
+<!-- Libro 5: Química General -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden relative" data-category="Ciencias Exactas" data-condition="Bueno" data-stock="12">
+<div class="p-5 flex flex-col gap-4">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            Donación Gratuita
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm">
+            ISBN: 978-607-150-301
+          </span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-32 rounded-lg bg-surface-container shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Manual de laboratorio y texto universitario de Química General por Raymond Chang, con ilustración molecular tridimensional e iconografía científica rigurosa, colores azules profundos." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzOE-b0jZDhp28tW2W3w8X2NeiBwWDayajqHAUE1vdOBDFW2eboYogCOmHvyKONx4-KcP-6MN9maBqS9hCTydo-s4clOHBluj9hbxBNLh5xjsLdsmUzygrAp6qKHe1G8vaxhM_O8kzyNstBZWIUvVhIbw1RCjqyNU8GJkvlTzGLar7LEBJIl4Mo_qwVip-z3ozqhjP0BjXo2qdXusY7JopTi3DtsCD8shfl1yBaes0"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Ciencias Exactas</span>
+<h2 class="font-headline-md text-headline-md text-[#16324F] font-bold leading-tight mt-0.5 truncate" title="Química General">
+              Química General
+            </h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Raymond Chang</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-[#22c55e]"></span>
+<span class="font-label-sm text-label-sm text-[#166534] font-semibold">Estado: Bueno</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">apartment</span>
+<strong class="text-on-surface">Inst. Donante:</strong> Instituto Superior Tecnológico
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Disponibilidad del lote:</span>
+<span class="font-label-md text-label-md font-bold text-[#16324F]">
+<span class="text-primary font-headline-sm text-headline-sm">12</span> disponibles
+            </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full bg-primary-container hover:bg-[#1d4ed8] text-white py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="openRequestModal('Química General', 'Raymond Chang', 'Instituto Superior Tecnológico', 12, 'Ciencias Exactas')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Solicitar Libro</span>
+</button>
+</div>
+</article>
+<!-- Libro 6: Introducción a la Sociología -->
+<article class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between overflow-hidden relative" data-category="Humanidades" data-condition="Bueno" data-stock="6">
+<div class="p-5 flex flex-col gap-4">
+<div class="flex items-start justify-between gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+            Donación Gratuita
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm">
+            ISBN: 978-842-068-294
+          </span>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-24 h-32 rounded-lg bg-surface-container shrink-0 overflow-hidden relative shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Portada académica del tratado de Introducción a la Sociología de Anthony Giddens, edición universitaria encuadernada en tonos azul oscuro y verde savia, diseño formal de ciencias sociales." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjS1q7hBxQp6eyNaQLekOlfwaNQrP2-hdHEGyq2k00p463ay5AAHfVaFfOcR3yKrNrYzzQwcrVqX7di74N5epDaVofa-7TliNTwwhQjmKnoJdrJOLvEDC7tb6v49Lry8JEvT-FCU5MSubN7NdZj29ycu7gluIZMoyftZ0QHFqYtvwc5iRIVcZYClaGSzj_m2Xw-VdKdb548oq5wJA3IrZCK_fo8sc5vVYlORAjbgA6"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-primary font-semibold uppercase tracking-wider">Humanidades</span>
+<h2 class="font-headline-md text-headline-md text-[#16324F] font-bold leading-tight mt-0.5 truncate" title="Introducción a la Sociología">
+              Introducción a la Sociología
+            </h2>
+<p class="font-body-md text-body-md text-secondary mt-1">Anthony Giddens</p>
+<div class="flex items-center gap-1.5 mt-2">
+<span class="w-2 h-2 rounded-full bg-[#22c55e]"></span>
+<span class="font-label-sm text-label-sm text-[#166534] font-semibold">Estado: Bueno</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[16px] text-tertiary">apartment</span>
+<strong class="text-on-surface">Inst. Donante:</strong> Univ. Nacional de Educación
+            </span>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-sm text-label-sm text-tertiary">Disponibilidad del lote:</span>
+<span class="font-label-md text-label-md font-bold text-[#16324F]">
+<span class="text-primary font-headline-sm text-headline-sm">6</span> disponibles
+            </span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 30%;"></div>
+</div>
+</div>
+</div>
+<div class="p-5 pt-0">
+<button class="w-full bg-primary-container hover:bg-[#1d4ed8] text-white py-2.5 px-4 rounded-lg font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm" onclick="openRequestModal('Introducción a la Sociología', 'Anthony Giddens', 'Universidad Nacional de Educación', 6, 'Humanidades')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Solicitar Libro</span>
+</button>
+</div>
+</article>
+</section>
+<!-- Paginación Institucional -->
+<footer class="mt-10 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="font-body-sm text-body-sm text-secondary">
+      Mostrando <span class="font-semibold text-on-surface">6</span> de <span class="font-semibold text-on-surface">1,428</span> obras registradas para donación
+    </div>
+<div class="flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-tertiary hover:bg-surface-container text-body-sm font-medium disabled:opacity-50" disabled="">
+        Anterior
+      </button>
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-white text-body-sm font-semibold">1</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-body-sm font-medium">2</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-body-sm font-medium">3</button>
+<span class="px-2 text-tertiary">...</span>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-body-sm font-medium">119</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container text-body-sm font-medium">
+        Siguiente
+      </button>
+</div>
+</footer>
+<!-- Modal Interactivo: Registro Oficial de Solicitud (RF08, RF09) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-[#16324F]/50 backdrop-blur-sm hidden" id="requestModal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-2xl shadow-2xl overflow-hidden flex flex-col transform transition-all">
+<!-- Modal Header -->
+<div class="bg-[#16324F] text-white p-5 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">assignment</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-white">Registro de Solicitud de Ejemplares</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed-dim">Trámite de Cooperación Bibliográfica Interinstitucional</p>
+</div>
+</div>
+<button class="text-secondary-fixed-dim hover:text-white p-1 rounded-lg" onclick="closeRequestModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Modal Body -->
+<div class="p-6 flex flex-col gap-5">
+<!-- Ficha de la Obra y Actores -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-3">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider" id="modalCategoryTag">Ciencias Exactas</span>
+<span class="font-headline-sm text-headline-sm text-[#16324F] font-bold" id="modalBookTitle">Matemática Básica</span>
+<span class="font-body-md text-body-md text-secondary" id="modalBookAuthor">Dr. Hugo Lázaro Carrillo</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+<div class="flex flex-col bg-surface-container-lowest p-2.5 rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-tertiary">Institución Donante:</span>
+<span class="font-body-sm text-body-sm font-semibold text-[#16324F] truncate" id="modalDonor">Universidad Nacional de Ingeniería</span>
+</div>
+<div class="flex flex-col bg-surface-container-lowest p-2.5 rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-tertiary">Institución Solicitante:</span>
+<span class="font-body-sm text-body-sm font-semibold text-primary truncate">Biblioteca Comunitaria San Martín</span>
+</div>
+</div>
+</div>
+<!-- Selector de Ejemplares -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-bold text-[#16324F]">Cantidad de ejemplares requeridos:</label>
+<span class="font-label-sm text-label-sm text-tertiary">
+              Stock máximo transferible: <strong class="text-on-surface" id="modalMaxStock">10</strong>
+</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="w-10 h-10 rounded-md bg-surface-container-lowest hover:bg-surface-container text-[#16324F] font-bold text-lg flex items-center justify-center transition-colors shadow-sm" onclick="decrementQuantity()" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<input class="w-16 text-center bg-transparent font-headline-sm text-headline-sm text-[#16324F] font-bold focus:outline-none" id="requestedCopies" max="10" min="1" readonly="" type="number" value="1"/>
+<button class="w-10 h-10 rounded-md bg-surface-container-lowest hover:bg-surface-container text-[#16324F] font-bold text-lg flex items-center justify-center transition-colors shadow-sm" onclick="incrementQuantity()" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+<div class="flex-1 bg-[#eff4ff] p-3 rounded-lg flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">info</span>
+<span class="font-body-sm text-body-sm text-[#1e4875]">
+                Se recomienda solicitar el número exacto ajustado al aforo de su sala de lectura.
+              </span>
+</div>
+</div>
+</div>
+<!-- Justificación de Uso Institucional -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md font-semibold text-[#16324F]" for="justificationNotes">
+            Destino o justificación de uso en la sede (Opcional):
+          </label>
+<textarea class="w-full rounded-lg bg-surface-container-low p-2.5 text-body-sm font-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:shadow-[0_0_0_2px_#2563eb]" id="justificationNotes" placeholder="Ejemplo: Refuerzo para programa escolar vespertino y talleres de nivelación..." rows="2"></textarea>
+</div>
+<!-- Advertencia Regulatoria y Auditoría (RNF01, RF08) -->
+<div class="bg-[#fef3c7] text-[#92400e] p-3.5 rounded-xl flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] shrink-0 text-[#b45309]">warning</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-[#b45309]">Aviso Administrativo de Reserva</span>
+<p class="font-body-sm text-body-sm mt-0.5 leading-snug">
+              Registrar una solicitud no reserva inmediatamente el inventario. Las unidades se reservan cuando la institución donante aprueba formalmente el pedido.
+            </p>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="bg-surface-container-low p-4 flex items-center justify-end gap-3">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-[#16324F] font-label-md text-label-md font-medium transition-colors" onclick="closeRequestModal()" type="button">
+          Cancelar
+        </button>
+<button class="px-5 py-2.5 rounded-lg bg-primary-container hover:bg-[#1d4ed8] text-white font-label-md text-label-md font-semibold transition-colors flex items-center gap-2 shadow-sm" onclick="confirmRequest()" type="button">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Confirmar Solicitud</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    let currentMaxStock = 10;
+
+    function openRequestModal(title, author, donor, maxStock, category) {
+      document.getElementById('modalBookTitle').textContent = title;
+      document.getElementById('modalBookAuthor').textContent = author;
+      document.getElementById('modalDonor').textContent = donor;
+      document.getElementById('modalCategoryTag').textContent = category;
+      document.getElementById('modalMaxStock').textContent = maxStock;
+      
+      currentMaxStock = maxStock;
+      const copiesInput = document.getElementById('requestedCopies');
+      copiesInput.value = 1;
+      copiesInput.max = maxStock;
+      
+      const modal = document.getElementById('requestModal');
+      modal.classList.remove('hidden');
+    }
+
+    function closeRequestModal() {
+      const modal = document.getElementById('requestModal');
+      modal.classList.add('hidden');
+      document.getElementById('justificationNotes').value = '';
+    }
+
+    function incrementQuantity() {
+      const input = document.getElementById('requestedCopies');
+      let val = parseInt(input.value, 10);
+      if (val < currentMaxStock) {
+        input.value = val + 1;
+      }
+    }
+
+    function decrementQuantity() {
+      const input = document.getElementById('requestedCopies');
+      let val = parseInt(input.value, 10);
+      if (val > 1) {
+        input.value = val - 1;
+      }
+    }
+
+    function confirmRequest() {
+      closeRequestModal();
+      showToast();
+    }
+
+    function showToast() {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        dismissToast();
+      }, 5000);
+    }
+
+    function dismissToast() {
+      const toast = document.getElementById('toastNotification');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+    }
+
+    function selectChip(categoryName) {
+      const filterCat = document.getElementById('filterCategory');
+      filterCat.value = categoryName;
+      aplicarFiltros();
+    }
+
+    function aplicarFiltros() {
+      const catVal = document.getElementById('filterCategory').value;
+      const condVal = document.getElementById('filterCondition').value;
+      const availVal = document.getElementById('filterAvailability').value;
+      const searchVal = document.getElementById('searchInput').value.toLowerCase().trim();
+
+      const cards = document.querySelectorAll('article[data-category]');
+
+      cards.forEach(card => {
+        const itemCat = card.getAttribute('data-category');
+        const itemCond = card.getAttribute('data-condition');
+        const itemStock = parseInt(card.getAttribute('data-stock'), 10);
+        const cardText = card.innerText.toLowerCase();
+
+        let matchCat = (catVal === 'all' || itemCat === catVal);
+        let matchCond = (condVal === 'all' || itemCond === condVal);
+        let matchAvail = (availVal === 'all' || itemStock > 0);
+        let matchSearch = searchVal === '' || cardText.includes(searchVal);
+
+        if (matchCat && matchCond && matchAvail && matchSearch) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function limpiarFiltros() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('filterCategory').value = 'all';
+      document.getElementById('filterCondition').value = 'all';
+      document.getElementById('filterAvailability').value = 'available';
+      document.getElementById('filterOrder').value = 'recent';
+      aplicarFiltros();
+    }
+
+    // Cerrar modal al clickear el fondo
+    document.getElementById('requestModal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeRequestModal();
+      }
+    });
+  </script>
+</div></main></div></body></html>

@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#2563eb","secondary":"#466080","tertiary-container":"#676e76","surface":"#f8f9ff","outline-variant":"#c3c6d7","primary":"#004ac6","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#c0c7d0","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#003ea8","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#121c2a","on-tertiary-container":"#eaf1fa","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-container-high":"#dee9fc","on-primary-fixed":"#00174b","inverse-surface":"#27313f","tertiary":"#4e565d","surface-container":"#e6eeff","secondary-fixed-dim":"#aec9ed","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","background":"#f8f9ff","primary-fixed":"#dbe1ff","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-bright":"#f8f9ff","on-secondary-container":"#455f7e","on-surface":"#121c2a","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","on-surface-variant":"#434655","tertiary-fixed":"#dce3ec","outline":"#737686","secondary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#2e4867","inverse-primary":"#b4c5ff","on-primary-container":"#eeefff","on-secondary-fixed":"#001d37","on-tertiary-fixed-variant":"#40484f","on-tertiary-fixed":"#151c23","secondary-container":"#bfd9fe","surface-tint":"#0053db"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"data-metric":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Simulación: Caso Matemática Básica (20 ejemplares)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Sistema Institucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold shadow-sm" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard General</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-de-libros" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Catálogo de Libros</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="publicaciones-e-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Publicaciones e Inventario</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Solicitudes</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Gestión de Reservas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Registro de Entregas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Instituciones</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Usuarios y Roles</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historiales" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Historiales</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reportes Consolidados</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Bitácora de Auditoría</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título o institución..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-[104px] min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full space-y-space-lg">
+<!-- BANNER AUDITORÍA & ECUACIÓN DE INTEGRIDAD (RF17, RF18, ODS 4, ODS 12) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<div class="flex items-start md:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary-container/10 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">balance</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-2 mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Panel de Control &amp; Trazabilidad Institucional</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">RF17 / RF18 Auditado</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">school</span> ODS 4: Calidad Educativa
+          </span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">cyclone</span> ODS 12: Consumo Circular
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Control de trazabilidad cerrada en donaciones interinstitucionales. Ecuación activa de custodia de ejemplares físicos.
+        </p>
+</div>
+</div>
+<!-- Ecuación matemática de integridad -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col sm:flex-row items-center gap-space-sm shadow-inner self-stretch xl:self-auto">
+<div class="flex items-center gap-1.5 px-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-md text-label-md text-secondary">Ecuación de Inventario:</span>
+</div>
+<div class="flex items-center gap-2 font-mono text-body-sm bg-surface-container-lowest px-3 py-1.5 rounded-md shadow-sm">
+<span class="font-bold text-on-surface" title="Inventario Inicial">Q<sub>ini</sub> (20)</span>
+<span class="text-outline">=</span>
+<span class="text-primary font-semibold" title="Disponibles">Disp (10)</span>
+<span class="text-outline">+</span>
+<span class="text-amber-700 font-semibold" title="Reservadas">Res (0)</span>
+<span class="text-outline">+</span>
+<span class="text-green-700 font-semibold" title="Entregadas">Entr (10)</span>
+</div>
+<button class="px-3 py-1.5 bg-primary-container hover:bg-primary text-on-primary rounded-lg font-label-sm text-label-sm transition-colors flex items-center gap-1" id="btn-open-simulador">
+<span class="material-symbols-outlined text-[16px]">play_circle</span>
+<span>Demostrar Caso</span>
+</button>
+</div>
+</section>
+<!-- ACCIONES RÁPIDAS INSTITUCIONALES -->
+<section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-space-sm">
+<a class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors p-space-sm rounded-xl shadow-sm flex items-center gap-3" data-path="instituciones" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Instituciones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">28 Entidades</span>
+</div>
+</a>
+<a class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors p-space-sm rounded-xl shadow-sm flex items-center gap-3" data-path="usuarios-y-roles" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Usuarios y Roles</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">142 Verificados</span>
+</div>
+</a>
+<a class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors p-space-sm rounded-xl shadow-sm flex items-center gap-3" data-path="publicaciones-e-inventario" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">inventory_2</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Inventario Global</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">5,550 Títulos</span>
+</div>
+</a>
+<a class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors p-space-sm rounded-xl shadow-sm flex items-center gap-3" data-path="reportes-consolidados" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">bar_chart</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Reportes ODS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">Informes PDF/XLS</span>
+</div>
+</a>
+<a class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors p-space-sm rounded-xl shadow-sm flex items-center gap-3 col-span-2 sm:col-span-1" data-path="bitacora-de-auditoria" href="#">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface block truncate">Bitácora Oficial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">Logs Inmutables</span>
+</div>
+</a>
+</section>
+<!-- 6 TARJETAS DE MÉTRICAS KPI -->
+<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-sm">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Inst. Activas</span>
+<span class="material-symbols-outlined text-[20px] text-primary">account_balance</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-data-metric text-on-surface">28</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">22 públicas • 6 comun.</p>
+</div>
+<div class="flex items-center gap-1 text-green-700 bg-green-50 px-2 py-0.5 rounded-full w-max font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+4 este mes</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Usuarios Reg.</span>
+<span class="material-symbols-outlined text-[20px] text-primary">group</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-data-metric text-on-surface">142</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">100% validados DNI/RUC</p>
+</div>
+<div class="flex items-center gap-1 text-primary bg-primary/10 px-2 py-0.5 rounded-full w-max font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>Auditados</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Libros Disponibles</span>
+<span class="material-symbols-outlined text-[20px] text-primary-container">menu_book</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-data-metric text-on-surface">3,450</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">62.1% del total físico</p>
+</div>
+<div class="flex items-center gap-1 text-green-700 bg-green-50 px-2 py-0.5 rounded-full w-max font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+<span>En Estantería</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Libros Reservados</span>
+<span class="material-symbols-outlined text-[20px] text-amber-600">event_available</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-data-metric text-on-surface">280</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bloqueados temporal</p>
+</div>
+<div class="flex items-center gap-1 text-amber-800 bg-amber-50 px-2 py-0.5 rounded-full w-max font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+<span>Trámite Activo</span>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Libros Entregados</span>
+<span class="material-symbols-outlined text-[20px] text-green-600">handshake</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-data-metric text-on-surface">1,820</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Recepción con acta firmada</p>
+</div>
+<div class="flex items-center gap-1 text-green-700 bg-green-50 px-2 py-0.5 rounded-full w-max font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span>Impacto ODS 4</span>
+</div>
+</div>
+<!-- KPI 6 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-md text-label-md">Solicitudes Pend.</span>
+<span class="material-symbols-outlined text-[20px] text-error">assignment_late</span>
+</div>
+<div class="my-2">
+<div class="font-data-metric text-data-metric text-error">14</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Requiere dictamen adm.</p>
+</div>
+<div class="flex items-center gap-1 text-error bg-error-container/40 px-2 py-0.5 rounded-full w-max font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">priority_high</span>
+<span>Por Revisar</span>
+</div>
+</div>
+</section>
+<!-- SECCIÓN DE GRÁFICOS ANALÍTICOS (RF07, RF17) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Gráfico 1: Barras de Libros Entregados por Mes (Lg: 5 cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Trazabilidad Temporal</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Libros Entregados por Mes</h3>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-low font-label-sm text-label-sm text-secondary font-semibold">Ene - Jun 2024</span>
+</div>
+<!-- Diagrama de barras SVG nativo y accesible -->
+<div class="h-56 w-full flex items-end justify-between gap-2 pt-6 pb-2 px-2">
+<!-- Ene: 160 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-secondary opacity-0 group-hover:opacity-100 transition-opacity mb-1">160</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all duration-300 group-hover:bg-primary-container" style="height: 24%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Ene</span>
+</div>
+<!-- Feb: 210 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-secondary opacity-0 group-hover:opacity-100 transition-opacity mb-1">210</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all duration-300 group-hover:bg-primary-container" style="height: 32%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Feb</span>
+</div>
+<!-- Mar: 290 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-secondary opacity-0 group-hover:opacity-100 transition-opacity mb-1">290</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all duration-300 group-hover:bg-primary-container" style="height: 44%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Mar</span>
+</div>
+<!-- Abr: 340 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-secondary opacity-0 group-hover:opacity-100 transition-opacity mb-1">340</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all duration-300 group-hover:bg-primary-container" style="height: 52%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">Abr</span>
+</div>
+<!-- May: 390 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-secondary opacity-0 group-hover:opacity-100 transition-opacity mb-1">390</span>
+<div class="w-full max-w-[36px] bg-secondary-container rounded-t-lg transition-all duration-300 group-hover:bg-primary-container" style="height: 60%;"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">May</span>
+</div>
+<!-- Jun: 430 -->
+<div class="flex-1 flex flex-col items-center h-full justify-end group">
+<span class="font-label-sm text-label-sm text-primary font-bold opacity-0 group-hover:opacity-100 transition-opacity mb-1">430</span>
+<div class="w-full max-w-[36px] bg-primary-container rounded-t-lg transition-all duration-300" style="height: 68%;"></div>
+<span class="font-label-sm text-label-sm font-semibold text-primary mt-2">Jun</span>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between text-secondary bg-surface-container-low px-3 py-2 rounded-lg">
+<span class="font-body-sm text-body-sm">Crecimiento intermensual promedio:</span>
+<span class="font-label-md text-label-md font-bold text-green-700">+22.4%</span>
+</div>
+</div>
+<!-- Gráfico 2: Dona de Distribución por Categoría (Lg: 4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Clasificación Temática</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Inventario por Categoría</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">pie_chart</span>
+</div>
+<div class="flex items-center justify-center py-2 relative">
+<svg class="w-40 h-40 transform -rotate-90" viewbox="0 0 36 36">
+<!-- Background circle -->
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="4"></path>
+<!-- Ciencias Exactas 35% -->
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="35, 100" stroke-width="4"></path>
+<!-- Literatura 25% -->
+<path class="text-[#2563eb]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="25, 100" stroke-dashoffset="-35" stroke-width="4"></path>
+<!-- Ingeniería 20% -->
+<path class="text-[#466080]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="20, 100" stroke-dashoffset="-60" stroke-width="4"></path>
+<!-- Ciencias Sociales 15% -->
+<path class="text-[#aec9ed]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="15, 100" stroke-dashoffset="-80" stroke-width="4"></path>
+<!-- Infantil 5% -->
+<path class="text-[#16324F]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="5, 100" stroke-dashoffset="-95" stroke-width="4"></path>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">5,550</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Libros Totales</span>
+</div>
+</div>
+<div class="space-y-1.5 pt-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span>Ciencias Exactas</span>
+<span class="font-semibold text-on-surface">35% (1,942)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#2563eb]"></span>Literatura &amp; Humanidades</span>
+<span class="font-semibold text-on-surface">25% (1,387)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#466080]"></span>Ingeniería &amp; Tecnología</span>
+<span class="font-semibold text-on-surface">20% (1,110)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#aec9ed]"></span>Ciencias Sociales</span>
+<span class="font-semibold text-on-surface">15% (833)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="flex items-center gap-2"><span class="w-2.5 h-2.5 rounded-full bg-[#16324F]"></span>Infantil &amp; Juvenil</span>
+<span class="font-semibold text-on-surface">5% (278)</span>
+</div>
+</div>
+</div>
+<!-- Gráfico 3: Participación por Institución (Lg: 3 cols) -->
+<div class="lg:col-span-3 bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Red Interinstitucional</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Top Instituciones</h3>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">corporate_fare</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Volumen acumulado de ejemplares transferidos.</p>
+<div class="space-y-3">
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface truncate">UNMSM (Donante)</span>
+<span class="font-bold text-primary">820 un.</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 82%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface truncate">Bibl. Com. San Martín</span>
+<span class="font-bold text-secondary">540 un.</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 54%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface truncate">I.E. Micaela Bastidas</span>
+<span class="font-bold text-secondary">410 un.</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 41%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-md text-label-md mb-1">
+<span class="text-on-surface truncate">Bibl. Municipal Comas</span>
+<span class="font-bold text-secondary">310 un.</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 31%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 bg-surface-container-low rounded-lg p-2.5 text-center">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Tasa de Efectividad en Entrega: 94.6%</span>
+</div>
+</div>
+</section>
+<!-- TABLA DE MOVIMIENTOS Y ENTREGAS RECIENTES (RF02, RF03, RF07) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Header de la tabla con controles y filtros -->
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low/40">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Movimientos y Entregas Recientes</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Registro cronológico de transferencias físicas con actas validadas</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<!-- Filtro Estado -->
+<div class="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">filter_alt</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer" id="filtro-estado">
+<option value="todos">Todos los Estados</option>
+<option value="entregado">Entregado</option>
+<option value="reserva">Reserva Activa</option>
+<option value="aprobada">Solicitud Aprobada</option>
+</select>
+</div>
+<!-- Rango de fecha rápida -->
+<div class="flex items-center gap-1 bg-surface-container-lowest px-3 py-1.5 rounded-lg shadow-sm text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Últimos 30 días</span>
+</div>
+<!-- Botón Exportar Reporte Consolidado -->
+<button class="px-3 py-1.5 bg-secondary hover:bg-on-background text-on-secondary rounded-lg font-label-sm text-label-sm transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Exportar XLS</span>
+</button>
+</div>
+</div>
+<!-- Contenedor scroll horizontal para la tabla -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<th class="py-3 px-4 font-semibold">Cód. Operación</th>
+<th class="py-3 px-4 font-semibold">Libro / Título</th>
+<th class="py-3 px-4 font-semibold">Institución Donante</th>
+<th class="py-3 px-4 font-semibold">Institución Solicitante</th>
+<th class="py-3 px-4 font-semibold text-right">Cantidad</th>
+<th class="py-3 px-4 font-semibold text-center">Estado</th>
+<th class="py-3 px-4 font-semibold">Fecha Registro</th>
+<th class="py-3 px-4 font-semibold text-center">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/40 font-body-sm text-body-sm text-on-surface" id="tabla-movimientos">
+<!-- FILA 1: Caso de Estudio Matemática Básica (Completado) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-estado="entregado">
+<td class="py-3.5 px-4 font-mono font-semibold text-primary">MOV-2024-0010</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Matemática Básica I (2da Ed.)</div>
+<div class="font-mono text-label-sm text-secondary">ISBN: 978-612-4215-08-9</div>
+</td>
+<td class="py-3.5 px-4">Univ. Nacional Mayor</td>
+<td class="py-3.5 px-4">Bibl. Comunitaria San Martín</td>
+<td class="py-3.5 px-4 font-mono font-bold text-right">10 un.</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> Entregado
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-mono text-body-sm">18/06/2024</td>
+<td class="py-3.5 px-4 text-center">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm font-medium transition-colors" onclick="verDetalleOperacion('MOV-2024-0010', 'Matemática Básica I (2da Ed.)', 'Univ. Nacional Mayor', 'Bibl. Comunitaria San Martín', '10', 'Entregado', 'Acta #AC-4491 firmada con sello digital. Caso base verificado.', '18/06/2024')">
+                Ver Detalle
+              </button>
+</td>
+</tr>
+<!-- FILA 2: Reserva Activa -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-estado="reserva">
+<td class="py-3.5 px-4 font-mono font-semibold text-primary">MOV-2024-0011</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Física General: Mecánica Clásica</div>
+<div class="font-mono text-label-sm text-secondary">ISBN: 978-958-3801-44-1</div>
+</td>
+<td class="py-3.5 px-4">Inst. Tecnológico Central</td>
+<td class="py-3.5 px-4">I.E. Micaela Bastidas</td>
+<td class="py-3.5 px-4 font-mono font-bold text-right">15 un.</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> Reserva Activa
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-mono text-body-sm">19/06/2024</td>
+<td class="py-3.5 px-4 text-center">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm font-medium transition-colors" onclick="verDetalleOperacion('MOV-2024-0011', 'Física General: Mecánica Clásica', 'Inst. Tecnológico Central', 'I.E. Micaela Bastidas', '15', 'Reserva Activa', 'Reserva física bloqueada en almacén origen. En espera de recojo.', '19/06/2024')">
+                Ver Detalle
+              </button>
+</td>
+</tr>
+<!-- FILA 3: Solicitud Aprobada -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-estado="aprobada">
+<td class="py-3.5 px-4 font-mono font-semibold text-primary">MOV-2024-0012</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Compendio de Biología Celular</div>
+<div class="font-mono text-label-sm text-secondary">ISBN: 978-844-8610-18-0</div>
+</td>
+<td class="py-3.5 px-4">Facultad de Medicina Humana</td>
+<td class="py-3.5 px-4">Colegio Politécnico Regional</td>
+<td class="py-3.5 px-4 font-mono font-bold text-right">25 un.</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-100 text-blue-800 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Solicitud Aprobada
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-mono text-body-sm">20/06/2024</td>
+<td class="py-3.5 px-4 text-center">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm font-medium transition-colors" onclick="verDetalleOperacion('MOV-2024-0012', 'Compendio de Biología Celular', 'Facultad de Medicina Humana', 'Colegio Politécnico Regional', '25', 'Solicitud Aprobada', 'Dictamen técnico favorable emitido. Generando credencial de transporte.', '20/06/2024')">
+                Ver Detalle
+              </button>
+</td>
+</tr>
+<!-- FILA 4: Entregado -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-estado="entregado">
+<td class="py-3.5 px-4 font-mono font-semibold text-primary">MOV-2024-0009</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Antología Poética Latinoamericana</div>
+<div class="font-mono text-label-sm text-secondary">ISBN: 978-987-1138-02-9</div>
+</td>
+<td class="py-3.5 px-4">Bibl. Municipal Comas</td>
+<td class="py-3.5 px-4">Bibl. Popular El Porvenir</td>
+<td class="py-3.5 px-4 font-mono font-bold text-right">8 un.</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-green-100 text-green-800 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> Entregado
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-mono text-body-sm">17/06/2024</td>
+<td class="py-3.5 px-4 text-center">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm font-medium transition-colors" onclick="verDetalleOperacion('MOV-2024-0009', 'Antología Poética Latinoamericana', 'Bibl. Municipal Comas', 'Bibl. Popular El Porvenir', '8', 'Entregado', 'Recepción de volúmenes en excelente estado. Incorporados al catálogo.', '17/06/2024')">
+                Ver Detalle
+              </button>
+</td>
+</tr>
+<!-- FILA 5: Reserva Activa -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-estado="reserva">
+<td class="py-3.5 px-4 font-mono font-semibold text-primary">MOV-2024-0008</td>
+<td class="py-3.5 px-4">
+<div class="font-medium text-on-surface">Introducción a los Algoritmos</div>
+<div class="font-mono text-label-sm text-secondary">ISBN: 978-026-2033-84-8</div>
+</td>
+<td class="py-3.5 px-4">Univ. Nacional Mayor</td>
+<td class="py-3.5 px-4">Inst. Superior Tecnológico Sur</td>
+<td class="py-3.5 px-4 font-mono font-bold text-right">5 un.</td>
+<td class="py-3.5 px-4 text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> Reserva Activa
+              </span>
+</td>
+<td class="py-3.5 px-4 text-on-surface-variant font-mono text-body-sm">16/06/2024</td>
+<td class="py-3.5 px-4 text-center">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm font-medium transition-colors" onclick="verDetalleOperacion('MOV-2024-0008', 'Introducción a los Algoritmos', 'Univ. Nacional Mayor', 'Inst. Superior Tecnológico Sur', '5', 'Reserva Activa', 'Asignación de transporte en progreso por responsable municipal.', '16/06/2024')">
+                Ver Detalle
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Paginación institucional limpia -->
+<div class="p-space-sm bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span>Mostrando 5 de 1,280 operaciones auditadas</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface disabled:opacity-40" disabled="">Anterior</button>
+<span class="px-3 py-1 rounded bg-primary-container text-on-primary font-semibold">1</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface">3</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-secondary hover:text-on-surface">Siguiente</button>
+</div>
+</div>
+</section>
+<!-- MODAL DE DETALLE DE MOVIMIENTO (RF17/RF18) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#16324F]/50 backdrop-blur-sm hidden p-4" id="modal-detalle">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">receipt_long</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Detalle de Operación Auditada</h4>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg" onclick="cerrarModalDetalle()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md space-y-4">
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg shadow-sm">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Código Registro</span>
+<div class="font-mono font-bold text-headline-sm text-primary" id="modal-codigo">MOV-2024-0010</div>
+</div>
+<div id="modal-badge-container"></div>
+</div>
+<div class="grid grid-cols-2 gap-3 text-body-sm font-body-sm">
+<div class="bg-surface-container-low/50 p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block font-medium">Libro Transferido</span>
+<span class="font-semibold text-on-surface block mt-0.5" id="modal-libro">Matemática Básica I</span>
+</div>
+<div class="bg-surface-container-low/50 p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block font-medium">Cantidad de Ejemplares</span>
+<span class="font-mono font-bold text-on-surface text-headline-sm block mt-0.5" id="modal-cantidad">10 un.</span>
+</div>
+<div class="bg-surface-container-low/50 p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block font-medium">Institución Donante</span>
+<span class="font-medium text-on-surface block mt-0.5" id="modal-donante">UNMSM</span>
+</div>
+<div class="bg-surface-container-low/50 p-2.5 rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block font-medium">Institución Receptora</span>
+<span class="font-medium text-on-surface block mt-0.5" id="modal-solicitante">Bibl. Com. San Martín</span>
+</div>
+</div>
+<div class="bg-surface-container-low/50 p-3 rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary block font-medium mb-1">Dictamen y Observaciones de Auditoría</span>
+<p class="text-on-surface font-body-sm text-body-sm" id="modal-obs">Acta firmada con sello digital institucional.</p>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-secondary pt-2">
+<span>Fecha de Validación: <strong class="text-on-surface font-mono" id="modal-fecha">18/06/2024</strong></span>
+<span class="flex items-center gap-1 text-green-700">
+<span class="material-symbols-outlined text-[15px]">verified_user</span> Hash SHA-256 Verificado
+          </span>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low/50 flex justify-end gap-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-secondary hover:bg-surface-container-high font-label-md text-label-md transition-colors" onclick="cerrarModalDetalle()">
+          Cerrar
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md transition-colors flex items-center gap-1.5" onclick="window.print()">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Imprimir Ficha Técnica</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL SIMULADOR DEL CASO DE ESTUDIO (MATEMÁTICA BÁSICA - 20 EJEMPLARES) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#16324F]/50 backdrop-blur-sm hidden p-4" id="modal-simulador">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<div class="p-space-md bg-[#16324F] text-white flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#b4c5ff] text-[24px]">school</span>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-white">Sustentación: Caso Matemática Básica</h4>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">Verificación de Integridad de Stock en Tiempo Real</span>
+</div>
+</div>
+<button class="text-secondary-fixed-dim hover:text-white p-1 rounded-lg" id="btn-close-simulador">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md space-y-4">
+<!-- Tarjeta del libro en cuestión -->
+<div class="flex gap-4 items-center bg-surface-container-low p-3 rounded-lg">
+<div class="w-14 h-18 bg-surface-container rounded-md flex items-center justify-center text-primary shrink-0 shadow-inner">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Matemática Básica I</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">20 Ejemplares Iniciales</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Donante: UNMSM • Receptor: Biblioteca Comunitaria San Martín</p>
+</div>
+</div>
+<!-- Estados dinámicos de la simulación -->
+<div class="grid grid-cols-3 gap-3">
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm border border-transparent text-center">
+<span class="font-label-sm text-label-sm text-secondary block">Disponibles</span>
+<span class="font-data-metric text-data-metric text-primary block mt-1" id="sim-disp">10</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">en catálogo</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm border border-transparent text-center">
+<span class="font-label-sm text-label-sm text-secondary block">Reservadas</span>
+<span class="font-data-metric text-data-metric text-amber-700 block mt-1" id="sim-res">0</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">en trámite</span>
+</div>
+<div class="bg-surface-container-lowest p-3 rounded-lg shadow-sm border border-transparent text-center">
+<span class="font-label-sm text-label-sm text-secondary block">Entregadas</span>
+<span class="font-data-metric text-data-metric text-green-700 block mt-1" id="sim-ent">10</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">con acta de entrega</span>
+</div>
+</div>
+<!-- Barra de progreso acumulada -->
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm text-secondary">
+<span>Conservación de la Materia (Sumatoria = 20)</span>
+<span class="font-mono font-bold text-on-surface" id="sim-suma">10 + 0 + 10 = 20 (100% Válido)</span>
+</div>
+<div class="w-full h-3 bg-surface-container rounded-full overflow-hidden flex">
+<div class="h-full bg-primary" id="bar-disp" style="width: 50%;" title="50% Disponibles"></div>
+<div class="h-full bg-amber-500" id="bar-res" style="width: 0%;" title="0% Reservadas"></div>
+<div class="h-full bg-green-600" id="bar-ent" style="width: 50%;" title="50% Entregadas"></div>
+</div>
+</div>
+<!-- Controles de simulación interactiva paso a paso -->
+<div class="bg-surface-container-low p-3 rounded-lg flex flex-wrap items-center justify-between gap-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Simular Paso del Ciclo:</span>
+<div class="flex gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors shadow-sm" onclick="setSimulacion(20, 0, 0, 'Inicial: 20 publicados en inventario')">
+              1. Inicio (20 Disp)
+            </button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors shadow-sm" onclick="setSimulacion(10, 10, 0, 'Reserva: 10 solicitados por Bibl. San Martín')">
+              2. Reserva (10 Res)
+            </button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm transition-colors shadow-sm font-semibold" onclick="setSimulacion(10, 0, 10, 'Finalizado: Acta firmada, 10 entregados')">
+              3. Entrega OK (10 Entr)
+            </button>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic" id="sim-desc">
+          Estado actual: El caso base demuestra que 10 ejemplares ya fueron recibidos con acta de entrega conforme y 10 continúan disponibles para otras entidades de la red.
+        </p>
+</div>
+<div class="p-space-sm bg-surface-container-low flex justify-end">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-secondary hover:bg-surface-container-high font-label-md text-label-md transition-colors" id="btn-close-simulador-2">
+          Entendido / Cerrar Simulación
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SCRIPT DE MICRO-INTERACCIONES Y FUNCIONALIDADES -->
+<script>
+  // Filtro de estado en la tabla
+  document.getElementById('filtro-estado').addEventListener('change', function(e) {
+    const valor = e.target.value;
+    const filas = document.querySelectorAll('#tabla-movimientos tr');
+    
+    filas.forEach(fila => {
+      const estadoFila = fila.getAttribute('data-estado');
+      if (valor === 'todos' || estadoFila === valor) {
+        fila.style.display = '';
+      } else {
+        fila.style.display = 'none';
+      }
+    });
+  });
+
+  // Modal de Detalle
+  function verDetalleOperacion(codigo, libro, donante, solicitante, cantidad, estado, obs, fecha) {
+    document.getElementById('modal-codigo').innerText = codigo;
+    document.getElementById('modal-libro').innerText = libro;
+    document.getElementById('modal-donante').innerText = donante;
+    document.getElementById('modal-solicitante').innerText = solicitante;
+    document.getElementById('modal-cantidad').innerText = cantidad + ' un.';
+    document.getElementById('modal-obs').innerText = obs;
+    document.getElementById('modal-fecha').innerText = fecha;
+
+    const badgeContainer = document.getElementById('modal-badge-container');
+    if (estado === 'Entregado') {
+      badgeContainer.innerHTML = '<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-green-100 text-green-800 font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> Entregado Conforme</span>';
+    } else if (estado === 'Reserva Activa') {
+      badgeContainer.innerHTML = '<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-amber-100 text-amber-800 font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-amber-600"></span> Reserva en Trámite</span>';
+    } else {
+      badgeContainer.innerHTML = '<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-blue-100 text-blue-800 font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-blue-600"></span> Aprobada Oficial</span>';
+    }
+
+    document.getElementById('modal-detalle').classList.remove('hidden');
+  }
+
+  function cerrarModalDetalle() {
+    document.getElementById('modal-detalle').classList.add('hidden');
+  }
+
+  // Modal Simulador de Caso de Estudio
+  const modalSim = document.getElementById('modal-simulador');
+  document.getElementById('btn-open-simulador').addEventListener('click', () => {
+    modalSim.classList.remove('hidden');
+  });
+  document.getElementById('btn-close-simulador').addEventListener('click', () => {
+    modalSim.classList.add('hidden');
+  });
+  document.getElementById('btn-close-simulador-2').addEventListener('click', () => {
+    modalSim.classList.add('hidden');
+  });
+
+  function setSimulacion(disp, res, ent, desc) {
+    document.getElementById('sim-disp').innerText = disp;
+    document.getElementById('sim-res').innerText = res;
+    document.getElementById('sim-ent').innerText = ent;
+    document.getElementById('sim-suma').innerText = `${disp} + ${res} + ${ent} = 20 (100% Válido)`;
+    document.getElementById('sim-desc').innerText = 'Estado simulado: ' + desc;
+
+    const pDisp = (disp / 20) * 100;
+    const pRes = (res / 20) * 100;
+    const pEnt = (ent / 20) * 100;
+
+    document.getElementById('bar-disp').style.width = pDisp + '%';
+    document.getElementById('bar-res').style.width = pRes + '%';
+    document.getElementById('bar-ent').style.width = pEnt + '%';
+  }
+</script></main></div></body></html>

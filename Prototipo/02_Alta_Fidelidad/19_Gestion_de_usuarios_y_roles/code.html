@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#2563eb","secondary":"#466080","tertiary-container":"#676e76","surface":"#f8f9ff","outline-variant":"#c3c6d7","primary":"#004ac6","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#c0c7d0","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#003ea8","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#121c2a","on-tertiary-container":"#eaf1fa","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-container-high":"#dee9fc","on-primary-fixed":"#00174b","inverse-surface":"#27313f","tertiary":"#4e565d","surface-container":"#e6eeff","secondary-fixed-dim":"#aec9ed","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","background":"#f8f9ff","primary-fixed":"#dbe1ff","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-bright":"#f8f9ff","on-secondary-container":"#455f7e","on-surface":"#121c2a","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","on-surface-variant":"#434655","tertiary-fixed":"#dce3ec","outline":"#737686","secondary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#2e4867","inverse-primary":"#b4c5ff","on-primary-container":"#eeefff","on-secondary-fixed":"#001d37","on-tertiary-fixed-variant":"#40484f","on-tertiary-fixed":"#151c23","secondary-container":"#bfd9fe","surface-tint":"#0053db"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"data-metric":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Simulación: Caso Matemática Básica (20 ejemplares)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Sistema Institucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard General</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-de-libros" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Catálogo de Libros</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="publicaciones-e-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Publicaciones e Inventario</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Solicitudes</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Gestión de Reservas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Registro de Entregas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Instituciones</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Usuarios y Roles</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historiales" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Historiales</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reportes Consolidados</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Bitácora de Auditoría</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título o institución..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-[104px] min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Encabezado de Sección y Acciones Principales -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="space-y-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant">
+          Módulo de Seguridad y Accesos
+        </span>
+<span class="font-label-sm text-label-sm text-outline">RF03 • RF04 • RNF05 • RNF06</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">
+        Gestión de Usuarios y Roles del Sistema
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Control centralizado de identidades, privilegios de acceso y adscripción institucional conforme a la normativa de seguridad de la información y trazabilidad RD14/RD15.
+      </p>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors shadow-sm" onclick="openModal('exportModal')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Exportar Padrón</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm" onclick="openDrawer('userDrawer')" type="button">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>+ Registrar Nuevo Usuario</span>
+</button>
+</div>
+</section>
+<!-- Métricas y Resumen de Estado (KPI Bento) -->
+<section class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-space-sm">
+<!-- Total Usuarios -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Total Padrón</span>
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">142</span>
+<span class="font-body-sm text-body-sm text-outline">usr</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">100% registros</span>
+</div>
+<!-- Administradores -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-primary">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Admin Sys</span>
+<span class="material-symbols-outlined text-[18px]">admin_panel_settings</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-primary font-bold">4</span>
+<span class="font-body-sm text-body-sm text-outline">sup</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed-variant mt-1">Supervisión total</span>
+</div>
+<!-- Inst. Donantes -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-tertiary">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Donantes</span>
+<span class="material-symbols-outlined text-[18px]">volunteer_activism</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">48</span>
+<span class="font-body-sm text-body-sm text-outline">ent</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Universidades / Inst.</span>
+</div>
+<!-- Inst. Solicitantes -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Solicitantes</span>
+<span class="material-symbols-outlined text-[18px]">local_library</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">62</span>
+<span class="font-body-sm text-body-sm text-outline">org</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Bibliotecas Com.</span>
+</div>
+<!-- Resp. Entrega -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-secondary-fixed-variant">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Logística</span>
+<span class="material-symbols-outlined text-[18px]">handshake</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-on-surface font-bold">28</span>
+<span class="font-body-sm text-body-sm text-outline">ope</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Custodios de acta</span>
+</div>
+<!-- Usuarios Activos -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-[#166534]">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Habilitados</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-[#166534] font-bold">138</span>
+<span class="font-body-sm text-body-sm text-outline">act</span>
+</div>
+<span class="font-label-sm text-label-sm text-[#166534] mt-1 font-semibold">97.2% operativo</span>
+</div>
+<!-- Bloqueados / Inactivos -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-error">
+<span class="font-label-sm text-label-sm uppercase font-semibold">Inactivos</span>
+<span class="material-symbols-outlined text-[18px]">lock_person</span>
+</div>
+<div class="mt-2 flex items-baseline gap-1">
+<span class="font-data-metric text-data-metric text-error font-bold">4</span>
+<span class="font-body-sm text-body-sm text-outline">rev</span>
+</div>
+<span class="font-label-sm text-label-sm text-error mt-1 font-semibold">2 por auditoría</span>
+</div>
+</section>
+<!-- Filtros y Búsqueda Operativa -->
+<section class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm items-center">
+<!-- Input de búsqueda -->
+<div class="md:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest shadow-inner" id="userSearch" placeholder="Buscar por DNI, Nombres, Correo o Institución..." type="text"/>
+</div>
+<!-- Filtro por Rol -->
+<div class="md:col-span-3">
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none" id="roleFilter">
+<option value="">Rol: Todos los Roles</option>
+<option value="Administrador">Administrador del Sistema</option>
+<option value="Donante">Inst. Donante (UNMSM / Univ.)</option>
+<option value="Solicitante">Inst. Solicitante (Bibliotecas)</option>
+<option value="Entrega">Responsable de Entrega</option>
+</select>
+</div>
+<!-- Filtro por Institución -->
+<div class="md:col-span-3">
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="">Institución: Todas</option>
+<option value="UNMSM">Univ. Nacional Mayor de San Marcos</option>
+<option value="UNI">Univ. Nacional de Ingeniería</option>
+<option value="BCSM">Bibl. Comunitaria San Martín</option>
+<option value="BPA">Bibl. Popular José Carlos Mariátegui</option>
+<option value="MINEDU">Sede Central - MINEDU</option>
+</select>
+</div>
+<!-- Filtro por Estado -->
+<div class="md:col-span-2">
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="">Estado: Todos</option>
+<option value="activo">Solo Activos</option>
+<option value="inactivo">Solo Inactivos</option>
+</select>
+</div>
+</div>
+<!-- Quick Badges de Rol Seleccionable -->
+<div class="flex items-center gap-space-xs flex-wrap pt-1">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold mr-1">Filtro rápido:</span>
+<button class="px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-xs">Todos (142)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Administradores (4)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Donantes (48)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Solicitantes (62)</button>
+<button class="px-3 py-1 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors">Resp. Entrega (28)</button>
+</div>
+</section>
+<!-- Tabla Principal de Usuarios -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">CÓDIGO</th>
+<th class="py-3 px-space-md">USUARIO Y DATOS PERSONALES</th>
+<th class="py-3 px-space-md">INSTITUCIÓN VINCULADA</th>
+<th class="py-3 px-space-md">ROL ASIGNADO</th>
+<th class="py-3 px-space-md text-center">ESTADO</th>
+<th class="py-3 px-space-md">ÚLTIMO ACCESO Y AUDITORÍA</th>
+<th class="py-3 px-space-md text-right">ACCIONES</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-md font-body-md text-on-surface">
+<!-- Fila 1: Admin Sys (Caso Referencial Carlos Mendoza) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md font-mono text-label-sm font-semibold text-primary">
+              USR-001
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed">
+                  CM
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Ing. Carlos Mendoza Alva</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-mono">DNI 44892104</span>
+<span>•</span>
+<span class="truncate">cmendoza@unmsm.edu.pe</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary">account_balance</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Univ. Nacional Mayor de San Marcos</span>
+<span class="font-label-sm text-label-sm text-outline">Sede Central - Rectorado</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+                Administrador
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+                Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">Hoy, 10:42 AM</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">IP: 190.236.44.12 (Aud: #A-9014)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed/40 transition-colors" onclick="openResetModal('USR-001', 'Ing. Carlos Mendoza Alva')" title="Restablecer Contraseña (RNF05)">
+<span class="material-symbols-outlined text-[19px]">key</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openDrawer('userDrawer')" title="Editar Usuario">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openRoleModal('USR-001', 'Administrador')" title="Cambiar Rol (RD14)">
+<span class="material-symbols-outlined text-[19px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container/40 transition-colors" title="Desactivar Cuenta">
+<span class="material-symbols-outlined text-[19px]">toggle_on</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 2: Donante (Elena Ramos) -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md font-mono text-label-sm font-semibold text-secondary">
+              USR-002
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed">
+                  ER
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Lic. Elena Ramos Cárdenas</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-mono">DNI 09384722</span>
+<span>•</span>
+<span class="truncate">eramos@uni.edu.pe</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">school</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Univ. Nacional de Ingeniería</span>
+<span class="font-label-sm text-label-sm text-outline">Dirección de Biblioteca Central</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#ede9fe] text-[#6b21a8] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">volunteer_activism</span>
+                Inst. Donante
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+                Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">Ayer, 16:15 PM</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">IP: 200.60.11.89 (Aud: #A-8991)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed/40 transition-colors" onclick="openResetModal('USR-002', 'Lic. Elena Ramos Cárdenas')" title="Restablecer Contraseña (RNF05)">
+<span class="material-symbols-outlined text-[19px]">key</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Editar Usuario">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openRoleModal('USR-002', 'Inst. Donante')" title="Cambiar Rol (RD14)">
+<span class="material-symbols-outlined text-[19px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container/40 transition-colors" title="Desactivar Cuenta">
+<span class="material-symbols-outlined text-[19px]">toggle_on</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 3: Solicitante (Rosa Huamán) -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md font-mono text-label-sm font-semibold text-secondary">
+              USR-003
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-fixed-variant">
+                  RH
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Rosa Huamán Quispe</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-mono">DNI 41209381</span>
+<span>•</span>
+<span class="truncate">rhuaman@comunitaria-sm.org</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_library</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Bibl. Comunitaria San Martín</span>
+<span class="font-label-sm text-label-sm text-outline">Coordinación de Proyectos</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">inbox_customize</span>
+                Inst. Solicitante
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+                Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">24 Oct, 09:20 AM</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">IP: 181.65.201.14 (Aud: #A-8850)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed/40 transition-colors" onclick="openResetModal('USR-003', 'Rosa Huamán Quispe')" title="Restablecer Contraseña (RNF05)">
+<span class="material-symbols-outlined text-[19px]">key</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Editar Usuario">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openRoleModal('USR-003', 'Inst. Solicitante')" title="Cambiar Rol (RD14)">
+<span class="material-symbols-outlined text-[19px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container/40 transition-colors" title="Desactivar Cuenta">
+<span class="material-symbols-outlined text-[19px]">toggle_on</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 4: Responsable de Entrega (Marco Valdivia) -->
+<tr class="bg-surface-container-low/40 hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-space-md font-mono text-label-sm font-semibold text-secondary">
+              USR-004
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-[#dcfce7] flex items-center justify-center font-bold text-[#166534]">
+                  MV
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Marco Valdivia Paredes</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-mono">DNI 72910488</span>
+<span>•</span>
+<span class="truncate">mvaldivia@logistica-libros.gob.pe</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-[#166534]">local_shipping</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Red Logística Educativa</span>
+<span class="font-label-sm text-label-sm text-outline">Operaciones y Custodia de Actas</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#dcfce7] text-[#166534] font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                Resp. Entrega
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span>
+                Activo
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">23 Oct, 18:40 PM</span>
+<span class="font-body-sm text-body-sm text-outline font-mono text-[11px]">IP: 190.12.88.4 (Aud: #A-8720)</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed/40 transition-colors" onclick="openResetModal('USR-004', 'Marco Valdivia Paredes')" title="Restablecer Contraseña (RNF05)">
+<span class="material-symbols-outlined text-[19px]">key</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Editar Usuario">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openRoleModal('USR-004', 'Resp. Entrega')" title="Cambiar Rol (RD14)">
+<span class="material-symbols-outlined text-[19px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-error hover:bg-error-container/40 transition-colors" title="Desactivar Cuenta">
+<span class="material-symbols-outlined text-[19px]">toggle_on</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Fila 5: Inactivo / Suspendido (Julia Salazar) -->
+<tr class="hover:bg-surface-container-low transition-colors bg-error-container/10">
+<td class="py-3.5 px-space-md font-mono text-label-sm font-semibold text-outline">
+              USR-005
+            </td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm opacity-80">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface-variant">
+                  JS
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface truncate">Julia Salazar Benavides</span>
+<div class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-mono">DNI 10293847</span>
+<span>•</span>
+<span class="truncate">jsalazar@mariategui-lib.pe</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5 opacity-80">
+<span class="material-symbols-outlined text-[18px] text-outline">museum</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-medium text-on-surface">Bibl. Popular José C. Mariátegui</span>
+<span class="font-label-sm text-label-sm text-outline">Vínculo temporal pausado</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[14px]">person_off</span>
+                Inst. Solicitante
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+                Inactivo
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">15 Sep, 11:02 AM</span>
+<span class="font-body-sm text-body-sm text-error font-mono text-[11px]">Baja por Relevo Directivo</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded-lg text-primary hover:bg-primary-fixed/40 transition-colors" onclick="openResetModal('USR-005', 'Julia Salazar Benavides')" title="Restablecer Contraseña (RNF05)">
+<span class="material-symbols-outlined text-[19px]">key</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" title="Editar Usuario">
+<span class="material-symbols-outlined text-[19px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container transition-colors" onclick="openRoleModal('USR-005', 'Inst. Solicitante')" title="Cambiar Rol (RD14)">
+<span class="material-symbols-outlined text-[19px]">manage_accounts</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline hover:text-[#166534] hover:bg-[#dcfce7] transition-colors" title="Reactivar Cuenta">
+<span class="material-symbols-outlined text-[19px]">toggle_off</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Paginación y Resumen de Tabla -->
+<div class="p-space-md bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span>Mostrando 1 a 5 de 142 usuarios registrados</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-medium">Anterior</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-bold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-medium">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-medium">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-medium">29</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-medium">Siguiente</button>
+</div>
+</div>
+</section>
+<!-- Banner Normativo de Regla de Negocio RD14 / RD15 -->
+<section class="bg-[#12263a] text-white p-space-md rounded-xl shadow-md flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="p-2.5 rounded-lg bg-primary-container/30 text-[#b4c5ff] shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[26px]">gavel</span>
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-semibold text-white">Integridad y Trazabilidad de Roles (RD14 / RD15)</span>
+<span class="font-label-sm text-label-sm bg-primary-container px-2 py-0.5 rounded text-white font-mono">ESTRICTO</span>
+</div>
+<p class="font-body-md text-body-md text-secondary-fixed-dim leading-relaxed max-w-4xl">
+          Toda modificación de privilegios administrativos, alta/baja institucional y restablecimiento de credenciales queda consignada de forma inmutable en la bitácora de auditoría del sistema, registrando el timestamp exacto, la IP de origen y la firma del administrador responsable.
+        </p>
+</div>
+</div>
+<a class="px-3 py-1.5 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-md text-label-md whitespace-nowrap flex items-center gap-1 transition-colors self-end md:self-center" href="#">
+<span>Ver Bitácora de Auditoría</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</section>
+<!-- DRAWER: Registrar Nuevo Usuario (RF03, RNF05, RNF06) -->
+<div aria-labelledby="drawer-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="userDrawer" role="dialog">
+<div class="absolute inset-0 bg-[#16324F]/50 backdrop-blur-xs transition-opacity" onclick="closeDrawer('userDrawer')"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-xl bg-surface-container-lowest shadow-2xl flex flex-col justify-between">
+<!-- Header Drawer -->
+<div class="p-space-lg bg-surface-container border-b-0 flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-primary">Formulario RF03</span>
+<h2 class="font-headline-md text-headline-md font-semibold text-on-surface" id="drawer-title">Registrar Nuevo Usuario</h2>
+</div>
+<button class="p-2 rounded-lg text-outline hover:text-on-surface hover:bg-surface transition-colors" onclick="closeDrawer('userDrawer')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Body Drawer -->
+<div class="p-space-lg overflow-y-auto space-y-space-md flex-1">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px] shrink-0 mt-0.5">info</span>
+<span>El registro creará una cuenta autenticada sujeta a las normas de seguridad del Estado. Los datos de acceso se enviarán mediante canal cifrado.</span>
+</div>
+<!-- Campos de Identidad -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Tipo de Documento</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="DNI">DNI (Documento Nacional)</option>
+<option value="CE">Carnet de Extranjería</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Número de Documento</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" maxlength="8" placeholder="Ej. 74839201" type="text"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Nombres y Apellidos Completos</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Ej. María Fernanda Paredes Ramos" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Correo Electrónico Institucional</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="mparedes@unmsm.edu.pe" type="email"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Teléfono / Anexo</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="+51 987 654 321" type="tel"/>
+</div>
+</div>
+<!-- Institución y Rol -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Institución de Adscripción</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="">Seleccione la entidad acreditada...</option>
+<option value="unmsm">Universidad Nacional Mayor de San Marcos</option>
+<option value="uni">Universidad Nacional de Ingeniería</option>
+<option value="bcsm">Biblioteca Comunitaria San Martín</option>
+<option value="bpjc">Biblioteca Popular José C. Mariátegui</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Rol y Nivel de Privilegios (RF04)</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="solicitante">Institución Solicitante (Catálogo, reservas, recepción)</option>
+<option value="donante">Institución Donante (Publicaciones, lote, actas)</option>
+<option value="entrega">Responsable de Entrega (Validación y firma de actas)</option>
+<option value="admin">Administrador General del Sistema (Control total)</option>
+</select>
+</div>
+<!-- Contraseña Temporal y Regla RNF05 -->
+<div class="p-space-md bg-surface-container rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-medium text-on-surface">Credencial Temporal Inicial</label>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Política RNF05</span>
+</div>
+<div class="relative">
+<input class="w-full px-3 py-2 pr-10 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none" id="newPassword" placeholder="Definir contraseña provisional..." type="password"/>
+<button class="material-symbols-outlined absolute right-3 top-2.5 text-outline text-[18px]" onclick="togglePassVisibility('newPassword')" type="button">visibility</button>
+</div>
+<!-- Indicadores de Cumplimiento RNF05 -->
+<div class="space-y-1 text-label-sm font-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-[#166534]">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Mínimo 8 caracteres alfanuméricos</span>
+</div>
+<div class="flex items-center gap-1.5 text-[#166534]">
+<span class="material-symbols-outlined text-[15px]">check_circle</span>
+<span>Al menos una letra mayúscula y un número</span>
+</div>
+<div class="flex items-center gap-1.5 text-outline">
+<span class="material-symbols-outlined text-[15px]">radio_button_unchecked</span>
+<span>Forzar cambio de clave en el primer inicio de sesión (Obligatorio)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer Drawer -->
+<div class="p-space-md bg-surface-container flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors" onclick="closeDrawer('userDrawer')" type="button">
+            Cancelar
+          </button>
+<button class="flex items-center gap-2 px-5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm" onclick="saveUserSuccess()" type="button">
+<span class="material-symbols-outlined text-[18px]">how_to_reg</span>
+<span>Registrar y Notificar</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Restablecer Contraseña (RNF05 / Sin exposición de Hashes) -->
+<div aria-labelledby="modal-reset-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="resetModal" role="dialog">
+<div class="fixed inset-0 bg-[#16324F]/50 backdrop-blur-xs transition-opacity" onclick="closeModal('resetModal')"></div>
+<div class="flex min-h-full items-center justify-center p-4">
+<div class="relative w-full max-w-lg bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden p-space-lg space-y-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2.5 rounded-full bg-primary-fixed text-primary shrink-0">
+<span class="material-symbols-outlined text-[24px]">key_vertical</span>
+</div>
+<div class="space-y-0.5">
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface" id="modal-reset-title">Restablecer Credenciales de Acceso</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Reemplazo seguro de contraseña conforme a los estándares criptográficos RNF05 y RNF06.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg space-y-1">
+<div class="font-label-sm text-label-sm text-outline uppercase font-semibold">Usuario Objetivo:</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold" id="resetUserDisplay">Ing. Carlos Mendoza Alva</div>
+<div class="font-mono text-label-sm text-primary" id="resetCodeDisplay">USR-001 • Administrador General</div>
+</div>
+<div class="space-y-space-sm">
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Generación de Nueva Clave</label>
+<div class="flex gap-2">
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-mono text-on-surface focus:outline-none font-bold" id="generatedPassword" readonly="" type="text" value="B00k#Red2024!Safe"/>
+<button class="px-3 py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-label-md font-medium flex items-center gap-1" onclick="regenerateSecret()" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Generar</span>
+</button>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-[#EFF6FF] text-on-secondary-fixed-variant space-y-1 font-body-sm text-body-sm">
+<div class="flex items-center gap-1 font-semibold text-primary">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span>Protección Criptográfica (RNF06):</span>
+</div>
+<p class="text-[13px] leading-relaxed">
+              El sistema encripta esta clave con algoritmo PBKDF2/SHA-256 de una sola vía. Ningún administrador ni personal técnico tiene acceso al hash ni a contraseñas históricas.
+            </p>
+</div>
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded text-primary-container focus:ring-0" id="forceEmail" type="checkbox"/>
+<label class="font-body-md text-body-md text-on-surface cursor-pointer" for="forceEmail">
+              Enviar token temporal y enlace seguro al correo institucional
+            </label>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors font-label-lg text-label-lg" onclick="closeModal('resetModal')" type="button">
+            Cancelar
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm flex items-center gap-2" onclick="confirmResetPassword()" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+<span>Confirmar Restablecimiento</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Cambiar Rol Administrativo (RD14) -->
+<div aria-labelledby="modal-role-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="roleModal" role="dialog">
+<div class="fixed inset-0 bg-[#16324F]/50 backdrop-blur-xs transition-opacity" onclick="closeModal('roleModal')"></div>
+<div class="flex min-h-full items-center justify-center p-4">
+<div class="relative w-full max-w-md bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden p-space-lg space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[22px]">manage_accounts</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface" id="modal-role-title">Modificar Rol de Usuario</h3>
+<span class="font-label-sm text-label-sm text-outline">Regla RD14 • Reasignación de Privilegios</span>
+</div>
+</div>
+<div class="space-y-space-sm">
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Usuario Seleccionado</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface" id="roleUserTarget" readonly="" type="text" value="USR-002 • Lic. Elena Ramos Cárdenas"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Nuevo Rol Institucional</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface focus:outline-none">
+<option value="admin">Administrador General</option>
+<option selected="" value="donante">Institución Donante</option>
+<option value="solicitante">Institución Solicitante</option>
+<option value="entrega">Responsable de Entrega</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md font-medium text-on-surface">Motivo Administrativo del Cambio (RD15)</label>
+<textarea class="w-full px-3 py-2 rounded-lg bg-surface text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Consigne la resolución o sustento institucional del cambio de rol..." rows="2"></textarea>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors font-label-lg text-label-lg" onclick="closeModal('roleModal')" type="button">
+            Cancelar
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm" onclick="closeModal('roleModal')" type="button">
+            Guardar en Auditoría
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Exportar Padrón de Usuarios -->
+<div aria-labelledby="modal-export-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="exportModal" role="dialog">
+<div class="fixed inset-0 bg-[#16324F]/50 backdrop-blur-xs transition-opacity" onclick="closeModal('exportModal')"></div>
+<div class="flex min-h-full items-center justify-center p-4">
+<div class="relative w-full max-w-md bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden p-space-lg space-y-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-full bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[22px]">file_download</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface" id="modal-export-title">Exportar Padrón Oficial</h3>
+<span class="font-label-sm text-label-sm text-outline">Formato Oficial de Auditoría</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Descargue la relación nominal y técnica de los 142 usuarios registrados con hash de comprobación.
+        </p>
+<div class="space-y-space-xs">
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#166534]">table_view</span>
+<span class="font-label-md text-label-md text-on-surface">Formato Excel Consolidado (.xlsx)</span>
+</div>
+<input checked="" class="text-primary-container" name="exportFmt" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface hover:bg-surface-container cursor-pointer transition-colors">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error">picture_as_pdf</span>
+<span class="font-label-md text-label-md text-on-surface">Documento Formal Foliado (.pdf)</span>
+</div>
+<input class="text-primary-container" name="exportFmt" type="radio"/>
+</label>
+</div>
+<div class="pt-2 flex items-center justify-end gap-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface text-on-surface hover:bg-surface-container transition-colors font-label-lg text-label-lg" onclick="closeModal('exportModal')" type="button">
+            Cerrar
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg transition-colors shadow-sm flex items-center gap-1.5" onclick="closeModal('exportModal')" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Generar y Descargar</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Microinteracciones JS (Sin dependencias externas) -->
+<script>
+    function openDrawer(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function closeDrawer(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    function openResetModal(code, name) {
+      document.getElementById('resetCodeDisplay').innerText = code + ' • Protocolo RNF05';
+      document.getElementById('resetUserDisplay').innerText = name;
+      openModal('resetModal');
+    }
+
+    function openRoleModal(code, currentRole) {
+      document.getElementById('roleUserTarget').value = code + ' (Rol Actual: ' + currentRole + ')';
+      openModal('roleModal');
+    }
+
+    function regenerateSecret() {
+      const chars = "ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%&*";
+      let pwd = "SEC#";
+      for (let i = 0; i < 10; i++) {
+        pwd += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById('generatedPassword').value = pwd;
+    }
+
+    function togglePassVisibility(inputId) {
+      const input = document.getElementById(inputId);
+      input.type = input.type === 'password' ? 'text' : 'password';
+    }
+
+    function confirmResetPassword() {
+      alert("Contraseña restablecida exitosamente conforme a RNF05. Registro inmutable enviado a bitácora de auditoría (RD15).");
+      closeModal('resetModal');
+    }
+
+    function saveUserSuccess() {
+      alert("Usuario registrado satisfactoriamente (RF03/RF04). Se ha generado la notificación oficial institucional.");
+      closeDrawer('userDrawer');
+    }
+  </script>
+</div></main></div></body></html>

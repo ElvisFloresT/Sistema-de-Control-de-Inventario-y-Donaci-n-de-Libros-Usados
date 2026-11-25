@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"surface-bright":"#f8f9ff","surface-tint":"#0053db","surface-variant":"#d9e3f6","on-tertiary-fixed-variant":"#40484f","background":"#f8f9ff","surface":"#f8f9ff","primary-fixed":"#dbe1ff","tertiary":"#4e565d","on-primary-fixed":"#00174b","on-primary":"#ffffff","tertiary-fixed-dim":"#c0c7d0","secondary":"#466080","secondary-fixed":"#d2e4ff","on-error":"#ffffff","inverse-on-surface":"#eaf1ff","primary":"#004ac6","inverse-primary":"#b4c5ff","surface-container-lowest":"#ffffff","surface-container-low":"#eff4ff","primary-fixed-dim":"#b4c5ff","on-tertiary-fixed":"#151c23","on-secondary-fixed":"#001d37","surface-container-high":"#dee9fc","on-tertiary-container":"#eaf1fa","on-surface-variant":"#434655","on-background":"#121c2a","outline-variant":"#c3c6d7","secondary-container":"#bfd9fe","outline":"#737686","secondary-fixed-dim":"#aec9ed","inverse-surface":"#27313f","on-secondary-container":"#455f7e","on-error-container":"#93000a","on-surface":"#121c2a","error":"#ba1a1a","on-secondary-fixed-variant":"#2e4867","on-secondary":"#ffffff","on-tertiary":"#ffffff","error-container":"#ffdad6","tertiary-fixed":"#dce3ec","on-primary-container":"#eeefff","surface-dim":"#d0dbed","surface-container":"#e6eeff","on-primary-fixed-variant":"#003ea8","surface-container-highest":"#d9e3f6","primary-container":"#2563eb","tertiary-container":"#676e76"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","gutter-mobile":"1rem","space-xs":"0.25rem","space-md":"1rem","gutter":"1.5rem","space-sm":"0.5rem","space-lg":"1.5rem","space-xl":"2rem","margin-mobile":"1rem"},"fontFamily":{"body-sm":["Inter"],"body-md":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"],"label-sm":["Inter"],"headline-xl":["Inter"],"headline-xl-mobile":["Inter"],"label-lg":["Inter"],"data-metric":["Inter"],"headline-md":["Inter"],"label-md":["Inter"],"headline-lg":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Caso: Matemática Básica (20 ejemplares iniciales)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Gestión Interinstitucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-4" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><div class="space-y-1"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Administrador</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="panel-principal-del-administrador" href="#">Dashboard</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#">Instituciones</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#">Usuarios y Roles</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="inventario-global" href="#">Inventario Global</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#">Reportes</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#">Bitácora</a></div><div class="space-y-1 pt-2 border-t border-white/10"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Donante</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-donante" href="#">Dashboard Donante</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="mis-publicaciones" href="#">Mis Publicaciones</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes-recibidas" href="#">Solicitudes Recibidas</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#">Gestión de Reservas</a></div><div class="space-y-1 pt-2 border-t border-white/10"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Solicitante</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-general-de-libros-y-solicitud" href="#">Catálogo General</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="mis-solicitudes" href="#">Mis Solicitudes</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="mis-reservas" href="#">Mis Reservas</a></div><div class="space-y-1 pt-2 border-t border-white/10"><span class="px-3 font-label-sm text-label-sm uppercase tracking-wider text-secondary-fixed-dim/80 font-semibold">Módulo Entrega</span><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-entrega" href="#">Dashboard Entrega</a><a aria-current="page" class="flex items-center px-3 py-2 rounded-lg transition-colors bg-primary-container text-on-primary font-semibold shadow-sm" data-path="registro-de-entregas" href="#">Registro de Entregas</a><a class="flex items-center px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historial-de-entregas" href="#">Historial de Entregas</a></div></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option><option value="iep">Institución Educativa Pública 2050</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título, código de entrega..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Foto de perfil" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-16 min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full">
+<!-- Status & Academic Case Banner -->
+<div class="mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-primary">Caso de Sustentación RF08 / RNF07</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-secondary">Trazabilidad de Cadena de Custodia</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight truncate">Control de Entrega Presencial de Donaciones - Acta Oficial</h1>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0 self-start md:self-auto">
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">hourglass_top</span>
+        Vence en 4 días
+      </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold">
+        Módulo 5: Despacho Físico
+      </span>
+</div>
+</div>
+<!-- Main Grid: 2 Columns on desktop -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Left Column: Master Reservation Traceability Card (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Reservation Detail Card -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<!-- Card Header with Badges -->
+<div class="flex items-start justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Reserva Activa Autorizada</span>
+<div class="flex items-center gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md font-bold text-primary">RES-2024-0042</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">SOL-2024-0089</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            En Custodia
+          </span>
+</div>
+<!-- Book Technical Card -->
+<div class="flex gap-space-md p-space-md rounded-lg bg-surface-container-low">
+<img class="w-16 h-24 rounded object-cover shadow-sm shrink-0" data-alt="Official university textbook cover for Matematica Basica I second edition with geometric vector shapes in navy blue and gold institutional tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKrB62uN9gE-n1ybDrJoz4j_t_F5BtHPJ5DU1u3wJ0UGYyWRNtEJMX3bhP6DE1cytuB8l0NBUXJ2j_hE8tJwlqqhMsCCLlzcWBmXtZLyLK4rjYO7nL7EjkclTFZm1qLzF98LJTpYyiV_4K1FkiPxrFkqjZU_F_qeyVoSuEefvW0F-XD4pfoj93YUk4xrEjXlNsMxUl69kBcaGxDid21RteD3W-4bxh70zWz7VNP3rQ"/>
+<div class="flex flex-col justify-between min-w-0">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">Publicación Donada</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight line-clamp-2">Matemática Básica I (2da Ed.)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ISBN: <span class="font-semibold text-on-surface">978-612-4215-08-9</span></p>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+<span>Edición Revisada • Formato Rústico</span>
+</div>
+</div>
+</div>
+<!-- Progress of Delivery -->
+<div class="flex flex-col gap-space-xs p-space-md rounded-lg bg-surface-container-high/40">
+<div class="flex justify-between items-center text-body-sm font-body-sm">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Progreso de Despacho del Lote</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="label-progress-pct">0% Completado</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full transition-all duration-500 w-[0%]" id="bar-delivery-progress"></div>
+</div>
+<div class="flex justify-between items-center font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Entregados: <strong class="text-on-surface" id="val-already-delivered">0</strong> un.</span>
+<span>Saldo: <strong class="text-error font-bold" id="val-pending-balance">10</strong> un.</span>
+<span>Total Inicial: <strong class="text-on-surface">10</strong> un.</span>
+</div>
+</div>
+<!-- Inventory Equation Formula Card (RNF07 Audit Validation) -->
+<div class="p-space-md rounded-lg bg-surface-bright shadow-sm flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+              Balance de Auditoría de Inventario
+            </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold">RNF07 Validada</span>
+</div>
+<div class="font-label-md text-label-md text-on-surface font-semibold tracking-wide flex items-center justify-between py-1 px-2 rounded bg-surface-container-low font-mono">
+<span>Q_ini (20)</span>
+<span class="text-secondary">=</span>
+<span>Disp (<span id="eq-disp">10</span>)</span>
+<span class="text-secondary">+</span>
+<span>Res (<span id="eq-res">10</span>)</span>
+<span class="text-secondary">+</span>
+<span>Entr (<span id="eq-entr">0</span>)</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">La suma de los tres estados preserva la integridad del inventario de 20 ejemplares en tiempo real.</p>
+</div>
+<!-- Custody Parties Breakdown -->
+<div class="space-y-space-sm pt-space-xs">
+<!-- Beneficiary -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="p-2 rounded bg-surface-container-highest text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_library</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Institución Solicitante Receptora</span>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Biblioteca Comunitaria San Martín</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Representante Acreditado: <span class="font-semibold text-on-surface">Prof. Roberto Gómez</span> (DNI: 42819023)</p>
+</div>
+</div>
+<!-- Donor -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="p-2 rounded bg-surface-container-highest text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Institución Donante de Custodia</span>
+<p class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Univ. Nacional de Ingeniería</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ubicación de Salida: Almacén Central - Rampa de Despacho 2</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Context Box -->
+<div class="p-space-md rounded-xl bg-surface-container text-on-surface flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-md text-label-md font-semibold text-primary">Regla de Negocio RF08: Entrega Presencial</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Toda entrega requiere la identificación biométrica o DNI del apoderado debidamente acreditado y la posterior firma física del acta oficial con código QR foliado.
+          </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Registration Form & Interactive Scenario Execution (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Interactive Dispatch Panel -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Formulario de Registro de Entrega Física</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conforme a la Orden de Despacho RES-2024-0042</p>
+</div>
+<!-- Presets for Academic Sustentation -->
+<div class="flex items-center gap-1.5 bg-surface-container-low p-1 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[18px] ml-1">science</span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold mr-1">Simulación:</span>
+<button class="px-2 py-1 rounded bg-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface transition-colors shadow-sm" onclick="setPresetQuantity(4)" type="button">
+              1ª Fase (4 un.)
+            </button>
+<button class="px-2 py-1 rounded bg-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface transition-colors shadow-sm" onclick="setPresetQuantity(3)" type="button">
+              2ª Fase (3 un.)
+            </button>
+<button class="px-2 py-1 rounded bg-surface hover:bg-primary hover:text-on-primary font-label-sm text-label-sm text-on-surface transition-colors shadow-sm" onclick="setPresetQuantity(10)" type="button">
+              Total (10 un.)
+            </button>
+</div>
+</div>
+<form class="flex flex-col gap-space-md" id="form-entrega" onsubmit="event.preventDefault(); openActaModal();">
+<!-- Quantity Stepper Module -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex flex-col text-center md:text-left">
+<span class="font-label-md text-label-md font-bold text-on-surface">Cantidad a Entregar en este Acto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                Límite actual permitido: <strong class="text-on-surface" id="lbl-max-limit">1 a 10 ejemplares</strong>
+</span>
+</div>
+<!-- Stepper Controller -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-lowest rounded-xl shadow-sm p-1">
+<button aria-label="Disminuir cantidad" class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors active:scale-95" onclick="stepQuantity(-1)" type="button">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+<input class="w-16 text-center font-headline-md text-headline-md font-bold text-primary bg-transparent focus:outline-none" id="input-qty" max="10" min="1" readonly="" type="number" value="4"/>
+<button aria-label="Aumentar cantidad" class="w-10 h-10 rounded-lg flex items-center justify-center text-on-surface hover:bg-surface-container transition-colors active:scale-95" onclick="stepQuantity(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+</div>
+<button class="px-3 py-2.5 rounded-lg bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm font-semibold transition-all shadow-sm" onclick="setPresetQuantity(10)" type="button">
+                Entregar todo lo pendiente (10 un.)
+              </button>
+</div>
+</div>
+<!-- Dynamic Remaining Balance Alert -->
+<div class="p-space-sm px-space-md rounded-lg bg-surface-container flex items-center justify-between font-body-sm text-body-sm" id="box-balance-status">
+<span class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">info</span>
+<span>Al procesar esta orden, el saldo pendiente quedará en: <strong class="text-primary font-bold" id="label-new-balance">6 ejemplares</strong>.</span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold" id="badge-delivery-type">
+              Entrega Parcial
+            </span>
+</div>
+<!-- Dispatch Meta Information (Auto-generated & Verified) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Delivery Timestamp -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Fecha y Hora de Despacho</label>
+<div class="flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">calendar_clock</span>
+<span class="font-body-md text-body-md font-mono font-medium" id="field-timestamp">2025-05-14 11:42:18 hrs</span>
+<span class="ml-auto px-1.5 py-0.5 rounded text-[10px] uppercase font-bold bg-surface-container-highest text-secondary">Auto</span>
+</div>
+</div>
+<!-- Delivery Responsible Officer -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Responsable de Entrega Asignado</label>
+<div class="flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<span class="font-body-md text-body-md truncate">Ing. Carlos Mendoza (Almacén Central)</span>
+</div>
+</div>
+<!-- Receiver Identity -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface">Documento de Identidad del Receptor</label>
+<div class="flex items-center gap-space-xs px-3 py-2 rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">person_check</span>
+<span class="font-body-md text-body-md font-semibold">DNI: 42819023</span>
+<span class="font-body-sm text-body-sm text-secondary truncate ml-1">Prof. Roberto Gómez</span>
+</div>
+</div>
+<!-- Physical Protocol Number (Editable) -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md font-semibold text-on-surface" for="acta-correlativo">N° de Acta Física Foliada</label>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Libro de Entregas Tomo IV</span>
+</div>
+<div class="relative">
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm" id="acta-correlativo" required="" type="text" value="ACT-2025-0042-SM"/>
+<span class="material-symbols-outlined absolute right-3 top-2.5 text-secondary text-[18px]">receipt_long</span>
+</div>
+</div>
+</div>
+<!-- Reception Condition & Physical Observation -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md font-semibold text-on-surface" for="txt-observations">Observaciones Técnicas y Estado Físico</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-lowest font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-primary shadow-sm resize-none" id="txt-observations" placeholder="Ingrese el reporte de estado físico al momento del retiro..." rows="3">Ejemplares revisados en buen estado físico. Sellados con tampón oficial de donación académica ODS 4. Se entrega con embalaje protector.</textarea>
+</div>
+<!-- Physical Conformity Checkbox -->
+<label class="flex items-start gap-space-sm p-space-sm rounded-lg bg-surface-container-low cursor-pointer select-none">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary" required="" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Conformidad Presencial Verificada</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">El apoderado receptor presenta acreditación vigente y se compromete a reportar el ingreso de los volúmenes a la estantería comunitaria.</span>
+</div>
+</label>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-end gap-space-sm pt-space-xs">
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold shadow-sm" onclick="history.back()" type="button">
+              Cancelar y Volver
+            </button>
+<button class="w-full sm:w-auto px-space-lg py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary transition-all font-label-md text-label-md font-bold shadow-md flex items-center justify-center gap-2 active:scale-95" type="submit">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+<span>Registrar y Generar Acta Oficial</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Sustentation Phase Progression Timeline Mini-Module -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Trazabilidad del Flujo de Entrega (Simulación Académica)</span>
+<div class="mt-space-sm grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-primary-fixed/30 flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-primary">Paso 1: Solicitud Aprobada</span>
+<span class="font-body-sm text-body-sm text-on-surface">10 libros reservados de lote donado de 20.</span>
+<span class="font-label-sm text-label-sm text-secondary">Disp: 10 | Res: 10</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Paso 2: Entrega Actual (En Curso)</span>
+<span class="font-body-sm text-body-sm text-on-surface" id="timeline-step2">Despacho presencial de 4 libros.</span>
+<span class="font-label-sm text-label-sm text-primary font-semibold" id="timeline-metrics2">Disp: 10 | Res: 6 | Entr: 4</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Paso 3: Acta y Cierre</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Generación de Acta Foliada con QR institucional.</span>
+<span class="font-label-sm text-label-sm text-secondary">Trazabilidad ODS 4/12</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Official Certificate / Delivery Protocol (Acta Oficial de Entrega) -->
+<div class="fixed inset-0 z-50 bg-[#16324F]/50 backdrop-blur-sm hidden flex items-center justify-center p-space-md overflow-y-auto" id="modal-acta">
+<div class="relative w-full max-w-3xl rounded-xl bg-surface-container-lowest shadow-2xl p-space-xl my-8 flex flex-col gap-space-md animate-fade-in max-h-[92vh] overflow-y-auto">
+<!-- Top Action Bar for Document Modal -->
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wide">Acta Oficial Foliada Generada con Éxito</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="window.print()" title="Imprimir Acta">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" onclick="closeActaModal()" title="Cerrar Previsualización">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Printable Certificate Layout -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md" id="acta-imprimible">
+<!-- Document Institutional Header -->
+<div class="flex flex-col sm:flex-row items-start justify-between pb-space-md gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary font-bold font-headline-lg shadow-sm">
+<span class="material-symbols-outlined text-[28px]">library_books</span>
+</div>
+<div>
+<h4 class="font-headline-md text-headline-md font-bold text-on-surface leading-tight">RED INTERINSTITUCIONAL DE DONACIÓN DE LIBROS</h4>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">Sistema Integrado de Economía Circular del Libro • ODS 4 / ODS 12</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sede Central: Almacén Universitario UNI - Lima, Perú</p>
+</div>
+</div>
+<div class="flex flex-col items-end text-right">
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-primary font-mono font-bold text-headline-sm" id="modal-acta-codigo">ACT-2025-0042-SM</span>
+<span class="font-label-sm text-label-sm text-secondary mt-1">Foliado Digital Seguro</span>
+<span class="font-label-sm text-label-sm text-secondary">Hash: #a982f1b7</span>
+</div>
+</div>
+<!-- Document Legal Paragraph -->
+<div class="p-space-md rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface leading-relaxed">
+          En la ciudad de Lima, a las <strong id="modal-hora">11:42 horas</strong> del <strong id="modal-fecha">14 de Mayo de 2025</strong>, se procede a formalizar la entrega presencial de material bibliográfico bajo el marco de la <strong>Reserva RES-2024-0042</strong> (Expediente SOL-2024-0089), suscrito entre las instituciones comparecientes:
+        </div>
+<!-- Delivery Breakdown Table -->
+<div class="overflow-x-auto rounded-lg bg-surface-bright shadow-sm">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold uppercase">
+<tr>
+<th class="p-3">Concepto / Material</th>
+<th class="p-3">Código ISBN</th>
+<th class="p-3 text-right">Cant. Entregada</th>
+<th class="p-3 text-right">Saldo Pendiente</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr>
+<td class="p-3">
+<div class="font-semibold text-on-surface">Matemática Básica I (2da Edición)</div>
+<div class="font-label-sm text-label-sm text-secondary">Tapa blanda • Editorial Universitaria</div>
+</td>
+<td class="p-3 font-mono font-medium text-on-surface-variant">978-612-4215-08-9</td>
+<td class="p-3 text-right font-bold text-primary font-mono text-headline-sm" id="modal-qty-entregada">4 un.</td>
+<td class="p-3 text-right font-mono font-semibold text-error" id="modal-qty-saldo">6 un.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- SDG Impact & Inventory Equation Strip -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md p-space-md rounded-lg bg-surface-container-low">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider">Alineamiento de Sostenibilidad</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="px-2 py-0.5 rounded bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-bold">ODS 4: Educación de Calidad</span>
+<span class="px-2 py-0.5 rounded bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-bold">ODS 12: Circularidad</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Garantiza el reuso de material académico y el acceso equitativo en centros comunales.</p>
+</div>
+<div class="flex flex-col gap-1 font-mono">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider">Validación RNF07 de Inventario</span>
+<div class="font-label-md text-label-md text-on-surface bg-surface-container-lowest p-2 rounded shadow-sm">
+              Q_ini (20) = Disp(10) + Res(<span id="modal-eq-res">6</span>) + Entr(<span id="modal-eq-entr">4</span>)
+            </div>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-1">Estado de Integridad: 100% Consistente</span>
+</div>
+</div>
+<!-- Observations in Acta -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-semibold text-secondary uppercase tracking-wider">Constancia de Observación Técnica:</span>
+<p class="font-body-sm text-body-sm text-on-surface bg-surface-container-low p-space-sm rounded italic" id="modal-obs-text">
+            Ejemplares revisados en buen estado físico. Sellados con tampón oficial de donación académica ODS 4. Se entrega con embalaje protector.
+          </p>
+</div>
+<!-- Official Signatures & QR Section -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-lg items-end">
+<!-- Donor Signature -->
+<div class="flex flex-col items-center text-center">
+<div class="w-full h-16 flex items-end justify-center pb-2">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary font-mono tracking-widest opacity-40">C.MENDOZA.UNI</span>
+</div>
+<div class="w-full h-0.5 bg-outline-variant"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface mt-1">Ing. Carlos Mendoza</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Responsable de Entrega (UNI)</span>
+<span class="font-label-sm text-label-sm text-secondary">Almacén Central de Custodia</span>
+</div>
+<!-- Receiver Signature -->
+<div class="flex flex-col items-center text-center">
+<div class="w-full h-16 flex items-end justify-center pb-2">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary font-mono tracking-widest opacity-40">R.GOMEZ.BCSM</span>
+</div>
+<div class="w-full h-0.5 bg-outline-variant"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface mt-1">Prof. Roberto Gómez</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">DNI 42819023 (Receptor)</span>
+<span class="font-label-sm text-label-sm text-secondary">Bibl. Comunitaria San Martín</span>
+</div>
+<!-- Institutional Security QR Stamp -->
+<div class="flex flex-col items-center justify-center p-space-sm rounded-lg bg-surface-container-low text-center">
+<!-- Inline SVG QR Code Representation -->
+<svg class="w-20 h-20 text-on-surface" fill="currentColor" viewbox="0 0 100 100">
+<rect height="30" rx="4" width="30" x="0" y="0"></rect>
+<rect fill="white" height="20" width="20" x="5" y="5"></rect>
+<rect height="12" width="12" x="9" y="9"></rect>
+<rect height="30" rx="4" width="30" x="70" y="0"></rect>
+<rect fill="white" height="20" width="20" x="75" y="5"></rect>
+<rect height="12" width="12" x="79" y="9"></rect>
+<rect height="30" rx="4" width="30" x="0" y="70"></rect>
+<rect fill="white" height="20" width="20" x="5" y="75"></rect>
+<rect height="12" width="12" x="9" y="79"></rect>
+<rect height="18" width="8" x="38" y="10"></rect>
+<rect height="8" width="10" x="52" y="6"></rect>
+<rect height="24" width="24" x="38" y="38"></rect>
+<rect fill="white" height="12" width="12" x="44" y="44"></rect>
+<rect height="4" width="4" x="48" y="48"></rect>
+<rect height="8" width="22" x="70" y="40"></rect>
+<rect height="8" width="20" x="10" y="42"></rect>
+<rect height="12" width="12" x="70" y="70"></rect>
+<rect height="22" width="8" x="86" y="74"></rect>
+<rect height="10" width="18" x="40" y="72"></rect>
+</svg>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono mt-1">VERIF-DIGITAL-ODS</span>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span>Acta registrada en la Bitácora de Transacciones Global (Audit Log).</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-lg py-2 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-bold transition-colors shadow-sm" onclick="closeActaModal()">
+            Entendido y Finalizar
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Case State Variables
+  const initialAvailable = 10;
+  const initialReserved = 10;
+  const totalReservedOrder = 10;
+  let currentlySelectedQty = 4;
+
+  function updateCalculations() {
+    const inputEl = document.getElementById('input-qty');
+    let qty = parseInt(inputEl.value, 10);
+    if (isNaN(qty) || qty < 1) qty = 1;
+    if (qty > totalReservedOrder) qty = totalReservedOrder;
+    currentlySelectedQty = qty;
+    inputEl.value = qty;
+
+    const newPending = totalReservedOrder - qty;
+    const progressPct = Math.round((qty / totalReservedOrder) * 100);
+
+    // Update Progress
+    const barEl = document.getElementById('bar-delivery-progress');
+    const labelPctEl = document.getElementById('label-progress-pct');
+    const deliveredEl = document.getElementById('val-already-delivered');
+    const pendingEl = document.getElementById('val-pending-balance');
+    const newBalEl = document.getElementById('label-new-balance');
+    const typeBadge = document.getElementById('badge-delivery-type');
+
+    if (barEl) barEl.style.width = progressPct + '%';
+    if (labelPctEl) labelPctEl.textContent = progressPct + '% Completado';
+    if (deliveredEl) deliveredEl.textContent = qty;
+    if (pendingEl) pendingEl.textContent = newPending;
+    if (newBalEl) newBalEl.textContent = newPending + (newPending === 1 ? ' ejemplar' : ' ejemplares');
+
+    // Update Badge Type
+    if (typeBadge) {
+      if (qty === totalReservedOrder) {
+        typeBadge.textContent = 'Entrega Total Definitiva';
+        typeBadge.className = 'px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold';
+      } else {
+        typeBadge.textContent = 'Entrega Parcial (Fase 1/2)';
+        typeBadge.className = 'px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold';
+      }
+    }
+
+    // Update Inventory Equation
+    // Initial total = 20
+    // Q_ini = Disp (10) + Res (10 - qty) + Entr (qty)
+    const eqDisp = document.getElementById('eq-disp');
+    const eqRes = document.getElementById('eq-res');
+    const eqEntr = document.getElementById('eq-entr');
+
+    if (eqDisp) eqDisp.textContent = initialAvailable;
+    if (eqRes) eqRes.textContent = newPending;
+    if (eqEntr) eqEntr.textContent = qty;
+
+    // Timeline step 2 text
+    const t2 = document.getElementById('timeline-step2');
+    const tm2 = document.getElementById('timeline-metrics2');
+    if (t2) t2.textContent = 'Despacho presencial de ' + qty + ' libros.';
+    if (tm2) tm2.textContent = 'Disp: ' + initialAvailable + ' | Res: ' + newPending + ' | Entr: ' + qty;
+  }
+
+  function stepQuantity(delta) {
+    const inputEl = document.getElementById('input-qty');
+    let current = parseInt(inputEl.value, 10) || 1;
+    current += delta;
+    if (current < 1) current = 1;
+    if (current > totalReservedOrder) current = totalReservedOrder;
+    inputEl.value = current;
+    updateCalculations();
+  }
+
+  function setPresetQuantity(val) {
+    const inputEl = document.getElementById('input-qty');
+    inputEl.value = val;
+    updateCalculations();
+  }
+
+  function openActaModal() {
+    const modal = document.getElementById('modal-acta');
+    const qty = currentlySelectedQty;
+    const pending = totalReservedOrder - qty;
+
+    document.getElementById('modal-qty-entregada').textContent = qty + ' un.';
+    document.getElementById('modal-qty-saldo').textContent = pending + ' un.';
+    document.getElementById('modal-acta-codigo').textContent = document.getElementById('acta-correlativo').value || 'ACT-2025-0042-SM';
+    document.getElementById('modal-obs-text').textContent = document.getElementById('txt-observations').value || 'Sin observaciones.';
+    document.getElementById('modal-eq-res').textContent = pending;
+    document.getElementById('modal-eq-entr').textContent = qty;
+
+    modal.classList.remove('hidden');
+  }
+
+  function closeActaModal() {
+    const modal = document.getElementById('modal-acta');
+    modal.classList.add('hidden');
+  }
+
+  // Set default current system time formatted
+  document.addEventListener('DOMContentLoaded', () => {
+    const now = new Date();
+    const formatted = now.getFullYear() + '-' +
+      String(now.getMonth() + 1).padStart(2, '0') + '-' +
+      String(now.getDate()).padStart(2, '0') + ' ' +
+      String(now.getHours()).padStart(2, '0') + ':' +
+      String(now.getMinutes()).padStart(2, '0') + ':' +
+      String(now.getSeconds()).padStart(2, '0') + ' hrs';
+    
+    const tsField = document.getElementById('field-timestamp');
+    if (tsField) tsField.textContent = formatted;
+
+    updateCalculations();
+  });
+</script></main></div></body></html>

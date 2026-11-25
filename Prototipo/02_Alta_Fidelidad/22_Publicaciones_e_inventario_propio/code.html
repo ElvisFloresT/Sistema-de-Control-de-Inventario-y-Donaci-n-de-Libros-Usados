@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"primary-container":"#2563eb","secondary":"#466080","tertiary-container":"#676e76","surface":"#f8f9ff","outline-variant":"#c3c6d7","primary":"#004ac6","primary-fixed-dim":"#b4c5ff","tertiary-fixed-dim":"#c0c7d0","surface-container-highest":"#d9e3f6","on-primary-fixed-variant":"#003ea8","error":"#ba1a1a","on-primary":"#ffffff","on-background":"#121c2a","on-tertiary-container":"#eaf1fa","on-tertiary":"#ffffff","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-container-high":"#dee9fc","on-primary-fixed":"#00174b","inverse-surface":"#27313f","tertiary":"#4e565d","surface-container":"#e6eeff","secondary-fixed-dim":"#aec9ed","on-secondary":"#ffffff","inverse-on-surface":"#eaf1ff","error-container":"#ffdad6","background":"#f8f9ff","primary-fixed":"#dbe1ff","on-error-container":"#93000a","surface-dim":"#d0dbed","surface-bright":"#f8f9ff","on-secondary-container":"#455f7e","on-surface":"#121c2a","surface-container-low":"#eff4ff","surface-variant":"#d9e3f6","on-surface-variant":"#434655","tertiary-fixed":"#dce3ec","outline":"#737686","secondary-fixed":"#d2e4ff","on-secondary-fixed-variant":"#2e4867","inverse-primary":"#b4c5ff","on-primary-container":"#eeefff","on-secondary-fixed":"#001d37","on-tertiary-fixed-variant":"#40484f","on-tertiary-fixed":"#151c23","secondary-container":"#bfd9fe","surface-tint":"#0053db"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xs":"0.25rem","space-sm":"0.5rem","margin-mobile":"1rem","space-md":"1rem","space-lg":"1.5rem","margin":"2rem","space-xl":"2rem","gutter-mobile":"1rem","gutter":"1.5rem"},"fontFamily":{"headline-xl-mobile":["Inter"],"headline-lg":["Inter"],"headline-sm":["Inter"],"body-md":["Inter"],"label-sm":["Inter"],"data-metric":["Inter"],"label-md":["Inter"],"label-lg":["Inter"],"headline-md":["Inter"],"headline-lg-mobile":["Inter"],"headline-xl":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"headline-xl-mobile":["26px",{"lineHeight":"34px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.025em","fontWeight":"600"}],"data-metric":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-md":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><div class="fixed top-0 left-0 right-0 z-50 bg-[#12263a] text-white shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="h-10 px-gutter flex items-center justify-between font-body-sm text-body-sm"><div class="flex items-center gap-space-sm"><span class="flex h-2 w-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-secondary-fixed">Modo Demostración / Sustentación Académica</span><span class="hidden lg:inline text-secondary-fixed-dim">|</span><span class="hidden lg:inline text-secondary-fixed-dim">Simulación: Caso Matemática Básica (20 ejemplares)</span></div><div class="flex items-center gap-space-xs"><span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim mr-space-xs">Simular Rol:</span><div class="flex items-center bg-[#0d1c2d] rounded-lg p-0.5"><button class="px-2.5 py-1 rounded font-label-sm text-label-sm bg-primary-container text-on-primary font-semibold transition-colors" type="button">Administrador</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Donante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Inst. Solicitante</button><button class="px-2.5 py-1 rounded font-label-sm text-label-sm text-secondary-fixed-dim hover:text-white transition-colors" type="button">Resp. Entrega</button></div><button class="ml-space-sm flex items-center gap-1 px-2.5 py-1 rounded-lg bg-surface-container-highest/20 hover:bg-surface-container-highest/30 text-white font-label-sm text-label-sm transition-colors" title="Reiniciar simulación a 20 ejemplares iniciales" type="button"><span class="material-symbols-outlined text-[16px]">restart_alt</span><span class="hidden md:inline">Reiniciar Caso</span></button></div></div></div><aside class="fixed left-0 top-10 bottom-0 w-64 bg-[#16324F] text-white z-40 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.06)]"><div class="flex flex-col overflow-y-auto"><div class="p-space-md border-b border-white/10"><div class="flex items-center gap-space-sm"><img alt="Red de Donación de Libros Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDrhPaNZnBH-ifqBywbGxEKffBh4GfoEqPJXQtrqYAdT3D90JWqSNb6MabVWZ3o9IugmZC_aky_kFp38damE_tckOFT08mGOas041DyNltdrmzh791dsHGYOubGZt9u2lR8yk8T55gCAYFArnzSKs0El0zHEvTEnBD564UspKT353yxc_dhm4nND7DYGovNINoBe3xaeku_Y-1q3TnsmVCdZc0JUr9qVUXMkexNMxj6"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm leading-tight text-white font-semibold">Red de Donación</span><span class="font-label-sm text-label-sm text-secondary-fixed-dim leading-tight">Sistema Institucional</span></div></div><div class="mt-space-sm flex items-center gap-1.5"><span class="px-2 py-0.5 rounded-full bg-[#1e4875] text-[#b4c5ff] font-label-sm text-label-sm font-semibold tracking-wide">ODS 4: Educación</span><span class="px-2 py-0.5 rounded-full bg-[#1b4332] text-[#95d5b2] font-label-sm text-label-sm font-semibold tracking-wide">ODS 12: Circular</span></div></div><nav class="flex-1 px-space-sm py-space-md space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="dashboard-general" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span>Dashboard General</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="catalogo-de-libros" href="#"><span class="material-symbols-outlined text-[20px]">menu_book</span><span>Catálogo de Libros</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="publicaciones-e-inventario" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Publicaciones e Inventario</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="solicitudes" href="#"><span class="material-symbols-outlined text-[20px]">swap_horiz</span><span>Solicitudes</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="gestion-de-reservas" href="#"><span class="material-symbols-outlined text-[20px]">event_available</span><span>Gestión de Reservas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="registro-de-entregas" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span>Registro de Entregas</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="instituciones" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span>Instituciones</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="usuarios-y-roles" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Usuarios y Roles</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="historiales" href="#"><span class="material-symbols-outlined text-[20px]">history</span><span>Historiales</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="reportes-consolidados" href="#"><span class="material-symbols-outlined text-[20px]">bar_chart</span><span>Reportes Consolidados</span></a><a class="flex items-center gap-space-sm px-3 py-2.5 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-md text-body-md" data-path="bitacora-de-auditoria" href="#"><span class="material-symbols-outlined text-[20px]">verified_user</span><span>Bitácora de Auditoría</span></a></nav></div><div class="p-space-sm border-t border-white/10 flex flex-col gap-1"><button class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" type="button"><span class="material-symbols-outlined text-[20px]">menu_open</span><span>Colapsar Menú</span></button><a class="flex items-center gap-space-sm w-full px-3 py-2 rounded-lg text-secondary-fixed-dim hover:bg-white/10 hover:text-white transition-colors font-body-sm text-body-sm" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span>Cerrar Sesión</span></a></div></aside><div class="pl-64"><header class="fixed top-10 left-64 right-0 h-16 bg-surface-container-lowest border-b border-surface-container-highest/60 z-30 flex items-center justify-between px-gutter shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[22px]">apartment</span><select class="bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg px-2.5 py-1.5 border border-outline-variant focus:border-primary-container focus:outline-none"><option value="unmsm">Universidad Nacional Mayor</option><option value="bcsm">Biblioteca Comunitaria San Martín</option></select></div><div class="hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[16px]">admin_panel_settings</span><span>Rol: Administrador</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center relative w-64 lg:w-80"><span class="material-symbols-outlined absolute left-3 text-outline text-[18px]">search</span><input class="w-full pl-9 pr-3 py-1.5 rounded-lg bg-surface border border-outline-variant text-body-sm font-body-sm placeholder:text-outline focus:border-primary-container focus:outline-none" placeholder="Buscar ISBN, título o institución..." type="text"/></div><button aria-label="Notificaciones Institucionales" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span></button><div class="relative flex items-center gap-space-sm pl-space-sm border-l border-surface-container-highest"><div class="flex items-center gap-space-sm cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnSBxSMvd7BitNs3EsyKdD6KOSjQoU-xbOSB0R20BEAOdXgbkvueJ563fFmbWbRMIilkfUX3My2AvCLpocjszCJjLh-ctEwU8kTIJlopflyGpw1H_IN31FD4n7TjHgL07K8UVCjFPq-LDW5v8LpOaXkgxuLlnvTaY02abrcIEIyaML4gQv8I-Du3AdwqqIBLxiJHIzBZKiaNZMqOsVb_kCzRnuHlPNNFxut_rayrNE"/><div class="hidden xl:flex flex-col text-left"><span class="font-label-md text-label-md font-semibold text-on-surface leading-tight">Ing. Carlos Mendoza</span><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Administrador General</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div></div></div></header><main class="relative pt-[104px] min-h-screen bg-surface px-gutter pb-space-xl"><div class="flex flex-col w-full">
+<!-- Top Command & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Institución Donante: UNMSM - Dirección de Bibliotecas</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Gestión de Publicaciones e Inventario Propio</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+        Administración de títulos registrados, control de stock disponible, comprometido y entregado bajo ODS 4 (Educación de Calidad) y ODS 12 (Producción y Consumo Responsable).
+      </p>
+</div>
+<!-- Global CTA Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface transition-colors font-label-lg text-label-lg shadow-sm" onclick="toggleReportModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span>Reporte de Custodia</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary transition-all font-label-lg text-label-lg shadow-md hover:shadow-lg" onclick="openNewPublicationModal()" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>+ Nueva Publicación de Libro</span>
+</button>
+</div>
+</div>
+<!-- KPI Bento Dashboard & Conservation Audit -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-space-md mb-space-lg">
+<!-- Card 1: Titles -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Títulos Registrados</span>
+<div class="font-data-metric text-data-metric text-on-surface mt-1">42</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[24px]">auto_stories</span>
+</div>
+</div>
+<div class="mt-3 flex items-center gap-1 font-body-sm text-body-sm text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>100% catalogados ISBN</span>
+</div>
+</div>
+<!-- Card 2: Initial Total Stock -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Ejemplares Totales (Q_ini)</span>
+<div class="font-data-metric text-data-metric text-on-surface mt-1">860 <span class="font-label-md text-label-md font-normal text-secondary">un.</span></div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-secondary">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>Línea Base 2024</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Fondo Fijo</span>
+</div>
+</div>
+<!-- Card 3: Available for Donation -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#166534] font-semibold">Disponibles Donación</span>
+<div class="font-data-metric text-data-metric text-[#166534] mt-1">520 <span class="font-label-md text-label-md font-normal text-[#166534]/80">un.</span></div>
+</div>
+<div class="p-2.5 rounded-lg bg-[#DCFCE7] text-[#166534]">
+<span class="material-symbols-outlined text-[24px]">check_box</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="w-full bg-[#DCFCE7] h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#166534] h-full rounded-full" style="width: 60.4%"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 font-label-sm text-label-sm text-[#166534]">
+<span>En vitrina abierta</span>
+<span class="font-semibold">60.5%</span>
+</div>
+</div>
+</div>
+<!-- Card 4: Reserved -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-[#92400E] font-semibold">Reservados / Trámite</span>
+<div class="font-data-metric text-data-metric text-[#92400E] mt-1">140 <span class="font-label-md text-label-md font-normal text-[#92400E]/80">un.</span></div>
+</div>
+<div class="p-2.5 rounded-lg bg-[#FEF3C7] text-[#92400E]">
+<span class="material-symbols-outlined text-[24px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="w-full bg-[#FEF3C7] h-1.5 rounded-full overflow-hidden">
+<div class="bg-[#D97706] h-full rounded-full" style="width: 16.3%"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 font-label-sm text-label-sm text-[#92400E]">
+<span>Con solicitud en curso</span>
+<span class="font-semibold">16.3%</span>
+</div>
+</div>
+</div>
+<!-- Card 5: Delivered -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">Entregados con Acta</span>
+<div class="font-data-metric text-data-metric text-primary mt-1">200 <span class="font-label-md text-label-md font-normal text-primary/80">un.</span></div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container text-primary">
+<span class="material-symbols-outlined text-[24px]">task_alt</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 23.2%"></div>
+</div>
+<div class="flex justify-between items-center mt-1.5 font-label-sm text-label-sm text-primary">
+<span>Firmados y despachados</span>
+<span class="font-semibold">23.2%</span>
+</div>
+</div>
+</div>
+<!-- Card 6: Audit Equation Banner (Institutional Rigor) -->
+<div class="bg-[#12263a] text-white rounded-xl p-space-md shadow-md flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-1.5">
+<span class="material-symbols-outlined text-[16px] text-[#95d5b2]">verified_user</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Ecuación de Custodia</span>
+</div>
+<div class="font-mono text-body-md text-[#eeefff] font-semibold bg-[#0d1c2d] px-2.5 py-1.5 rounded">
+          Q_ini = Disp + Res + Ent
+        </div>
+<div class="font-mono text-body-sm text-secondary-fixed-dim mt-2">
+          860 = 520 + 140 + 200
+        </div>
+</div>
+<div class="mt-3 pt-2 border-t border-white/10 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-[#95d5b2] font-semibold">100% Auditado</span>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim">Sin descuadres</span>
+</div>
+</div>
+</div>
+<!-- Conservation Alert Callout: Simulation Showcase -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="p-2 rounded-lg bg-secondary-container text-on-secondary-fixed-variant shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[22px]">science</span>
+</div>
+<div>
+<div class="flex items-center gap-2 flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Caso Activo de Demostración Académica</h2>
+<span class="px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold">Caso RF05 / RF06</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">ISBN 978-612-4001-20-4</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          Obra clave: <strong class="text-on-surface">Matemática Básica I (2da Ed.)</strong> - Trazabilidad instantánea de 20 ejemplares iniciales distribuidos en: 
+          <span class="font-semibold text-[#166534]">10 Disponibles</span>, 
+          <span class="font-semibold text-[#92400E]">6 Reservados</span> y 
+          <span class="font-semibold text-primary">4 Entregados</span> con Acta N° AC-2024-089.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-primary font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" onclick="focusRowDemo()" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Localizar en Tabla</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1.5" onclick="openBatchHistory('Matemática Básica I (2da Ed.)', 'PUB-012')" type="button">
+<span class="material-symbols-outlined text-[16px]">history</span>
+<span>Ver Kardex de Lote</span>
+</button>
+</div>
+</div>
+<!-- Filter & Search Toolbar (RD03, RD04, RD05) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm mb-space-md flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-sm items-center">
+<!-- Search input -->
+<div class="lg:col-span-4 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-[20px]">search</span>
+<input class="w-full pl-10 pr-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-secondary focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="searchInput" onkeyup="filterTable()" placeholder="Buscar por título, autor, ISBN (ej. 978-612...)" type="text"/>
+</div>
+<!-- Category Filter -->
+<div class="lg:col-span-3">
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="categoryFilter" onchange="filterTable()">
+<option value="ALL">Todas las Categorías</option>
+<option value="Ciencias Exactas">Ciencias Exactas</option>
+<option value="Ingeniería y Tecnología">Ingeniería y Tecnología</option>
+<option value="Humanidades y Ciencias Sociales">Humanidades y Ciencias Sociales</option>
+<option value="Ciencias Médicas">Ciencias Médicas</option>
+<option value="Literatura Clásica">Literatura Clásica</option>
+</select>
+</div>
+<!-- Physical Condition Filter -->
+<div class="lg:col-span-2">
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="conditionFilter" onchange="filterTable()">
+<option value="ALL">Estado Físico: Todos</option>
+<option value="Bueno">Bueno (Sin marcas)</option>
+<option value="Regular">Regular (Uso moderado)</option>
+</select>
+</div>
+<!-- Publication Status Filter -->
+<div class="lg:col-span-2">
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="statusFilter" onchange="filterTable()">
+<option value="ALL">Publicación: Todas</option>
+<option value="Activa">Activa en Catálogo</option>
+<option value="Pausada">Pausada / Desactivada</option>
+</select>
+</div>
+<!-- Reset Filter Button -->
+<div class="lg:col-span-1 flex justify-end">
+<button class="w-full py-2 px-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-secondary hover:text-on-surface transition-colors font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1" onclick="resetFilters()" title="Limpiar todos los filtros" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+<span class="lg:hidden xl:inline">Limpiar</span>
+</button>
+</div>
+</div>
+<!-- Active filter chips & inventory summary micro-metric -->
+<div class="flex items-center justify-between text-body-sm font-body-sm pt-2 text-on-surface-variant flex-wrap gap-2">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm font-semibold text-secondary">Filtros Activos:</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+          Fondo UNMSM Central
+        </span>
+<span class="hidden px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm" id="activeFilterBadge">
+          Filtro personalizado aplicado
+        </span>
+</div>
+<div>
+<span>Mostrando <strong class="text-on-surface" id="visibleCount">6</strong> de <strong class="text-on-surface">42</strong> títulos catalogados</span>
+</div>
+</div>
+</div>
+<!-- Main Publications and Inventory Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-xl">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse" id="publicationsTable">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 font-semibold">Código &amp; Portada</th>
+<th class="py-3 px-4 font-semibold">Título y Autor</th>
+<th class="py-3 px-4 font-semibold">Categoría &amp; Estado Físico</th>
+<th class="py-3 px-4 font-semibold text-right">Cant. Inicial</th>
+<th class="py-3 px-4 font-semibold text-right text-[#166534]">Disponible</th>
+<th class="py-3 px-4 font-semibold text-right text-[#92400E]">Reservada</th>
+<th class="py-3 px-4 font-semibold text-right text-primary">Entregada</th>
+<th class="py-3 px-4 font-semibold text-center">Estado Publicación</th>
+<th class="py-3 px-4 font-semibold">Fecha Registro</th>
+<th class="py-3 px-4 font-semibold text-center">Acciones</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm font-body-sm text-on-surface">
+<!-- Row 1: The Core Academic Case Study (Matemática Básica I) -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-secondary-container/15" data-category="Ciencias Exactas" data-condition="Bueno" data-status="Activa" id="row-PUB-012">
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img class="w-10 h-14 object-cover rounded shadow-sm shrink-0 bg-surface-container" data-alt="Cover of an academic mathematics university textbook with geometric vectors and clean minimal design in deep navy and blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA51jR1AYa2q6G9ZRT443GjY15yov6QGk_gfNCG84YxApA5SkmXSQrIjvPwbKGvYBA-CrJhsL9aQ3n8_0RuwFbXjWCXGXIMHA2GvDoV9CXFPiNWsmQj4Xxs6SOetT3_FDN7mnquU-M4Omr8SWIJfQo87LsEFw1rP4b9Bm-2DGMtklDVw35wMFlsWiuU2M-sXRtHrMU8xMBKWuCLirOzEpXQN8KkgteOR7XM5S0wF2tg"/>
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-primary text-body-sm">PUB-012</span>
+<span class="font-mono text-secondary text-label-sm">978-612-4001-20-4</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold mt-0.5">Caso Simulación</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 max-w-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('Matemática Básica I (2da Ed.)')">Matemática Básica I (2da Ed.)</span>
+<span class="text-on-surface-variant text-body-sm">Dr. Hugo Lázaro Carrillo</span>
+<span class="font-label-sm text-label-sm text-secondary">Fondo Editorial UNMSM • 2021</span>
+</div>
+</td>
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Ciencias Exactas</span>
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Bueno (Sin Marcas)
+                </span>
+</div>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">20</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">10</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">6</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">4</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1" id="badge-PUB-012">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo
+              </span>
+</td>
+<td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">15/01/2024</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('Matemática Básica I (2da Ed.)')" title="Ver detalle bibliográfico completo" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="editPublication('PUB-012', 'Matemática Básica I (2da Ed.)', 'Dr. Hugo Lázaro Carrillo', 'Ciencias Exactas', 'Bueno', 20)" title="Editar datos bibliográficos" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-error hover:bg-error-container/30 transition-colors" onclick="togglePublicationStatus('PUB-012')" title="Pausar o Desactivar publicación en catálogo" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchHistory('Matemática Básica I (2da Ed.)', 'PUB-012')" title="Historial y trazabilidad de lotes" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Física Universitaria -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-category="Ciencias Exactas" data-condition="Bueno" data-status="Activa" id="row-PUB-015">
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img class="w-10 h-14 object-cover rounded shadow-sm shrink-0 bg-surface-container" data-alt="Cover of university physics textbook Sears and Zemansky with atomic illustrations in clean cyan and dark navy palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsacDqitEH31TdsNT0qqHkTFw7ThELstpVv_10twz1obpJLKzoITODIUguYBhJX3m2C7saa56hSFH1O6xQOEK1N4YJscV12fj7j3XOxw6F5Lyy4O37h5yXVWItAeFuJpjzddxkaWATduqGnEykNEkr8TwFl5CxILzEE3rXF0m5VDUzrFpXZrsq8CwlbJmoadfqdgRKgnxZ_vq-nmG7MTAzYloIWD36DkGOY1qMrnOW"/>
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-primary text-body-sm">PUB-015</span>
+<span class="font-mono text-secondary text-label-sm">978-607-32-2190-0</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 max-w-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('Física Universitaria Vol. 1 (13va Ed.)')">Física Universitaria Vol. 1 (13va Ed.)</span>
+<span class="text-on-surface-variant text-body-sm">Sears, Zemansky, Young &amp; Freedman</span>
+<span class="font-label-sm text-label-sm text-secondary">Pearson Educación • 2018</span>
+</div>
+</td>
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Ciencias Exactas</span>
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Bueno
+                </span>
+</div>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">50</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">32</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">10</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">8</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1" id="badge-PUB-015">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo
+              </span>
+</td>
+<td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">02/02/2024</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('Física Universitaria Vol. 1 (13va Ed.)')" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="editPublication('PUB-015', 'Física Universitaria Vol. 1', 'Sears &amp; Zemansky', 'Ciencias Exactas', 'Bueno', 50)" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-error hover:bg-error-container/30 transition-colors" onclick="togglePublicationStatus('PUB-015')" title="Pausar publicación" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchHistory('Física Universitaria Vol. 1', 'PUB-015')" title="Kardex" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Química General -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-category="Ciencias Exactas" data-condition="Regular" data-status="Activa" id="row-PUB-021">
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img class="w-10 h-14 object-cover rounded shadow-sm shrink-0 bg-surface-container" data-alt="Cover of General Chemistry by Raymond Chang university book with molecular crystal lattice models on clean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFhlqRWiRC0349e5_RP33ezRkyz2VsSKKk2agrkiESL8Xn2oPgkr8QY5KLAlCSB0tZ4w4v2juM6_GiUI002dwZ0rj6Ixw-HtQmVXa-JI_ZtiWBbCvncGp210u-SlVWp12nNlwjIjBxaB3dYSA0IqLkoLUBKVsaryNCR6ZwmAL0-XY31TNJqxMtT8DkinsO9Nu9yJIgDtqfIzIiVDaVl4DRJt_Pv5piuFbMXFuqDwH2"/>
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-primary text-body-sm">PUB-021</span>
+<span class="font-mono text-secondary text-label-sm">978-607-15-0928-4</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 max-w-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('Química General (11va Ed.)')">Química General (11va Ed.)</span>
+<span class="text-on-surface-variant text-body-sm">Raymond Chang &amp; Kenneth A. Goldsby</span>
+<span class="font-label-sm text-label-sm text-secondary">McGraw-Hill Interamericana • 2019</span>
+</div>
+</td>
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Ciencias Exactas</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#92400E] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#D97706]"></span> Regular (Subrayado tenue)
+                </span>
+</div>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">35</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">18</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">7</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">10</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1" id="badge-PUB-021">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo
+              </span>
+</td>
+<td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">10/02/2024</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('Química General (11va Ed.)')" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="editPublication('PUB-021', 'Química General (11va Ed.)', 'Raymond Chang', 'Ciencias Exactas', 'Regular', 35)" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-error hover:bg-error-container/30 transition-colors" onclick="togglePublicationStatus('PUB-021')" title="Pausar publicación" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchHistory('Química General (11va Ed.)', 'PUB-021')" title="Kardex" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Ingeniería y Tecnología -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-category="Ingeniería y Tecnología" data-condition="Bueno" data-status="Activa" id="row-PUB-033">
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img class="w-10 h-14 object-cover rounded shadow-sm shrink-0 bg-surface-container" data-alt="Cover of Engineering Mechanics Statics textbook showing architectural truss bridges and blueprint graphics in cool blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChEa-BNIAwIO4KniJusOey9rj5XSQB9N3rus26rdXHONjd9F42uk93XgdBI-Un5IcOn8w4eahUuAm4wCVc0Sh7isuDRcRgUBhsgHT8-I6XIMPFeG85i2Q6NAcuIZ--doxiA1Li3I10AietO4xx65dp6BNRdP2VSBdXtOBRdQw0mi-qvh2XXY3MZGuP6pSv9K2sn1r7q-WKv-SFz5kFgPwnxbUdMaQypeHaI42nwBEV"/>
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-primary text-body-sm">PUB-033</span>
+<span class="font-mono text-secondary text-label-sm">978-607-32-3490-0</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 max-w-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('Mecánica Vectorial para Ingenieros: Estática')">Mecánica Vectorial: Estática</span>
+<span class="text-on-surface-variant text-body-sm">Ferdinand P. Beer &amp; E. Russell Johnston</span>
+<span class="font-label-sm text-label-sm text-secondary">McGraw-Hill • 2020</span>
+</div>
+</td>
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Ingeniería y Tecnología</span>
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Bueno
+                </span>
+</div>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">40</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">25</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">5</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">10</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1" id="badge-PUB-033">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo
+              </span>
+</td>
+<td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">18/02/2024</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('Mecánica Vectorial: Estática')" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="editPublication('PUB-033', 'Mecánica Vectorial: Estática', 'Beer &amp; Johnston', 'Ingeniería y Tecnología', 'Bueno', 40)" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-error hover:bg-error-container/30 transition-colors" onclick="togglePublicationStatus('PUB-033')" title="Pausar" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchHistory('Mecánica Vectorial: Estática', 'PUB-033')" title="Kardex" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Humanidades / Pausada -->
+<tr class="hover:bg-surface-container-low/60 transition-colors bg-surface-container/10" data-category="Humanidades y Ciencias Sociales" data-condition="Regular" data-status="Pausada" id="row-PUB-040">
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img class="w-10 h-14 object-cover rounded shadow-sm shrink-0 bg-surface-container" data-alt="Cover of Peruvian sociological academic book titled Siete Ensayos de Interpretacion de la Realidad Peruana José Carlos Mariátegui clean historical publication design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoTjA9H5emVY90vd13QyBrRRGlpO8pjcEqdOSUAuVljRsBHLLySBzJfWlmDXGHtzDEdxHI4GDHxIKxJcMNiurMRu62n2ZsaXWlLmddBGxzxQixXCDFU8CRKurF28E9jNyk5rVegZ8bPNHWeL3sDQdwf4zJDaJpKvxc9Of5mEWhEiE2jwyBYpt6aTKCwRMuNaBF4rIJ6dwk01J0FrEJ7wbiXu0TzXFNbIP51BEEiG7f"/>
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-secondary text-body-sm">PUB-040</span>
+<span class="font-mono text-secondary text-label-sm">978-9972-205-18-9</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 max-w-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('7 Ensayos de Interpretación de la Realidad Peruana')">7 Ensayos de Interpretación</span>
+<span class="text-on-surface-variant text-body-sm">José Carlos Mariátegui</span>
+<span class="font-label-sm text-label-sm text-secondary">Ediciones Minerva • Edición Facsimilar</span>
+</div>
+</td>
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Humanidades</span>
+<span class="px-2 py-0.5 rounded-full bg-[#FEF3C7] text-[#92400E] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#D97706]"></span> Regular (Encuadernación sana)
+                </span>
+</div>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">30</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">0</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">0</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">30</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1" id="badge-PUB-040">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Pausada (Agotada)
+              </span>
+</td>
+<td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">05/01/2024</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('7 Ensayos de Interpretación')" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="editPublication('PUB-040', '7 Ensayos de Interpretación', 'J. C. Mariátegui', 'Humanidades y Ciencias Sociales', 'Regular', 30)" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="togglePublicationStatus('PUB-040')" title="Reactivar publicación" type="button">
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchHistory('7 Ensayos de Interpretación', 'PUB-040')" title="Kardex" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Anatomía Humana -->
+<tr class="hover:bg-surface-container-low/60 transition-colors" data-category="Ciencias Médicas" data-condition="Bueno" data-status="Activa" id="row-PUB-041">
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex items-center gap-3">
+<img class="w-10 h-14 object-cover rounded shadow-sm shrink-0 bg-surface-container" data-alt="Cover of medical anatomy textbook showing medical illustrations of musculoskeletal anatomy in modern surgical blue and white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLiEKvJROBQJXusEy60fXugHb-4iSNJBkUpIn-B-iSCEW-esp29BS-lB5fDV1dKzA2kXXzN3v0RrDw3WN9NXRwGKsAI1ngiGr75SotH4IM9hsnjrli9FjMBhimGWPb8VyXS3x6R_Zy1IqZ1iJBIw9WDstKgCpzBAwyyZ8fRZJnNOm4alVQb7cVgna_h0_owM7Mtv6wcLp7--gZP-rA55NxZI_nek0VvEsRAVrWuDvW"/>
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-primary text-body-sm">PUB-041</span>
+<span class="font-mono text-secondary text-label-sm">978-849-022-861-6</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-4 max-w-xs">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('Atlas de Anatomía Humana (7ma Ed.)')">Atlas de Anatomía Humana</span>
+<span class="text-on-surface-variant text-body-sm">Frank H. Netter, MD</span>
+<span class="font-label-sm text-label-sm text-secondary">Elsevier Masson • 2021</span>
+</div>
+</td>
+<td class="py-3 px-4 whitespace-nowrap">
+<div class="flex flex-col gap-1 items-start">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">Ciencias Médicas</span>
+<span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Bueno
+                </span>
+</div>
+</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">25</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">15</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">4</td>
+<td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">6</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1" id="badge-PUB-041">
+<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo
+              </span>
+</td>
+<td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">22/02/2024</td>
+<td class="py-3 px-4 text-center whitespace-nowrap">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openDetailModal('Atlas de Anatomía Humana')" title="Ver detalle" type="button">
+<span class="material-symbols-outlined text-[18px]">info</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="editPublication('PUB-041', 'Atlas de Anatomía Humana', 'Frank Netter', 'Ciencias Médicas', 'Bueno', 25)" title="Editar" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-error hover:bg-error-container/30 transition-colors" onclick="togglePublicationStatus('PUB-041')" title="Pausar" type="button">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</button>
+<button class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors" onclick="openBatchHistory('Atlas de Anatomía Humana', 'PUB-041')" title="Kardex" type="button">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Technical Subtext -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">format_image_left</span>
+<span>Validación RD03 &amp; RD04: Ningún libro puede comprometerse si la cantidad disponible es menor a 1.</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container text-secondary hover:bg-surface-container-highest transition-colors disabled:opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px] align-middle">chevron_left</span>
+</button>
+<span class="font-label-sm text-label-sm px-2 text-on-surface font-semibold">Página 1 de 4</span>
+<button class="px-2.5 py-1 rounded bg-surface-container text-secondary hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] align-middle">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- MODAL / FORM: Nueva Publicación de Libro (RF05, RF06, RF07, RD03, RD04, RD05) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#12263a]/60 backdrop-blur-sm p-4 hidden" id="newPubModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-3xl shadow-xl flex flex-col overflow-hidden max-h-[90vh]">
+<!-- Header -->
+<div class="bg-[#16324F] px-space-lg py-4 text-white flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[24px] text-secondary-fixed">post_add</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-white">Registrar Nueva Publicación para Donación</h3>
+<p class="font-label-sm text-label-sm text-secondary-fixed-dim">RF05 &amp; RD04: Incorporación al catálogo institucional con lote inicial</p>
+</div>
+</div>
+<button class="text-secondary-fixed hover:text-white transition-colors" onclick="closeNewPublicationModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Form Body -->
+<form class="overflow-y-auto p-space-lg space-y-space-md" id="publicationForm" onsubmit="handleFormSubmit(event)">
+<!-- Section 1: Bibliographical info -->
+<div>
+<div class="flex items-center gap-2 mb-2 pb-1 border-b border-surface-container">
+<span class="material-symbols-outlined text-primary text-[18px]">menu_book</span>
+<span class="font-label-md text-label-md font-semibold text-primary uppercase tracking-wider">1. Información Bibliográfica Oficial</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Title -->
+<div class="md:col-span-2">
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Título de la Obra / Libro *</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputTitle" placeholder="Ej. Introducción a la Termodinámica Aplicada" required="" type="text"/>
+</div>
+<!-- Author -->
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Autor(es) Principal(es) *</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputAuthor" placeholder="Ej. Ing. Carlos A. Huamán" required="" type="text"/>
+</div>
+<!-- ISBN -->
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Código ISBN Normalizado *</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputISBN" pattern="^(97(8|9))?[\d-]{10,17}$" placeholder="978-612-XXXX-XX-X" required="" type="text"/>
+<span class="text-secondary font-label-sm text-label-sm mt-0.5 block">Formato ISBN-10 o ISBN-13 verificado</span>
+</div>
+<!-- Category -->
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Categoría Académica *</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputCategory" required="">
+<option value="">Seleccione una rama...</option>
+<option value="Ciencias Exactas">Ciencias Exactas (Matemática, Física, Química)</option>
+<option value="Ingeniería y Tecnología">Ingeniería y Tecnología</option>
+<option value="Humanidades y Ciencias Sociales">Humanidades y Ciencias Sociales</option>
+<option value="Ciencias Médicas y de la Salud">Ciencias Médicas y de la Salud</option>
+<option value="Educación y Pedagogía">Educación y Pedagogía</option>
+</select>
+</div>
+<!-- Editorial & Year -->
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Editorial / Sello</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputPublisher" placeholder="Fondo UNMSM" type="text"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Año de Edición</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputYear" max="2026" min="1950" placeholder="2022" type="number"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Inventory Initial Stock and Physical State -->
+<div>
+<div class="flex items-center gap-2 mb-2 pb-1 border-b border-surface-container">
+<span class="material-symbols-outlined text-primary text-[18px]">inventory</span>
+<span class="font-label-md text-label-md font-semibold text-primary uppercase tracking-wider">2. Control de Inventario y Condiciones de Entrega</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Physical Condition -->
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Estado Físico del Lote *</label>
+<select class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputCondition" required="">
+<option value="Bueno">Bueno (Sin marcas, encuadernación óptima)</option>
+<option value="Regular">Regular (Uso de lectura, páginas completas)</option>
+</select>
+<span class="text-secondary font-label-sm text-label-sm mt-0.5 block">RD05: Material deteriorado no califica</span>
+</div>
+<!-- Initial Quantity -->
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Cantidad Inicial (Q_ini) *</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-mono font-bold text-body-md focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputQuantity" max="1000" min="1" placeholder="Ej. 25" required="" type="number"/>
+<span class="text-secondary font-label-sm text-label-sm mt-0.5 block">RF07: Ingresará a stock 'Disponible'</span>
+</div>
+<!-- Location / Shelf Code -->
+<div>
+<label class="block font-label-md text-label-md font-medium text-on-surface mb-1">Ubicación en Depósito</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" id="inputLocation" placeholder="Pabellón C - Estante 4B" type="text"/>
+</div>
+</div>
+</div>
+<!-- Section 3: Custody Declaration & Policy Warning -->
+<div class="p-3.5 rounded-xl bg-surface-container flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">gavel</span>
+<div class="text-body-sm font-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Declaración Jurada Institucional:</span> Al guardar esta publicación, la entidad declara la titularidad y disponibilidad física del lote. Los ejemplares quedarán bloqueados para fines institucionales y se aplicará la regla de auditoría estricta <code class="font-mono text-primary font-semibold">Q_ini = Disp + Res + Ent</code>.
+          </div>
+</div>
+<!-- Validation message container -->
+<div class="hidden p-3 rounded-lg bg-error-container text-on-error-container font-body-sm text-body-sm flex items-center gap-2" id="formValidationAlert">
+<span class="material-symbols-outlined text-[18px]">error</span>
+<span id="formValidationText">Por favor revise los campos obligatorios.</span>
+</div>
+<!-- Footer Actions -->
+<div class="flex items-center justify-end gap-space-sm pt-space-sm border-t border-surface-container">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-highest text-secondary font-label-md text-label-md font-semibold transition-colors" onclick="closeNewPublicationModal()" type="button">
+            Cancelar
+          </button>
+<button class="px-5 py-2 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md font-semibold transition-all shadow-md flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Publicar y Habilitar en Red</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- DETAIL MODAL: Ficha Técnica Bibliográfica -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#12263a]/60 backdrop-blur-sm p-4 hidden" id="detailModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-2xl shadow-xl overflow-hidden">
+<div class="bg-[#16324F] px-space-lg py-4 text-white flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-secondary-fixed">menu_book</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-white" id="detailModalTitle">Detalle de Publicación</h3>
+</div>
+<button class="text-secondary-fixed hover:text-white transition-colors" onclick="closeDetailModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-4">
+<div class="flex items-start gap-4">
+<img class="w-20 h-28 object-cover rounded-lg shadow shrink-0 bg-surface-container" data-alt="Official catalog book thumbnail showing high-resolution textbook front cover with academic typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9hFjBzOk5QOJWHe7Kg41cpW_0FEOud4LDL17APRe8DNtLuRKpHA92UryMjkqHdNE55bn4beOhArYnfPkna0K2FfweY0zhN_RRZ1fVwN85hyrafaYENuKrW8c2FKtXDBmfY10VvM64oD3vhhugH-E6mbrcT93UESLR28wEN3iwfmHZmaT6wtTDcbhhc8Bzsrv9N0_oZANAWpYJrk3FgkvjExQnFTZlV4Smn6Nxph6C"/>
+<div class="flex flex-col">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold w-max mb-1" id="detailBadgeCat">Ciencias Exactas</span>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold" id="detailBookTitle">Matemática Básica I (2da Ed.)</h4>
+<span class="font-body-md text-body-md text-on-surface-variant" id="detailAuthor">Dr. Hugo Lázaro Carrillo</span>
+<div class="mt-2 flex items-center gap-2 text-label-sm text-secondary font-mono">
+<span>Código: PUB-012</span>
+<span>•</span>
+<span>ISBN: 978-612-4001-20-4</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 text-center p-3 rounded-xl bg-surface-container-low">
+<div class="p-2">
+<span class="text-secondary font-label-sm text-label-sm block">Inicial</span>
+<span class="font-mono text-headline-sm font-bold text-on-surface">20</span>
+</div>
+<div class="p-2 bg-[#DCFCE7]/60 rounded-lg">
+<span class="text-[#166534] font-label-sm text-label-sm block font-semibold">Disponible</span>
+<span class="font-mono text-headline-sm font-bold text-[#166534]">10</span>
+</div>
+<div class="p-2 bg-[#FEF3C7]/60 rounded-lg">
+<span class="text-[#92400E] font-label-sm text-label-sm block font-semibold">Reservada</span>
+<span class="font-mono text-headline-sm font-bold text-[#92400E]">6</span>
+</div>
+<div class="p-2 bg-surface-container rounded-lg">
+<span class="text-primary font-label-sm text-label-sm block font-semibold">Entregada</span>
+<span class="font-mono text-headline-sm font-bold text-primary">4</span>
+</div>
+</div>
+<div class="text-body-sm text-on-surface-variant space-y-1">
+<p><strong>ODS Asociados:</strong> ODS 4.1 (Acceso a material pedagógico de calidad) y ODS 12.5 (Extensión de ciclo de vida del libro impreso).</p>
+<p><strong>Entidad Custodia:</strong> Universidad Nacional Mayor de San Marcos - Biblioteca Central Pedro Zulen.</p>
+</div>
+<div class="flex justify-end pt-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-highest text-secondary font-label-md text-label-md font-semibold transition-colors" onclick="closeDetailModal()" type="button">
+            Cerrar Ficha
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- KARDEX MODAL: Historial de Lotes y Movimientos -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#12263a]/60 backdrop-blur-sm p-4 hidden" id="kardexModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-3xl shadow-xl overflow-hidden">
+<div class="bg-[#16324F] px-space-lg py-4 text-white flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-secondary-fixed">receipt_long</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-white" id="kardexTitle">Kardex de Movimientos de Inventario</h3>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim" id="kardexSubtitle">Registro de auditoría inmutable de entradas, reservas y despachos</span>
+</div>
+</div>
+<button class="text-secondary-fixed hover:text-white transition-colors" onclick="closeKardexModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-secondary font-label-sm text-label-sm uppercase">
+<th class="py-2.5 px-3">Fecha / Hora</th>
+<th class="py-2.5 px-3">Operación</th>
+<th class="py-2.5 px-3">Institución Solicitante / Ref.</th>
+<th class="py-2.5 px-3 text-right">Variación</th>
+<th class="py-2.5 px-3 text-right">Saldo Disp.</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
+<tr class="hover:bg-surface-container-low">
+<td class="py-2 px-3 font-mono text-secondary">24/02 11:20</td>
+<td class="py-2 px-3 font-semibold text-primary">Entrega Efectiva (Acta AC-089)</td>
+<td class="py-2 px-3">I.E. Micaela Bastidas (SJL)</td>
+<td class="py-2 px-3 text-right font-mono text-primary font-bold">-4 un.</td>
+<td class="py-2 px-3 text-right font-mono font-bold">10 un.</td>
+</tr>
+<tr class="hover:bg-surface-container-low">
+<td class="py-2 px-3 font-mono text-secondary">19/02 09:45</td>
+<td class="py-2 px-3 font-semibold text-[#92400E]">Reserva Aprobada (SOL-2024-042)</td>
+<td class="py-2 px-3">Biblioteca Comunitaria San Martín</td>
+<td class="py-2 px-3 text-right font-mono text-[#92400E] font-bold">-6 un.</td>
+<td class="py-2 px-3 text-right font-mono font-bold">10 un.</td>
+</tr>
+<tr class="hover:bg-surface-container-low">
+<td class="py-2 px-3 font-mono text-secondary">15/01 08:30</td>
+<td class="py-2 px-3 font-semibold text-[#166534]">Alta de Lote Inicial (Donación)</td>
+<td class="py-2 px-3">UNMSM - Fondo Pedro Zulen</td>
+<td class="py-2 px-3 text-right font-mono text-[#166534] font-bold">+20 un.</td>
+<td class="py-2 px-3 text-right font-mono font-bold">20 un.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex justify-end pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container hover:bg-surface-container-highest text-secondary font-label-md text-label-md font-semibold transition-colors" onclick="closeKardexModal()" type="button">
+            Cerrar Kardex
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- REPORT CUSTODY MODAL -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#12263a]/60 backdrop-blur-sm p-4 hidden" id="reportModal">
+<div class="bg-surface-container-lowest rounded-2xl w-full max-w-lg shadow-xl overflow-hidden">
+<div class="bg-[#16324F] px-space-lg py-4 text-white flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[22px] text-secondary-fixed">description</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-white">Generar Reporte de Custodia</h3>
+</div>
+<button class="text-secondary-fixed hover:text-white transition-colors" onclick="toggleReportModal()" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-4 font-body-sm text-body-sm">
+<p class="text-on-surface-variant">
+          Emisión de certificado oficial de bienes donables para sustentación ante Contraloría, OCI y Vicerrectorado Académico.
+        </p>
+<div class="space-y-2">
+<label class="block font-label-md text-label-md font-medium text-on-surface">Tipo de Certificación</label>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center gap-3">
+<input checked="" class="text-primary focus:ring-primary" id="rep1" name="repType" type="radio"/>
+<label class="font-label-md text-label-md text-on-surface" for="rep1">Balance Consolidado de Inventario (ODS 4/12)</label>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center gap-3">
+<input class="text-primary focus:ring-primary" id="rep2" name="repType" type="radio"/>
+<label class="font-label-md text-label-md text-on-surface" for="rep2">Padrón de Actas de Entrega y Recepción 2024</label>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-3">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-secondary hover:bg-surface-container-highest transition-colors font-label-md text-label-md font-semibold" onclick="toggleReportModal()" type="button">
+            Cancelar
+          </button>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all font-label-md text-label-md font-semibold flex items-center gap-1.5 shadow-sm" onclick="downloadMockPDF()" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Descargar PDF Firmado</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast (Micro-interaction) -->
+<div class="fixed bottom-6 right-6 z-50 bg-[#12263a] text-white px-4 py-3 rounded-xl shadow-xl flex items-center gap-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none" id="appToast">
+<span class="material-symbols-outlined text-[#95d5b2] text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium" id="toastMessage">Operación ejecutada con éxito</span>
+</div>
+</div>
+<script>
+  // UI and Inventory Interactivity logic
+  function showToast(msg, icon = 'check_circle', isError = false) {
+    const toast = document.getElementById('appToast');
+    const toastMsg = document.getElementById('toastMessage');
+    const toastIcon = document.getElementById('toastIcon');
+    
+    toastMsg.textContent = msg;
+    toastIcon.textContent = icon;
+    toastIcon.className = isError ? 'material-symbols-outlined text-error text-[20px]' : 'material-symbols-outlined text-[#95d5b2] text-[20px]';
+
+    toast.classList.remove('translate-y-20', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-20', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+
+  function openNewPublicationModal() {
+    document.getElementById('newPubModal').classList.remove('hidden');
+    document.getElementById('inputTitle').focus();
+  }
+
+  function closeNewPublicationModal() {
+    document.getElementById('newPubModal').classList.add('hidden');
+    document.getElementById('formValidationAlert').classList.add('hidden');
+  }
+
+  function toggleReportModal() {
+    const modal = document.getElementById('reportModal');
+    modal.classList.toggle('hidden');
+  }
+
+  function downloadMockPDF() {
+    toggleReportModal();
+    showToast('Reporte de Custodia generado con firma digital.', 'file_download');
+  }
+
+  function openDetailModal(title) {
+    document.getElementById('detailBookTitle').textContent = title;
+    document.getElementById('detailModal').classList.remove('hidden');
+  }
+
+  function closeDetailModal() {
+    document.getElementById('detailModal').classList.add('hidden');
+  }
+
+  function openBatchHistory(title, code) {
+    document.getElementById('kardexTitle').textContent = 'Kardex: ' + title;
+    document.getElementById('kardexSubtitle').textContent = 'Código Lote: ' + code + ' | Trazabilidad según directiva UNMSM-2024';
+    document.getElementById('kardexModal').classList.remove('hidden');
+  }
+
+  function closeKardexModal() {
+    document.getElementById('kardexModal').classList.add('hidden');
+  }
+
+  function focusRowDemo() {
+    const row = document.getElementById('row-PUB-012');
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    row.classList.add('ring-2', 'ring-primary');
+    setTimeout(() => {
+      row.classList.remove('ring-2', 'ring-primary');
+    }, 2500);
+    showToast('Obra en simulación localizada (Matemática Básica I: 20 ejemplares iniciales).');
+  }
+
+  function togglePublicationStatus(code) {
+    const badge = document.getElementById('badge-' + code);
+    const row = document.getElementById('row-' + code);
+    if (!badge || !row) return;
+
+    const currentStatus = row.getAttribute('data-status');
+    if (currentStatus === 'Activa') {
+      row.setAttribute('data-status', 'Pausada');
+      badge.className = 'px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-semibold inline-flex items-center gap-1';
+      badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Pausada';
+      showToast('Publicación ' + code + ' pausada temporalmente del catálogo público.');
+    } else {
+      row.setAttribute('data-status', 'Activa');
+      badge.className = 'px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1';
+      badge.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo';
+      showToast('Publicación ' + code + ' reactivada en la Red.');
+    }
+  }
+
+  function editPublication(code, title, author, category, condition, qty) {
+    openNewPublicationModal();
+    document.getElementById('inputTitle').value = title;
+    document.getElementById('inputAuthor').value = author;
+    document.getElementById('inputCategory').value = category;
+    document.getElementById('inputCondition').value = condition;
+    document.getElementById('inputQuantity').value = qty;
+    showToast('Cargados datos de ' + code + ' para edición bibliográfica.');
+  }
+
+  function handleFormSubmit(e) {
+    e.preventDefault();
+    const title = document.getElementById('inputTitle').value.trim();
+    const author = document.getElementById('inputAuthor').value.trim();
+    const isbn = document.getElementById('inputISBN').value.trim();
+    const qty = parseInt(document.getElementById('inputQuantity').value, 10);
+
+    if (!title || !author || !isbn || isNaN(qty) || qty < 1) {
+      const alert = document.getElementById('formValidationAlert');
+      const text = document.getElementById('formValidationText');
+      text.textContent = 'Complete todos los campos requeridos y asegure una cantidad válida (mínimo 1).';
+      alert.classList.remove('hidden');
+      return;
+    }
+
+    // Dynamic insertion to table
+    const tableBody = document.querySelector('#publicationsTable tbody');
+    const newCode = 'PUB-0' + (Math.floor(Math.random() * 80) + 43);
+    const category = document.getElementById('inputCategory').value || 'Ciencias Exactas';
+    const condition = document.getElementById('inputCondition').value || 'Bueno';
+
+    const tr = document.createElement('tr');
+    tr.id = 'row-' + newCode;
+    tr.className = 'hover:bg-surface-container-low/60 transition-colors animate-pulse';
+    tr.setAttribute('data-category', category);
+    tr.setAttribute('data-condition', condition);
+    tr.setAttribute('data-status', 'Activa');
+
+    tr.innerHTML = `
+      <td class="py-3 px-4 whitespace-nowrap">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-14 bg-surface-container rounded shadow-sm flex items-center justify-center text-secondary">
+            <span class="material-symbols-outlined text-[20px]">book</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-mono font-semibold text-primary text-body-sm">${newCode}</span>
+            <span class="font-mono text-secondary text-label-sm">${isbn}</span>
+            <span class="font-label-sm text-label-sm text-[#166534] font-semibold mt-0.5">Recién Registrado</span>
+          </div>
+        </div>
+      </td>
+      <td class="py-3 px-4 max-w-xs">
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-on-surface font-semibold hover:text-primary cursor-pointer" onclick="openDetailModal('${title}')">${title}</span>
+          <span class="text-on-surface-variant text-body-sm">${author}</span>
+          <span class="font-label-sm text-label-sm text-secondary">Registro Donante 2024</span>
+        </div>
+      </td>
+      <td class="py-3 px-4 whitespace-nowrap">
+        <div class="flex flex-col gap-1 items-start">
+          <span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant font-medium">${category}</span>
+          <span class="px-2 py-0.5 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> ${condition}
+          </span>
+        </div>
+      </td>
+      <td class="py-3 px-4 text-right font-mono font-bold text-body-md text-on-surface">${qty}</td>
+      <td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#166534] bg-[#DCFCE7]/20">${qty}</td>
+      <td class="py-3 px-4 text-right font-mono font-bold text-body-md text-[#92400E] bg-[#FEF3C7]/20">0</td>
+      <td class="py-3 px-4 text-right font-mono font-bold text-body-md text-primary bg-surface-container/30">0</td>
+      <td class="py-3 px-4 text-center whitespace-nowrap">
+        <span id="badge-${newCode}" class="px-2.5 py-1 rounded-full bg-[#DCFCE7] text-[#166534] font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#16A34A]"></span> Activa en Catálogo
+        </span>
+      </td>
+      <td class="py-3 px-4 whitespace-nowrap text-secondary font-label-md text-label-md">Hoy</td>
+      <td class="py-3 px-4 text-center whitespace-nowrap">
+        <div class="flex items-center justify-center gap-1">
+          <button type="button" onclick="openDetailModal('${title}')" class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[18px]">info</span></button>
+          <button type="button" onclick="togglePublicationStatus('${newCode}')" class="p-1.5 rounded-lg text-secondary hover:text-error hover:bg-error-container/30 transition-colors"><span class="material-symbols-outlined text-[18px]">pause_circle</span></button>
+          <button type="button" onclick="openBatchHistory('${title}', '${newCode}')" class="p-1.5 rounded-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[18px]">receipt_long</span></button>
+        </div>
+      </td>
+    `;
+
+    tableBody.insertBefore(tr, tableBody.firstChild);
+
+    setTimeout(() => {
+      tr.classList.remove('animate-pulse');
+    }, 1500);
+
+    closeNewPublicationModal();
+    document.getElementById('publicationForm').reset();
+    showToast('Nueva publicación ' + newCode + ' creada y disponible para donación.');
+    filterTable();
+  }
+
+  function filterTable() {
+    const searchVal = document.getElementById('searchInput').value.toLowerCase();
+    const categoryVal = document.getElementById('categoryFilter').value;
+    const conditionVal = document.getElementById('conditionFilter').value;
+    const statusVal = document.getElementById('statusFilter').value;
+
+    const rows = document.querySelectorAll('#publicationsTable tbody tr');
+    let visibleCount = 0;
+
+    const isFiltered = (searchVal !== '' || categoryVal !== 'ALL' || conditionVal !== 'ALL' || statusVal !== 'ALL');
+    document.getElementById('activeFilterBadge').classList.toggle('hidden', !isFiltered);
+
+    rows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      const rowCat = row.getAttribute('data-category') || '';
+      const rowCond = row.getAttribute('data-condition') || '';
+      const rowStat = row.getAttribute('data-status') || '';
+
+      const matchSearch = text.includes(searchVal);
+      const matchCat = (categoryVal === 'ALL' || rowCat.includes(categoryVal));
+      const matchCond = (conditionVal === 'ALL' || rowCond.includes(conditionVal));
+      const matchStat = (statusVal === 'ALL' || rowStat === statusVal);
+
+      if (matchSearch && matchCat && matchCond && matchStat) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    document.getElementById('visibleCount').textContent = visibleCount;
+  }
+
+  function resetFilters() {
+    document.getElementById('searchInput').value = '';
+    document.getElementById('categoryFilter').value = 'ALL';
+    document.getElementById('conditionFilter').value = 'ALL';
+    document.getElementById('statusFilter').value = 'ALL';
+    filterTable();
+    showToast('Filtros restablecidos.');
+  }
+</script></main></div></body></html>
